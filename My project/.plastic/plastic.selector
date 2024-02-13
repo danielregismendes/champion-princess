@@ -1,0 +1,4 @@
+repository "champion-princess@danielmendespers@cloud"
+  path "/"
+    br "/main"
+    co "/main"
