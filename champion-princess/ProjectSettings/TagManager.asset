@@ -13,14 +13,14 @@ TagManager:
   - UI
   - 
   - 
+  - Ground
+  - Player
+  - Player Hit
+  - Enemy
+  - Enemy Hit
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - DamageText
   - 
   - 
   - 
