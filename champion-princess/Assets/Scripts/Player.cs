@@ -10,8 +10,12 @@ public class Player : MonoBehaviour
     public float maxSpeed = 4;
     public float jumpForce = 400;
     public float minHeight, maxHeight;
+    public int maxHealth = 10;
+    public string playerName;
+    public Sprite playerImage;
 
 
+    private int currentHealth;
     private float currentSpeed;
     private Rigidbody rb;
     private Animator anim;
@@ -25,6 +29,7 @@ public class Player : MonoBehaviour
     void Start()
     {
 
+        currentHealth = maxHealth;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         groundCheck = gameObject.transform.Find("GroundCheck");
@@ -128,6 +133,18 @@ public class Player : MonoBehaviour
 
     }
 
+    [System.Obsolete]
+    public void TookDamage(int damage)
+    {
+
+        if(!isDead)
+        {
+            currentHealth -= damage;
+            anim.SetTrigger("HitDamage");
+            FindObjectOfType<UIManager>().UpdateHealt(currentHealth);
+        }
+
+    }
 
 }
 

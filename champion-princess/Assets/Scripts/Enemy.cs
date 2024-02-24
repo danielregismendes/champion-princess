@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
 public class Enemy : MonoBehaviour {
 
 	public float maxSpeed;
@@ -13,8 +15,15 @@ public class Enemy : MonoBehaviour {
 	public string enemyName;
 	public Sprite enemyImage;
 	public AudioClip collisionSound, deathSound;
+	public EnemyHit enemyHit;
+    public Attack attack;
 
-	private int currentHealth;
+    public Color damageColor;
+    public float damageExibitionTime = 0.1f;
+	public GameObject damageText;
+    public Transform damageTextPosition;
+
+    private int currentHealth;
 	private float currentSpeed;
 	private Rigidbody rb;
 	protected Animator anim;
@@ -29,6 +38,9 @@ public class Enemy : MonoBehaviour {
 	private float damageTimer;
 	private float nextAttack;
 	private AudioSource audioS;
+
+    private SpriteRenderer spriteRenderer;
+    private Color defaultColor;
 
 
     // Use this for initialization
@@ -84,9 +96,9 @@ public class Enemy : MonoBehaviour {
 			Vector3 targetDitance = target.position - transform.position;
 			float hForce = targetDitance.x / Mathf.Abs(targetDitance.x);
 
-			if(walkTimer >= Random.Range(1f, 2f))
+			if(walkTimer >= UnityEngine.Random.Range(1f, 2f))
 			{
-				zForce = Random.Range(-1, 2);
+				zForce = UnityEngine.Random.Range(-1, 2);
 				walkTimer = 0;
 			}
 
@@ -103,7 +115,8 @@ public class Enemy : MonoBehaviour {
 			if(Mathf.Abs(targetDitance.x) < 1.5f && Mathf.Abs(targetDitance.z) < 1.5f && Time.time > nextAttack)
 			{
 				anim.SetTrigger("Attack");
-				currentSpeed = 0;
+				attack.SetEnemyAttack(enemyHit);
+                currentSpeed = 0;
 				nextAttack = Time.time + attackRate;
 			}
 		}
@@ -115,7 +128,7 @@ public class Enemy : MonoBehaviour {
 				Mathf.Clamp(rb.position.z, minHeight, maxHeight));
 	}
 
-	/*
+	
     [System.Obsolete]
     public void TookDamage(int damage)
 	{
@@ -134,11 +147,7 @@ public class Enemy : MonoBehaviour {
 			}
 		}
 	}
-	*/
-
-
-
-
+	
 	public void DisableEnemy()
 	{
 		gameObject.SetActive(false);
@@ -154,4 +163,38 @@ public class Enemy : MonoBehaviour {
 		audioS.clip = clip;
 		audioS.Play();
 	}
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        defaultColor = spriteRenderer.color;
+    }
+
+    public void SpriteDamage(int damage)
+    {
+        spriteRenderer.color = damageColor;
+        Invoke("ReleaseDamage", damageExibitionTime);
+        GameObject newDamageText = Instantiate(damageText, damageTextPosition.position, Quaternion.identity);
+        newDamageText.GetComponentInChildren<Text>().text = damage.ToString();
+        Destroy(newDamageText, 1);
+        ComboManager.instance.SetCombo();
+    }
+
+    void ReleaseDamage()
+    {
+        spriteRenderer.color = defaultColor;
+    }
+
+    [Serializable]
+    public class EnemyHit
+	{
+		public int damage = 1;
+		public AudioClip collisionSound, deathSound;
+    }
+
+    void PlayEnemyHit(EnemyHit enemyHit)
+    {
+        attack.SetEnemyAttack(enemyHit);
+    }
+
 }
