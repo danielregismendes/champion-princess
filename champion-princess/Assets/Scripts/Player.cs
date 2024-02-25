@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public int maxHealth = 10;
     public string playerName;
     public Sprite playerImage;
-
+    public AudioClip collisionSound, jumpSound, healthItem;
 
     private int currentHealth;
     private float currentSpeed;
@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     private bool isDead = false;
     private bool facingRight = true;
     private bool Jump = false;
+    private AudioSource audioS;
 
 
     void Start()
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         groundCheck = gameObject.transform.Find("GroundCheck");
         currentSpeed = maxSpeed;
-
+        audioS = GetComponent<AudioSource>();
         
     }
 
@@ -97,6 +98,7 @@ public class Player : MonoBehaviour
             {
                 Jump = false;
                 rb.AddForce(Vector3.up * jumpForce);
+                PlaySong(jumpSound);
             }
 
             float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
@@ -142,7 +144,52 @@ public class Player : MonoBehaviour
             currentHealth -= damage;
             anim.SetTrigger("HitDamage");
             FindObjectOfType<UIManager>().UpdateHealt(currentHealth);
+            PlaySong(collisionSound);
+            if(currentHealth <= 0)
+            {
+                isDead = true;
+                FindObjectOfType<GameManager>().lives--;
+                FindObjectOfType<UIManager>().UpdateLives();
+                if(facingRight)
+                {
+                    rb.AddForce(new Vector3(-3, 5, 0), ForceMode.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(new Vector3(3, 5, 0), ForceMode.Impulse);
+                }
+            }
         }
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Health Item"))
+        {
+            Destroy(other.gameObject);
+            anim.SetTrigger("Catching");
+            PlaySong(healthItem);
+            currentHealth = maxHealth;
+            FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);    
+        }
+    }
+
+    void PlayerRespawn()
+    {
+        isDead = false;
+        currentHealth = maxHealth;
+        FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);
+        anim.Rebind();
+        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0,0,10)).x;
+        transform.position = new Vector3(minWidth, 10, -4);
+    }
+
+    public void PlaySong(AudioClip clip)
+    {
+
+        audioS.clip = clip;
+        audioS.Play();
 
     }
 

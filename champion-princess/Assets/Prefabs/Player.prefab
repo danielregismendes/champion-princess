@@ -284,6 +284,9 @@ MonoBehaviour:
   maxHealth: 10
   playerName: Leona Silva
   playerImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+  collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+  jumpSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
+  healthItem: {fileID: 8300000, guid: 958535b288fe6e34b9cae872baa55637, type: 3}
 --- !u!114 &8125233529707395634
 MonoBehaviour:
   m_ObjectHideFlags: 0

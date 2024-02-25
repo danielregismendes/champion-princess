@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2538123146956034143}
   - component: {fileID: 8646928292205636264}
+  - component: {fileID: 3977921496079397398}
   m_Layer: 12
   m_Name: Attack
   m_TagString: Untagged
@@ -84,6 +85,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3977921496079397398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045257568098208971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee659f16811dcef40bbd362239f0de13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 0}
 --- !u!1 &2094737572795381620
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +143,6 @@ GameObject:
   - component: {fileID: 6690102614185866835}
   - component: {fileID: 4634831617474398005}
   - component: {fileID: 2714654565608840825}
-  - component: {fileID: 2221428069949199311}
   - component: {fileID: 1048001823093174532}
   m_Layer: 11
   m_Name: Enemy
@@ -300,29 +313,17 @@ MonoBehaviour:
   damageTime: 0.5
   maxHealth: 4
   attackRate: 1
-  damage: 1
   enemyName: Costureira
   enemyImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
-  collisionSound: {fileID: 0}
-  deathSound: {fileID: 0}
-  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+  deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+  enemyHit:
+    damage: 1
+    collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+    deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+  attack: {fileID: 3977921496079397398}
+  damageColor: {r: 1, g: 1, b: 1, a: 0}
   damageExibitionTime: 0.1
-  damageText: {fileID: 0}
-  damageTextPosition: {fileID: 0}
---- !u!114 &2221428069949199311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142490494634527439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad807888de53a7c4d8bd1d14ce34f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-  damageTime: 0.1
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}
   damageTextPosition: {fileID: 1819854164453975634}
 --- !u!82 &1048001823093174532
