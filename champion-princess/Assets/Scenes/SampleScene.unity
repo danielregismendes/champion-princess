@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrashItem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2640163158042276920, guid: 0339e1d218d711b4993f4970b088cf6f, type: 3}
+      propertyPath: dropItem
+      value: 
+      objectReference: {fileID: 460381869528032468, guid: df7513e9315681a4e937c14fae919e7f, type: 3}
     - target: {fileID: 8280251163903861208, guid: 0339e1d218d711b4993f4970b088cf6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -2941,6 +2945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrashItem
       objectReference: {fileID: 0}
+    - target: {fileID: 2640163158042276920, guid: 0339e1d218d711b4993f4970b088cf6f, type: 3}
+      propertyPath: dropItem
+      value: 
+      objectReference: {fileID: 1047532187468557263, guid: 37972b918a813ca4b9f924300ec40183, type: 3}
     - target: {fileID: 8280251163903861208, guid: 0339e1d218d711b4993f4970b088cf6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
