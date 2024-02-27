@@ -45,7 +45,9 @@ public class Player : MonoBehaviour
     {
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+
         
+
         anim.SetBool("OnGround", onGround);
         anim.SetBool("Dead", isDead);
         anim.SetBool("Weapon", holdingWeapon);

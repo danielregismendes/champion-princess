@@ -38,6 +38,7 @@ public class Attack : MonoBehaviour
     {
         Enemy enemy = other.GetComponent<Enemy>();
         Player player = other.GetComponent<Player>();
+        CrashItem crashItem = other.GetComponent<CrashItem>();
 
 
         if (enemy != null)
@@ -64,5 +65,13 @@ public class Attack : MonoBehaviour
             audioPlayer.PlaySound(hitSoundEnemy);
         }
 
-    }
+        if (crashItem != null)
+        {
+            damage = 1;
+            Debug.Log("Dano no barril = " + damage);
+            crashItem.TookDamage(damage);
+            audioPlayer.PlaySound(hitSound);
+
+        }
+     }
 }
