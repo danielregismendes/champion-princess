@@ -10,6 +10,7 @@ public class PlayerCombo : MonoBehaviour
     public Attack attack;
     public List<string> currentCombo;
     public UnityEvent OnStartCombo, OnFinishCombo;
+    public bool weapon = false;
 
 
     private Animator anim;
@@ -32,14 +33,16 @@ public class PlayerCombo : MonoBehaviour
 
         groundCheck = gameObject.transform.Find("GroundCheck");
 
+
     }
 
     void Update()
     {
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+        weapon = GetComponentInParent<Player>().GetHoldingWeapon();
 
-        if (onGround)
+        if (onGround && !weapon)
         {
 
             CheckInputs();

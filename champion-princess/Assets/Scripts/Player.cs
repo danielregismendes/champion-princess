@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Player : MonoBehaviour
 {
 
@@ -14,6 +13,7 @@ public class Player : MonoBehaviour
     public string playerName;
     public Sprite playerImage;
     public AudioClip collisionSound, jumpSound, healthItem;
+    public Weapon weapon;
 
     private int currentHealth;
     private float currentSpeed;
@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     private bool facingRight = true;
     private bool Jump = false;
     private AudioSource audioS;
+    private bool holdingWeapon = false;
 
 
     void Start()
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
         
         anim.SetBool("OnGround", onGround);
         anim.SetBool("Dead", isDead);
+        anim.SetBool("Weapon", holdingWeapon);
 
         if (Input.GetButtonDown("Jump")&& onGround)
         {
@@ -173,6 +175,17 @@ public class Player : MonoBehaviour
             currentHealth = maxHealth;
             FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);    
         }
+
+        if (other.CompareTag("Weapon"))
+        {
+            anim.SetTrigger("Catching");
+            holdingWeapon = true;
+            WeaponItem weaponItem = other.GetComponent<PickableWeapon>().weapon;
+            weapon.ActicateWeapon(weaponItem.sprite, weaponItem.color, weaponItem.durability, weaponItem.damage);
+            Destroy(other.gameObject);
+
+        }
+
     }
 
     void PlayerRespawn()
@@ -190,6 +203,18 @@ public class Player : MonoBehaviour
 
         audioS.clip = clip;
         audioS.Play();
+
+    }
+
+    public void SetHoldingWeaponToFalse()
+    {
+        holdingWeapon = false;
+    }
+
+    public bool GetHoldingWeapon() 
+    {
+    
+        return holdingWeapon;
 
     }
 
