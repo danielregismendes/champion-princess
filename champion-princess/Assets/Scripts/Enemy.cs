@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour {
 	public AudioClip collisionSound, deathSound;
 	public EnemyHit enemyHit;
     public Attack attack;
+	public bool boboTreino = false;
 
     public Color damageColor;
     public float damageExibitionTime = 0.1f;
@@ -57,75 +58,81 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-		anim.SetBool("Grounded", onGround);
-		anim.SetBool("Dead", isDead);
-
-		if (!isDead)
+		if (!boboTreino)
 		{
-			facingRight = (target.position.x < transform.position.x) ? false : true;
-			if (facingRight)
-			{
-				transform.eulerAngles = new Vector3(0, 180, 0);
-			}
-			else
-			{
-				transform.eulerAngles = new Vector3(0, 0, 0);
-			}
-		}
-		
+			onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+			anim.SetBool("Grounded", onGround);
+			anim.SetBool("Dead", isDead);
 
-		if(damaged && !isDead)
-		{
-			damageTimer += Time.deltaTime;
-			if(damageTimer >= damageTime)
+			if (!isDead)
 			{
-				damaged = false;
-				damageTimer = 0;
+				facingRight = (target.position.x < transform.position.x) ? false : true;
+				if (facingRight)
+				{
+					transform.eulerAngles = new Vector3(0, 180, 0);
+				}
+				else
+				{
+					transform.eulerAngles = new Vector3(0, 0, 0);
+				}
 			}
-		}
 
-		walkTimer += Time.deltaTime;
+
+			if (damaged && !isDead)
+			{
+				damageTimer += Time.deltaTime;
+				if (damageTimer >= damageTime)
+				{
+					damaged = false;
+					damageTimer = 0;
+				}
+			}
+
+			walkTimer += Time.deltaTime;
+		}
 	}
 
 	private void FixedUpdate()
 	{
-		if (!isDead)
+		if (!boboTreino)
 		{
-			Vector3 targetDitance = target.position - transform.position;
-			float hForce = targetDitance.x / Mathf.Abs(targetDitance.x);
 
-			if(walkTimer >= UnityEngine.Random.Range(1f, 2f))
+			if (!isDead)
 			{
-				zForce = UnityEngine.Random.Range(-1, 2);
-				walkTimer = 0;
+				Vector3 targetDitance = target.position - transform.position;
+				float hForce = targetDitance.x / Mathf.Abs(targetDitance.x);
+
+				if (walkTimer >= UnityEngine.Random.Range(1f, 2f))
+				{
+					zForce = UnityEngine.Random.Range(-1, 2);
+					walkTimer = 0;
+				}
+
+				if (Mathf.Abs(targetDitance.x) < 1.5f)
+				{
+					hForce = 0;
+				}
+
+				if (!damaged)
+					rb.velocity = new Vector3(hForce * currentSpeed, 0, zForce * currentSpeed);
+
+				anim.SetFloat("Speed", Mathf.Abs(currentSpeed));
+
+				if (Mathf.Abs(targetDitance.x) < 1.5f && Mathf.Abs(targetDitance.z) < 1.5f && Time.time > nextAttack)
+				{
+					anim.SetTrigger("Attack");
+					attack.SetEnemyAttack(enemyHit);
+					currentSpeed = 0;
+					nextAttack = Time.time + attackRate;
+				}
 			}
 
-			if(Mathf.Abs(targetDitance.x) < 1.5f)
-			{
-				hForce = 0;
-			}
-
-			if(!damaged)
-			rb.velocity = new Vector3(hForce * currentSpeed, 0, zForce * currentSpeed);
-
-			anim.SetFloat("Speed", Mathf.Abs(currentSpeed));
-
-			if(Mathf.Abs(targetDitance.x) < 1.5f && Mathf.Abs(targetDitance.z) < 1.5f && Time.time > nextAttack)
-			{
-				anim.SetTrigger("Attack");
-				attack.SetEnemyAttack(enemyHit);
-                currentSpeed = 0;
-				nextAttack = Time.time + attackRate;
-			}
+			rb.position = new Vector3
+				(
+					rb.position.x,
+					rb.position.y,
+					Mathf.Clamp(rb.position.z, minHeight, maxHeight));
 		}
-
-		rb.position = new Vector3
-			(
-				rb.position.x,
-				rb.position.y,
-				Mathf.Clamp(rb.position.z, minHeight, maxHeight));
 	}
 
 	
