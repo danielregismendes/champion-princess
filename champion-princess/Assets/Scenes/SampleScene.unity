@@ -3189,6 +3189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2714654565608840825, guid: 1afb2aee93e98a546a5bdd8d463221fc, type: 3}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3977921496079397398, guid: 1afb2aee93e98a546a5bdd8d463221fc, type: 3}
       propertyPath: audioPlayer
       value: 
@@ -3256,7 +3260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4714873727225510923, guid: 37972b918a813ca4b9f924300ec40183, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4714873727225510923, guid: 37972b918a813ca4b9f924300ec40183, type: 3}
       propertyPath: m_LocalPosition.y
