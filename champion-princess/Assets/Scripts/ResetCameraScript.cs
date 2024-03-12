@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class ResetCameraScript : MonoBehaviour
 {
+    public float cameraX;
 
+    [System.Obsolete]
     public void Activate()
     {
+        cameraX = FindObjectOfType<EnemySpawn>().GetMaxX();
         GetComponent<Animator>().SetTrigger("Go");
     }
 
     [System.Obsolete]
     void ResetCamera()
     {
-        FindObjectOfType<CameraFollow>().maxXAndY.x = 200;
+        //cameraX = FindObjectOfType<EnemySpawn>().GetMaxX();
+        FindObjectOfType<CameraFollow>().maxXAndY.x = cameraX;
     }
 
 }

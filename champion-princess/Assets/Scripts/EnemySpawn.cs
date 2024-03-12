@@ -12,10 +12,17 @@ public class EnemySpawn : MonoBehaviour
 
     private int currentEnemies;
 
+    public float cameraX;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    public float GetMaxX()
+    {
+        return cameraX;
     }
 
     [Obsolete]
@@ -63,6 +70,7 @@ public class EnemySpawn : MonoBehaviour
         
         if(other.CompareTag("Player"))
         {
+            cameraX = FindObjectOfType<CameraFollow>().maxXAndY.x;
             GetComponent<BoxCollider>().enabled = false;
             FindObjectOfType<CameraFollow>().maxXAndY.x = transform.position.x;
             SpawnEnemy();

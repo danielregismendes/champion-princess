@@ -28,7 +28,6 @@ public class CameraFollow : MonoBehaviour
         return (transform.position.x - m_Player.position.x) < xMargin;
     }
 
-
     //private bool CheckYMargin()
     //{
     // Returns true if the distance between the camera and the player in the y axis is greater than the y margin.
