@@ -22,6 +22,8 @@ public class PlayerCombo : MonoBehaviour
     private bool onGround;
     private Transform groundCheck;
 
+    Player player;
+    private bool stop;
 
     private void Awake()
     {
@@ -41,8 +43,10 @@ public class PlayerCombo : MonoBehaviour
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
         weapon = GetComponentInParent<Player>().GetHoldingWeapon();
+        player = GetComponentInParent<Player>();
+        stop = player.GetStop();
 
-        if (onGround && !weapon)
+        if (onGround && !weapon && !stop)
         {
 
             CheckInputs();

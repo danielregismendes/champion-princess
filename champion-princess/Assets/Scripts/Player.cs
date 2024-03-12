@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     private bool Jump = false;
     private AudioSource audioS;
     private bool holdingWeapon = false;
+    public bool stop = false;
 
 
     void Start()
@@ -46,32 +47,33 @@ public class Player : MonoBehaviour
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-        
-
         anim.SetBool("OnGround", onGround);
         anim.SetBool("Dead", isDead);
         anim.SetBool("Weapon", holdingWeapon);
 
-        if (Input.GetButtonDown("Jump")&& onGround)
+        if (!isDead && !stop)
         {
 
-            Jump = true;
+            if (Input.GetButtonDown("Jump") && onGround)
+            {
 
+                Jump = true;
+
+            }
+
+            if (Input.GetButtonDown("Fire1"))
+            {
+
+                anim.SetTrigger("Attack");
+
+            }
         }
-
-        if(Input.GetButtonDown("Fire1"))
-        {
-
-            anim.SetTrigger("Attack");
-
-        }
-
     }
 
     private void FixedUpdate()
     {
 
-        if(!isDead)
+        if(!isDead && !stop)
         {
             float h = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
@@ -218,6 +220,23 @@ public class Player : MonoBehaviour
     
         return holdingWeapon;
 
+    }
+
+    public void SetStop()
+    {
+        if (stop)
+        {
+            stop = false;
+        }
+        else
+        {
+            stop = true;
+        }
+    }
+
+    public bool GetStop()
+    {
+        return stop;
     }
 
 }

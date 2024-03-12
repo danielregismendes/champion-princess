@@ -6,7 +6,7 @@ using UnityEngine;
 public class gatilhoCutscene : MonoBehaviour
 {
     DialogeSystem dialogeSystem;
-    bool reprodizido = false;
+    bool reproduzido = false;
 
     [Obsolete]
     private void Awake()
@@ -17,13 +17,13 @@ public class gatilhoCutscene : MonoBehaviour
     [Obsolete]
     private void OnTriggerEnter(Collider other)
     {
-        if(!reprodizido) 
+        if(!reproduzido) 
         {        
             if(other.CompareTag("Player"))
             {
                 GetComponent<BoxCollider>().enabled = false;
                 dialogeSystem.Next();
-                reprodizido = true;
+                reproduzido = true;
             }
         }
     }

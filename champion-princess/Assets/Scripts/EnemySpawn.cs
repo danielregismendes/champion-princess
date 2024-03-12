@@ -43,11 +43,11 @@ public class EnemySpawn : MonoBehaviour
         spawnPosition.z = UnityEngine.Random.Range(minZ,maxZ);
         if (positionX)
         {
-            spawnPosition = new Vector3(transform.position.x + 10,0,spawnPosition.z);
+            spawnPosition = new Vector3(transform.position.x + 30,0,spawnPosition.z);
         }
         else
         {
-            spawnPosition = new Vector3(transform.position.x - 10, 0, spawnPosition.z);
+            spawnPosition = new Vector3(transform.position.x - 30, 0, spawnPosition.z);
         }
         Instantiate(enemy[UnityEngine.Random.Range(0, enemy.Length)], spawnPosition, Quaternion.identity);
         currentEnemies++;

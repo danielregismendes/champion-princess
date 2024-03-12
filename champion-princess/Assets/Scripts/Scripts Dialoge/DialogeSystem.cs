@@ -20,6 +20,9 @@ public class DialogeSystem : MonoBehaviour
     TypeTextAnimation typeText;
     DialogeUI dialogeUI;
 
+    Player player;
+    bool playerStop;
+
     STATE state;
 
     [Obsolete]
@@ -29,6 +32,7 @@ public class DialogeSystem : MonoBehaviour
         dialogeUI = FindObjectOfType<DialogeUI>();
 
         typeText.TypeFinished = OnTypeFinishe;
+
     }
 
 
@@ -57,8 +61,17 @@ public class DialogeSystem : MonoBehaviour
         
     }
 
+    [Obsolete]
     public void Next()
     {
+        player = FindObjectOfType<Player>();
+        playerStop = player.GetStop();
+
+        if (!playerStop)
+        {
+            player.SetStop();
+        }
+
         if(currentText == 0)
         {
             dialogeUI.Enable();
@@ -90,6 +103,7 @@ public class DialogeSystem : MonoBehaviour
             }
             else
             {
+                player.SetStop();
                 dialogeUI.Disable();
                 state = STATE.DISABLED;
                 currentText = 0;
