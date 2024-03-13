@@ -21,7 +21,9 @@ public class DialogeSystem : MonoBehaviour
     DialogeUI dialogeUI;
 
     Player player;
+    Enemy enemy;
     bool playerStop;
+    bool enemyStop;
 
     STATE state;
 
@@ -65,11 +67,14 @@ public class DialogeSystem : MonoBehaviour
     public void Next()
     {
         player = FindObjectOfType<Player>();
+        enemy = FindObjectOfType<Enemy>();
         playerStop = player.GetStop();
+        enemyStop = player.GetStop();
 
-        if (!playerStop)
+        if (!playerStop && !enemyStop)
         {
-            player.SetStop();
+            if(player) player.SetStop();
+            if(enemy) enemy.SetStop();
         }
 
         if(currentText == 0)
@@ -103,7 +108,8 @@ public class DialogeSystem : MonoBehaviour
             }
             else
             {
-                player.SetStop();
+                if (player) player.SetStop();
+                if (enemy) enemy.SetStop();
                 dialogeUI.Disable();
                 state = STATE.DISABLED;
                 currentText = 0;
@@ -120,6 +126,11 @@ public class DialogeSystem : MonoBehaviour
             state = STATE.WAITING;
         }
 
+    }
+
+    public void SetDialogo(DialogeData dialogo)
+    {
+        dialogeData = dialogo;
     }
 
 }

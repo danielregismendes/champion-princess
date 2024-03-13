@@ -9,7 +9,7 @@ public class ResetCameraScript : MonoBehaviour
     [System.Obsolete]
     public void Activate()
     {
-        cameraX = FindObjectOfType<EnemySpawn>().GetMaxX();
+        cameraX = FindObjectOfType<CameraFollow>().GetMaxX();
         GetComponent<Animator>().SetTrigger("Go");
     }
 

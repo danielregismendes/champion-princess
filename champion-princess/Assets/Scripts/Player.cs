@@ -227,16 +227,23 @@ public class Player : MonoBehaviour
         if (stop)
         {
             stop = false;
+            resetSpeed();
         }
         else
         {
             stop = true;
+            ZeroSpeed();
+            anim.SetFloat("Speed", 0);
         }
+
+        
+
     }
 
     public bool GetStop()
     {
         return stop;
+
     }
 
 }

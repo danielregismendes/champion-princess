@@ -13,14 +13,20 @@ public class CameraFollow : MonoBehaviour
     public Vector2 minXAndY; // The minimum x and y coordinates the camera can have.
 
     private Transform m_Player; // Reference to the player's transform.
-
+    private Vector2 PmaxXAndY; // The maximum x and y coordinates the camera can have.
+    private Vector2 PminXAndY; // The minimum x and y coordinates the camera can have.
 
     private void Awake()
     {
         // Setting up the reference.
         m_Player = GameObject.FindGameObjectWithTag("Player").transform;
+        PmaxXAndY = maxXAndY;
     }
 
+    public float GetMaxX()
+    {
+        return PmaxXAndY.x;
+    }
 
     private bool CheckXMargin()
     {

@@ -14,10 +14,10 @@ public class EnemySpawn : MonoBehaviour
 
     public float cameraX;
 
-    // Start is called before the first frame update
+    [Obsolete]
     void Start()
     {
-
+        cameraX = FindObjectOfType<CameraFollow>().maxXAndY.x;
     }
 
     public float GetMaxX()

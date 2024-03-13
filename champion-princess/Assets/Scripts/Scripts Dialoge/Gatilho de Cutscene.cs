@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class gatilhoCutscene : MonoBehaviour
 {
-    DialogeSystem dialogeSystem;
+    public DialogeData dialogeData;
+
+    public DialogeSystem dialogeSystem;
     bool reproduzido = false;
 
     [Obsolete]
@@ -21,6 +23,8 @@ public class gatilhoCutscene : MonoBehaviour
         {        
             if(other.CompareTag("Player"))
             {
+                dialogeSystem = FindObjectOfType<DialogeSystem>();
+                dialogeSystem.SetDialogo(dialogeData);
                 GetComponent<BoxCollider>().enabled = false;
                 dialogeSystem.Next();
                 reproduzido = true;

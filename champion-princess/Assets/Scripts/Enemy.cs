@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour {
 	private float damageTimer;
 	private float nextAttack;
 	private AudioSource audioS;
-
+	public bool stop = false;
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
 
@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour {
 			anim.SetBool("Grounded", onGround);
 			anim.SetBool("Dead", isDead);
 
-			if (!isDead)
+			if (!isDead && !stop)
 			{
 				facingRight = (target.position.x < transform.position.x) ? false : true;
 				if (facingRight)
@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour {
 		if (!boboTreino)
 		{
 
-			if (!isDead)
+			if (!isDead && !stop)
 			{
 				Vector3 targetDitance = target.position - transform.position;
 				float hForce = targetDitance.x / Mathf.Abs(targetDitance.x);
@@ -202,6 +202,18 @@ public class Enemy : MonoBehaviour {
     void PlayEnemyHit(EnemyHit enemyHit)
     {
         attack.SetEnemyAttack(enemyHit);
+    }
+
+    public void SetStop()
+    {
+        if (stop)
+        {
+            stop = false;
+        }
+        else
+        {
+            stop = true;
+        }
     }
 
 }
