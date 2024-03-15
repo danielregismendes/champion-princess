@@ -858,7 +858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 680691133128763587, guid: 5da40dde5779ad34cbd0a7058b6ef38f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2047223966967578868, guid: 5da40dde5779ad34cbd0a7058b6ef38f, type: 3}
       propertyPath: dialogeData
@@ -4875,6 +4875,22 @@ PrefabInstance:
     - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
       propertyPath: combos.Array.data[5].hits.Array.data[0].damage
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
+      propertyPath: combos.Array.data[0].hits.Array.data[2].slowDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
+      propertyPath: combos.Array.data[1].hits.Array.data[2].slowDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
+      propertyPath: combos.Array.data[2].hits.Array.data[2].slowDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
+      propertyPath: combos.Array.data[3].hits.Array.data[3].slowDown
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8125233529707395634, guid: b739fef732361aa49afd8c35b20f5a25, type: 3}
       propertyPath: combos.Array.data[4].hits.Array.data[0].hitSound

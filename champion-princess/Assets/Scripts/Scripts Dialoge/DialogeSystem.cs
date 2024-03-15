@@ -46,6 +46,7 @@ public class DialogeSystem : MonoBehaviour
     }
 
 
+    [Obsolete]
     void Update()
     {
 
@@ -93,11 +94,13 @@ public class DialogeSystem : MonoBehaviour
         state = STATE.TYPING;
     }
 
+    [Obsolete]
     void OnTypeFinishe()
     {
         state = STATE.WAITING;
     }
 
+    [Obsolete]
     void Waiting()
     {
         if (Input.GetButtonDown("Fire1"))

@@ -271,9 +271,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2.6249704
-  m_Height: 11.571814
+  m_Height: 11.435501
   m_Direction: 1
-  m_Center: {x: 3.2685285, y: 0.06403732, z: 0}
+  m_Center: {x: 3.2685285, y: 0.13219357, z: 0}
 --- !u!95 &4634831617474398005
 Animator:
   serializedVersion: 7
@@ -328,6 +328,7 @@ MonoBehaviour:
   damageExibitionTime: 0.1
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}
   damageTextPosition: {fileID: 1819854164453975634}
+  stop: 0
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0
