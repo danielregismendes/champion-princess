@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 
@@ -12,14 +14,18 @@ public class UIManager : MonoBehaviour
     public Text livesText;
 
     public GameObject enemyUI;
+    public GameObject playerUI;
     public Slider enemySlider;
     public Text enemyName;
     public Image enemyImage;
+
+    public GameObject gameOverUI;
 
     public float enemyUITime = 4f;
 
     private float enemyTimer;
     private Player player;
+    private Animator anim;
 
 
     [System.Obsolete]
@@ -32,6 +38,7 @@ public class UIManager : MonoBehaviour
         healthUI.value = healthUI.maxValue;
         playerName.text = player.playerName;
         playerImage.sprite = player.playerImage;
+        anim = GetComponent<Animator>();
         UpdateLives();
 
     }
@@ -66,6 +73,20 @@ public class UIManager : MonoBehaviour
     public void UpdateLives()
     {
         livesText.text = "x " + FindObjectOfType<GameManager>().lives.ToString();
+    }
+
+    public void GameOver()
+    {
+        playerUI.SetActive(false);
+        enemyUI.SetActive(false);
+        anim.SetTrigger("Game Over");
+        StartCoroutine("Esperar");
+    }
+
+    IEnumerator Esperar()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(0);
     }
 
 }

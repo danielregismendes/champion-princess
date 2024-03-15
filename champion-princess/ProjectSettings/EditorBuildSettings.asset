@@ -4,5 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/_Menu.unity
+    guid: 18fcae298db47e343a85636b3ed69e33
+  - enabled: 1
+    path: Assets/Scenes/_Tutorial.unity
+    guid: 5b3bcedbb193ba147adece0447a14bdc
+  - enabled: 1
+    path: Assets/Scenes/Teste Cenario 3d _2.unity
+    guid: f1b23f54862d1c545b525dc0ce863daf
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

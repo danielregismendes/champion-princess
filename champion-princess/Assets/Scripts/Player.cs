@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     private AudioSource audioS;
     private bool holdingWeapon = false;
     public bool stop = false;
+    private bool canFlip = true;
+    private bool canJump = true;
 
 
     void Start()
@@ -54,20 +56,14 @@ public class Player : MonoBehaviour
         if (!isDead && !stop)
         {
 
-            if (Input.GetButtonDown("Jump") && onGround)
+            if (Input.GetButtonDown("Jump") && onGround && canJump)
             {
 
                 Jump = true;
-
-            }
-
-            if (Input.GetButtonDown("Fire1"))
-            {
-
-                anim.SetTrigger("Attack");
-
+               
             }
         }
+
     }
 
     private void FixedUpdate()
@@ -105,6 +101,8 @@ public class Player : MonoBehaviour
                 Jump = false;
                 rb.AddForce(Vector3.up * jumpForce);
                 PlaySong(jumpSound);
+
+                Debug.Log("Pulo");
             }
 
             float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
@@ -112,33 +110,36 @@ public class Player : MonoBehaviour
 
             rb.position = new Vector3(Mathf.Clamp(rb.position.x, minWidth+1, maxWidth-1), rb.position.y,
                 Mathf.Clamp(rb.position.z, minHeight, maxHeight));
-
         }
     }
 
     void Flip()
     {
+        if(canFlip)
+        {
 
-        facingRight = !facingRight;
+            facingRight = !facingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
 
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-
+        }
     }
 
     void ZeroSpeed()
     {
 
         currentSpeed = 0;
-
+        canFlip = false;
+        canJump = false;
     }
 
     void resetSpeed()
     {
 
         currentSpeed = maxSpeed;
-
+        canFlip = true;
+        canJump = true;
     }
 
     [System.Obsolete]
@@ -192,14 +193,22 @@ public class Player : MonoBehaviour
 
     }
 
+    [Obsolete]
     void PlayerRespawn()
     {
-        isDead = false;
-        currentHealth = maxHealth;
-        FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);
-        anim.Rebind();
-        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0,0,10)).x;
-        transform.position = new Vector3(minWidth, 10, -4);
+        if (FindObjectOfType<GameManager>().lives >= 0)
+            {
+                isDead = false;
+                currentHealth = maxHealth;
+                FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);
+                anim.Rebind();
+                float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
+                transform.position = new Vector3(minWidth, 10, -4);
+            }
+        else
+        {
+            FindObjectOfType<UIManager>().GameOver();
+        }
     }
 
     public void PlaySong(AudioClip clip)
@@ -235,8 +244,6 @@ public class Player : MonoBehaviour
             ZeroSpeed();
             anim.SetFloat("Speed", 0);
         }
-
-        
 
     }
 

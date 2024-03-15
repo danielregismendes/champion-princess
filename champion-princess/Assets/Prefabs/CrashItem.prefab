@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: -0.67, z: -6.5}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45cdce4ccf80f0b4b9f626b23c17a211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropItem: {fileID: 0}
 --- !u!65 &4233109927222755732
 BoxCollider:
   m_ObjectHideFlags: 0
