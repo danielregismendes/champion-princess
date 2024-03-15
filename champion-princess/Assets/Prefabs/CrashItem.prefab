@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3670177057136313683}
   - component: {fileID: 2640163158042276920}
   - component: {fileID: 4233109927222755732}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CrashItem
   m_TagString: Crash Item
   m_Icon: {fileID: 0}
@@ -171,5 +171,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.62, y: 0.9120106, z: 0.56150496}
-  m_Center: {x: 0, y: 0.06100508, z: 0.0009096861}
+  m_Size: {x: 0.62, y: 1.1352443, z: 0.56150496}
+  m_Center: {x: 0, y: 0.17261985, z: 0.0009096861}
