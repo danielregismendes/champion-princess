@@ -216,6 +216,8 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-
-
+	public int GetHealth()
+	{
+		return currentHealth;
+	}
 }

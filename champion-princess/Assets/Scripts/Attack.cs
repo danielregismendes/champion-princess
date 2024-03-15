@@ -43,19 +43,21 @@ public class Attack : MonoBehaviour
 
         if (enemy != null)
         {
-            weapon = GetComponentInParent<Player>().GetHoldingWeapon();
-
-            if(weapon)
+            if (enemy.GetHealth() > 0)
             {
-                damage = weaponDamage;
+                weapon = GetComponentInParent<Player>().GetHoldingWeapon();
+
+                if (weapon)
+                {
+                    damage = weaponDamage;
+                }
+
+                enemy.SpriteDamage(damage);
+                enemy.TookDamage(damage);
+                audioPlayer.PlaySound(hitSound);
+                if (slowDown)
+                    SlowDown.instance.SetSlowDown();
             }
-
-            enemy.SpriteDamage(damage);
-            enemy.TookDamage(damage);
-            audioPlayer.PlaySound(hitSound);
-            if (slowDown)
-                SlowDown.instance.SetSlowDown();
-
         }
 
         if (player != null)
