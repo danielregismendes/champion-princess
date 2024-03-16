@@ -60,6 +60,8 @@ public class PlayerCombo : MonoBehaviour
         if (!onGround && Input.GetButtonDown("Fire2"))
         {
             anim.SetTrigger("Attack");
+            player.SetCanFlip();
+            player.SetDireçãoFixa();
         }
         if(onGround && !Input.GetButtonDown("Jump"))
         {

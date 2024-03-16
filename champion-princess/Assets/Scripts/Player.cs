@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     public bool stop = false;
     private bool canFlip = true;
     private bool canJump = true;
-
+    private bool direcaoFixa = false;
 
     void Start()
     {
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if(!isDead && !stop)
+        if(!isDead && !stop && !direcaoFixa)
         {
             float h = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
         currentSpeed = maxSpeed;
         canFlip = true;
         canJump = true;
+        if (direcaoFixa) SetDireçãoFixa();
     }
 
     [System.Obsolete]
@@ -252,6 +253,30 @@ public class Player : MonoBehaviour
     {
         return stop;
 
+    }
+
+    public void SetCanFlip()
+    {
+        if (canFlip)
+        {
+            canFlip = false;
+        }
+        else
+        {
+            canFlip = true;
+        }
+    }
+
+    public void SetDireçãoFixa()
+    {
+        if (direcaoFixa)
+        {
+            direcaoFixa = false;
+        }
+        else
+        {
+            direcaoFixa = true;
+        }
     }
 
 }
