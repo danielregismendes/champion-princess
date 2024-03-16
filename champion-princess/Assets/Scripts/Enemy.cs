@@ -157,7 +157,7 @@ public class Enemy : MonoBehaviour {
 	
 	public void DisableEnemy()
 	{
-		gameObject.SetActive(false);
+		Destroy(gameObject);
 	}
 
 	void ResetSpeed()

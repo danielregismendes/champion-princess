@@ -10,12 +10,12 @@ public class CrashItem : MonoBehaviour
 
     private int currentDamage = 0;
     private Animator anim;
-    private Transform transform;
+    private Transform trans;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        transform = GetComponent<Transform>();
+        trans = GetComponent<Transform>();
     }
 
     public void TookDamage(int damage)
@@ -29,7 +29,7 @@ public class CrashItem : MonoBehaviour
 
     public void DestroyItem()
     {
-        Instantiate(dropItem, transform.position, transform.rotation);
+        Instantiate(dropItem, trans.position, trans.rotation);
         gameObject.SetActive(false);
     }
 

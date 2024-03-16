@@ -125,8 +125,9 @@ public class PlayerCombo : MonoBehaviour
                         {
                             canHit = false;
                             CancelInvoke();
-                            Invoke("ResetCombo", currentHit.animationTime);
-                        }
+                            //Invoke("ResetCombo", currentHit.animationTime);
+                            ResetCombo();
+                    }
                     }
 
                     if (comboTimer >= currentHit.resetTime)
