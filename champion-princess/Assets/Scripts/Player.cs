@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour
         
     }
 
-
+    [System.Obsolete]
     void Update()
     {
 
@@ -62,6 +63,13 @@ public class Player : MonoBehaviour
                 Jump = true;
                
             }
+
+            if (Input.GetButtonDown("Cancel"))
+            {
+                FindObjectOfType<GameManager>().GameOver();
+                SceneManager.LoadScene(0);
+            }
+
         }
 
     }

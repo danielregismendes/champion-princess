@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
+  m_Name: Dialogo 4
+  m_EditorClassIdentifier: 
+  talkScript:
+  - dialogeImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+    name: Leona
+    text: "Cheguei!\r"
+  - dialogeImage: {fileID: 21300000, guid: 37494fe288db8804c8a21a29e219a5fb, type: 3}
+    name: Savu
+    text: "Obrigado por jogar o prototipo!\r"
+  - dialogeImage: {fileID: 21300000, guid: 37494fe288db8804c8a21a29e219a5fb, type: 3}
+    name: Savu
+    text: "Aperte ESC para voltar ao menu!\r"
