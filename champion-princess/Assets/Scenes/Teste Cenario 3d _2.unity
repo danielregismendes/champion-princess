@@ -795,6 +795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1145973008}
     m_Modifications:
+    - target: {fileID: -9187838071414007025, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.757507
@@ -835,9 +839,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7455304120955625421, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7360126185137706067, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6023776808458726960, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5143949747787532934, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -960453704134711260, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -382788013473457636, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
       propertyPath: m_Name
       value: Corredor_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585015375599971490, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814486046188677520, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312655118229024436, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2801450457605356967, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724108216673022167, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093680043070647361, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316717908338866256, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193678521121278753, guid: 53daffd4cdaff6949a566d132258e543, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2688,9 +2752,17 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8462166646407363108, guid: 146b57cba72e7d144acda5bdd0fd2700, type: 3}
+      propertyPath: enemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462166646407363108, guid: 146b57cba72e7d144acda5bdd0fd2700, type: 3}
       propertyPath: 'enemy.Array.data[0]'
       value: 
       objectReference: {fileID: 6142490494634527439, guid: d4cab0eed966ee74ca9475dcb1928d3d, type: 3}
+    - target: {fileID: 8462166646407363108, guid: 146b57cba72e7d144acda5bdd0fd2700, type: 3}
+      propertyPath: 'enemy.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6142490494634527439, guid: 1afb2aee93e98a546a5bdd8d463221fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

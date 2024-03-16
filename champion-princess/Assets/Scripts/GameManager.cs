@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
     public int lives;
 
     private GameManager gameManager;
+    private int currentLives;
 
     // Start is called before the first frame update
     void Awake()
     {
+        currentLives = lives;
 
         if (gameManager == null)
         {
@@ -23,6 +25,21 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         
+    }
+
+    public int GetLives()
+    {
+        return currentLives;
+    }
+
+    public void SetLives()
+    {
+        currentLives--;
+    }
+
+    public void GameOver()
+    {
+        currentLives = lives;
     }
 
     // Update is called once per frame

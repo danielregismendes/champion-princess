@@ -72,9 +72,10 @@ public class UIManager : MonoBehaviour
     [System.Obsolete]   
     public void UpdateLives()
     {
-        livesText.text = "x " + FindObjectOfType<GameManager>().lives.ToString();
+        if(FindObjectOfType<GameManager>().GetLives()>=0) livesText.text = "x " + FindObjectOfType<GameManager>().GetLives().ToString();
     }
 
+    [System.Obsolete]
     public void GameOver()
     {
         playerUI.SetActive(false);
@@ -83,9 +84,11 @@ public class UIManager : MonoBehaviour
         StartCoroutine("Esperar");
     }
 
+    [System.Obsolete]
     IEnumerator Esperar()
     {
         yield return new WaitForSeconds(5);
+        FindObjectOfType<GameManager>().GameOver();
         SceneManager.LoadScene(0);
     }
 

@@ -157,7 +157,7 @@ public class Player : MonoBehaviour
             if(currentHealth <= 0)
             {
                 isDead = true;
-                FindObjectOfType<GameManager>().lives--;
+                FindObjectOfType<GameManager>().SetLives();
                 FindObjectOfType<UIManager>().UpdateLives();
                 if(facingRight)
                 {
@@ -198,7 +198,7 @@ public class Player : MonoBehaviour
     [Obsolete]
     void PlayerRespawn()
     {
-        if (FindObjectOfType<GameManager>().lives >= 0)
+        if (FindObjectOfType<GameManager>().GetLives() >= 0)
             {
                 isDead = false;
                 currentHealth = maxHealth;
@@ -210,6 +210,7 @@ public class Player : MonoBehaviour
         else
         {
             FindObjectOfType<UIManager>().GameOver();
+
         }
     }
 
