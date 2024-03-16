@@ -99,10 +99,10 @@ public class Player : MonoBehaviour
             if (Jump)
             {
                 Jump = false;
+                SetDireçãoFixa();
+                SetCanFlip();
                 rb.AddForce(Vector3.up * jumpForce);
                 PlaySong(jumpSound);
-
-                Debug.Log("Pulo");
             }
         }
 
