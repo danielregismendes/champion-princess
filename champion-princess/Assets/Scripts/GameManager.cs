@@ -5,9 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int lives;
+    public string lingua = "PT";
 
     private GameManager gameManager;
     private int currentLives;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -42,9 +44,8 @@ public class GameManager : MonoBehaviour
         currentLives = lives;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetLingua(string abreviacaoLingua)
     {
-        
+        lingua = abreviacaoLingua;
     }
 }

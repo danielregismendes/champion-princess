@@ -12,33 +12,201 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
   m_Name: Dialogo 1
   m_EditorClassIdentifier: 
-  talkScript:
-  - dialogeImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
-    name: Leona
-    text: "Parece que meu caminho at\xE9 a sa\xEDda n\xE3o ser\xE1 t\xE3o tranquilo
-      hoje.\r"
-  - dialogeImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
-    name: Mizuki
-    text: "Leona, Leona, sempre t\xE3o desleixada. Acha mesmo que vai sair daqui
-      sem um desafio?\r"
-  - dialogeImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
-    name: Leona
-    text: "Oh, Mizuki. N\xE3o estava esperando encontrar as estrelas do desfile hoje."
-  - dialogeImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
-    name: Mizuki
-    text: "Poupe-me dos seus coment\xE1rios sarc\xE1sticos. Voc\xEA e seu clube de
-      mangaka t\xEAm nos ignorado por muito tempo.\r"
-  - dialogeImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
-    name: Leona
-    text: "Ignorado? N\xE3o sabia que desfiles de moda eram t\xE3o urgentes assim.\r"
-  - dialogeImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
-    name: Mizuki
-    text: " Bem, talvez seja hora de abrir seus olhos. Estamos aqui para mostrar
+  sheetId: 1UO11imXHFnMzBmPNlRuKjEX6Z6LfBrKgYQAM3AYBMms
+  gridId: 604805352
+  items:
+  - avatar: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+    nome: Leona
+    textoPT: "Parece que meu caminho at\xE9 a sa\xEDda n\xE3o ser\xE1 t\xE3o tranquilo
+      hoje."
+    textoEN: It seems like my way to the exit won't be so smooth today.
+    textoES: "Parece que mi camino hacia la salida no ser\xE1 tan tranquilo hoy."
+    textoFR: Il semble que mon chemin vers la sortie ne sera pas si tranquille aujourd'hui.
+    textoDE: "Es scheint als w\xFCrde mein Weg zum Ausgang heute nicht so reibungslos
+      verlaufen."
+    textoIT: "Sembra che il mio cammino verso l'uscita non sar\xE0 cos\xEC tranquillo
+      oggi."
+    textoRU: "\u041F\u043E\u0445\u043E\u0436\u0435 \u0447\u0442\u043E \u043C\u043E\u0439
+      \u043F\u0443\u0442\u044C \u043A \u0432\u044B\u0445\u043E\u0434\u0443 \u0441\u0435\u0433\u043E\u0434\u043D\u044F
+      \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0442\u0430\u043A\u0438\u043C
+      \u0433\u043B\u0430\u0434\u043A\u0438\u043C."
+    textoZH: "\u4ECA\u5929\u4F3C\u4E4E\u6211\u7684\u51FA\u8DEF\u4E0D\u4F1A\u90A3\u4E48\u987A\u5229\u3002"
+    textoHI: "\u0932\u0917\u0924\u093E \u0939\u0948 \u0915\u093F \u0906\u091C \u092E\u0947\u0930\u093E
+      \u0928\u093F\u0915\u093E\u0938\u0940 \u0915\u093E \u0930\u093E\u0938\u094D\u0924\u093E
+      \u0907\u0924\u0928\u093E \u0938\u0941\u0916\u0926 \u0928\u0939\u0940\u0902
+      \u0939\u094B\u0917\u093E\u0964"
+    textoJA: "\u4ECA\u65E5\u306F\u3001\u51FA\u53E3\u307E\u3067\u306E\u9053\u304C\u305D\u3093\u306A\u306B\u5E73\u7A4F\u3067\u306F\u306A\u3044\u3088\u3046\u3067\u3059\u306D\u3002"
+  - avatar: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
+    nome: Mizuki
+    textoPT: "Leona Leona sempre t\xE3o desleixada. Acha mesmo que vai sair daqui
+      sem um desafio?"
+    textoEN: Leona Leona always so careless. Do you really think you'll get out of
+      here without a challenge?
+    textoES: "Leona Leona siempre tan descuidada. \xBFRealmente crees que vas a salir
+      de aqu\xED sin un desaf\xEDo?"
+    textoFR: "Leona Leona toujours si n\xE9gligente. Penses-tu vraiment pouvoir sortir
+      d'ici sans d\xE9fi ?"
+    textoDE: "Leona Leona immer so nachl\xE4ssig. Glaubst du wirklich dass du hier
+      ohne Herausforderung herauskommen wirst?"
+    textoIT: "Leona Leona sempre cos\xEC trascurata. Davvero pensi di uscire di qui
+      senza una sfida?"
+    textoRU: "\u041B\u0435\u043E\u043D\u0430 \u041B\u0435\u043E\u043D\u0430 \u0432\u0441\u0435\u0433\u0434\u0430
+      \u0442\u0430\u043A\u0430\u044F \u043D\u0435\u0431\u0440\u0435\u0436\u043D\u0430\u044F.
+      \u0422\u044B \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+      \u0434\u0443\u043C\u0430\u0435\u0448\u044C \u0447\u0442\u043E \u0432\u044B\u0431\u0435\u0440\u0435\u0448\u044C\u0441\u044F
+      \u043E\u0442\u0441\u044E\u0434\u0430 \u0431\u0435\u0437 \u0432\u044B\u0437\u043E\u0432\u0430?"
+    textoZH: "\u8389\u5965\u5A1C\uFF0C\u8389\u5965\u5A1C\uFF0C\u603B\u662F\u8FD9\u4E48\u61D2\u6563\u3002\u4F60\u771F\u7684\u8BA4\u4E3A\u4F60\u4F1A\u6BEB\u65E0\u6311\u6218\u5730\u79BB\u5F00\u8FD9\u91CC\u5417\uFF1F"
+    textoHI: "\u0932\u093F\u092F\u094B\u0928\u093E \u0932\u093F\u092F\u094B\u0928\u093E
+      \u0939\u092E\u0947\u0936\u093E \u0907\u0924\u0928\u0940 \u0932\u093E\u092A\u0930\u0935\u093E\u0939\u0964
+      \u0915\u094D\u092F\u093E \u0935\u093E\u0915\u0908 \u0906\u092A \u0938\u094B\u091A\u0924\u0940
+      \u0939\u0948\u0902 \u0915\u093F \u0906\u092A \u092C\u093F\u0928\u093E \u0915\u093F\u0938\u0940
+      \u091A\u0941\u0928\u094C\u0924\u0940 \u0915\u0947 \u092F\u0939\u093E\u0902
+      \u0938\u0947 \u0928\u093F\u0915\u0932 \u091C\u093E\u090F\u0902\u0917\u0940?"
+    textoJA: "\u30EC\u30AA\u30CA\u3001\u30EC\u30AA\u30CA\u3001\u3044\u3064\u3082\u305D\u3093\u306A\u306B\u3060\u3089\u3057\u306A\u3044\u3002\u672C\u5F53\u306B\u6311\u6226\u306A\u3057\u3067\u3053\u3053\u304B\u3089\u51FA\u3066\u3044\u3051\u308B\u3068\u601D\u3063\u3066\u3044\u308B\u306E\uFF1F"
+  - avatar: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+    nome: Leona
+    textoPT: "Oh Mizuki. N\xE3o estava esperando encontrar as estrelas do desfile
+      hoje."
+    textoEN: Oh Mizuki. I wasn't expecting to run into the stars of the fashion show
+      today.
+    textoES: Oh Mizuki. No esperaba encontrarme con las estrellas del desfile de
+      moda hoy.
+    textoFR: "Oh Mizuki. Je ne m'attendais pas \xE0 croiser les stars du d\xE9fil\xE9
+      de mode aujourd'hui."
+    textoDE: "Oh Mizuki. Ich h\xE4tte nicht erwartet heute auf die Stars der Modenschau
+      zu treffen."
+    textoIT: Oh Mizuki. Non mi aspettavo di incontrare le star della sfilata di moda
+      oggi.
+    textoRU: "\u041E \u041C\u0438\u0434\u0437\u0443\u043A\u0438. \u042F \u043D\u0435
+      \u043E\u0436\u0438\u0434\u0430\u043B\u0430 \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
+      \u0437\u0432\u0435\u0437\u0434 \u0434\u0435\u0444\u0438\u043B\u0435 \u0441\u0435\u0433\u043E\u0434\u043D\u044F."
+    textoZH: "\u54E6\uFF0C\u7F8E\u6708\u3002\u6211\u6CA1\u60F3\u5230\u4ECA\u5929\u4F1A\u9047\u5230\u65F6\u88C5\u79C0\u7684\u660E\u661F\u3002"
+    textoHI: "\u0913\u0939 \u092E\u093F\u091C\u093C\u0941\u0915\u0940\u0964 \u092E\u0948\u0902\u0928\u0947
+      \u0906\u091C \u092B\u0948\u0936\u0928 \u0936\u094B \u0915\u0947 \u0938\u093F\u0924\u093E\u0930\u094B\u0902
+      \u0938\u0947 \u092E\u093F\u0932\u0928\u0947 \u0915\u0940 \u0909\u092E\u094D\u092E\u0940\u0926
+      \u0928\u0939\u0940\u0902 \u0915\u0940 \u0925\u0940\u0964"
+    textoJA: "\u3042\u3042\u3001\u30DF\u30BA\u30AD\u3002\u4ECA\u65E5\u306F\u30D5\u30A1\u30C3\u30B7\u30E7\u30F3\u30B7\u30E7\u30FC\u306E\u30B9\u30BF\u30FC\u306B\u51FA\u4F1A\u3046\u3053\u3068\u3092\u671F\u5F85\u3057\u3066\u3044\u307E\u305B\u3093\u3067\u3057\u305F\u3002"
+  - avatar: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
+    nome: Mizuki
+    textoPT: "Poupe-me dos seus coment\xE1rios sarc\xE1sticos. Voc\xEA e seu clube
+      de mangaka t\xEAm nos ignorado por muito tempo."
+    textoEN: Spare me your sarcastic remarks. You and your mangaka club have been
+      ignoring us for too long.
+    textoES: "Ah\xF3rrame tus comentarios sarc\xE1sticos. T\xFA y tu club de mangakas
+      nos han estado ignorando durante demasiado tiempo."
+    textoFR: "\xC9pargne-moi tes remarques sarcastiques. Toi et ton club de mangaka
+      nous avez ignor\xE9s trop longtemps."
+    textoDE: Erspar mir deine sarkastischen Bemerkungen. Du und dein Mangaka-Club
+      habt uns schon zu lange ignoriert.
+    textoIT: Risparmiami i tuoi commenti sarcastici. Tu e il tuo club di mangaka
+      ci avete ignorato per troppo tempo.
+    textoRU: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 \u043D\u0435
+      \u0440\u0430\u0437\u0434\u0440\u0430\u0436\u0430\u0439 \u043C\u0435\u043D\u044F
+      \u0441\u0432\u043E\u0438\u043C\u0438 \u0441\u0430\u0440\u043A\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438
+      \u0437\u0430\u043C\u0435\u0447\u0430\u043D\u0438\u044F\u043C\u0438. \u0422\u044B
+      \u0438 \u0442\u0432\u043E\u0439 \u043A\u043B\u0443\u0431 \u043C\u0430\u043D\u0433\u0430\u043A\u0430
+      \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u043E\u0432\u0430\u043B\u0438 \u043D\u0430\u0441
+      \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E."
+    textoZH: "\u514D\u4E86\u4F60\u90A3\u4E9B\u8BBD\u523A\u7684\u8BDD\u3002\u4F60\u548C\u4F60\u7684\u6F2B\u753B\u793E\u5DF2\u7ECF\u592A\u4E45\u6CA1\u6709\u7406\u4F1A\u6211\u4EEC\u4E86\u3002"
+    textoHI: "\u092E\u0941\u091D\u0947 \u0905\u092A\u0928\u0940 \u0915\u091F\u0941
+      \u091F\u093F\u092A\u094D\u092A\u0923\u093F\u092F\u094B\u0902 \u0938\u0947 \u092C\u091A\u093E\u0913\u0964
+      \u0906\u092A \u0914\u0930 \u0906\u092A\u0915\u093E \u092E\u0902\u0917\u093E\u0915\u093E
+      \u0915\u094D\u0932\u092C \u0939\u092E\u0947\u0902 \u092C\u0939\u0941\u0924
+      \u0932\u0902\u092C\u0947 \u0938\u092E\u092F \u0938\u0947 \u0905\u0928\u0926\u0947\u0916\u093E
+      \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964"
+    textoJA: "\u76AE\u8089\u306A\u30B3\u30E1\u30F3\u30C8\u306F\u63A7\u3048\u3066\u304F\u3060\u3055\u3044\u3002\u3042\u306A\u305F\u3068\u3042\u306A\u305F\u306E\u30DE\u30F3\u30AC\u5BB6\u30AF\u30E9\u30D6\u306F\u9577\u3044\u9593\u79C1\u305F\u3061\u3092\u7121\u8996\u3057\u3066\u304D\u307E\u3057\u305F\u3002"
+  - avatar: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+    nome: Leona
+    textoPT: "Ignorado? N\xE3o sabia que desfiles de moda eram t\xE3o urgentes assim."
+    textoEN: Ignored? I didn't know fashion shows were so urgent.
+    textoES: "\xBFIgnorados? No sab\xEDa que los desfiles de moda eran tan urgentes."
+    textoFR: "Ignor\xE9s ? Je ne savais pas que les d\xE9fil\xE9s de mode \xE9taient
+      si urgents."
+    textoDE: Ignoriert? Ich wusste nicht dass Modenschauen so dringend sind.
+    textoIT: "Ignorato? Non sapevo che le sfilate di moda fossero cos\xEC urgenti."
+    textoRU: "\u0418\u0433\u043D\u043E\u0440\u0438\u0440\u043E\u0432\u0430\u043B\u0438?
+      \u042F \u043D\u0435 \u0437\u043D\u0430\u043B\u0430 \u0447\u0442\u043E \u0434\u0435\u0444\u0438\u043B\u0435
+      \u0442\u0430\u043A \u0441\u0440\u043E\u0447\u043D\u044B."
+    textoZH: "\u88AB\u5FFD\u7565\uFF1F\u6211\u4E0D\u77E5\u9053\u65F6\u88C5\u79C0\u662F\u90A3\u4E48\u7D27\u6025\u3002"
+    textoHI: "\u0905\u0928\u0926\u0947\u0916\u093E? \u092E\u0941\u091D\u0947 \u0928\u0939\u0940\u0902
+      \u092A\u0924\u093E \u0925\u093E \u0915\u093F \u092B\u0948\u0936\u0928 \u0936\u094B
+      \u0907\u0924\u0928\u0947 \u0905\u0924\u094D\u092F\u093E\u0935\u0936\u094D\u092F\u0915
+      \u0939\u0948\u0902\u0964"
+    textoJA: "\u7121\u8996\u3055\u308C\u3066\uFF1F\u30D5\u30A1\u30C3\u30B7\u30E7\u30F3\u30B7\u30E7\u30FC\u304C\u305D\u3093\u306A\u306B\u7DCA\u6025\u3060\u3068\u306F\u77E5\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002"
+  - avatar: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
+    nome: Mizuki
+    textoPT: "Bem talvez seja hora de abrir seus olhos. Estamos aqui para mostrar
       que o estilo supera qualquer hist\xF3ria em quadrinhos."
-  - dialogeImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
-    name: Leona
-    text: " Se \xE9 assim que querem jogar, eu estou dentro. Mas n\xE3o me culpe
+    textoEN: Well maybe it's time to open your eyes. We're here to show that style
+      trumps any comic book.
+    textoES: "Bueno tal vez sea hora de que abras los ojos. Estamos aqu\xED para
+      mostrar que el estilo supera cualquier c\xF3mic."
+    textoFR: "Eh bien peut-\xEAtre est-il temps d'ouvrir les yeux. Nous sommes ici
+      pour montrer que le style l'emporte sur n'importe quelle bande dessin\xE9e."
+    textoDE: "Nun vielleicht ist es an der Zeit die Augen zu \xF6ffnen. Wir sind
+      hier um zu zeigen dass Stil jede Comicgeschichte \xFCbertrifft."
+    textoIT: "Beh forse \xE8 ora di aprire gli occhi. Siamo qui per dimostrare che
+      lo stile batte qualsiasi fumetto."
+    textoRU: "\u041D\u0443 \u0447\u0442\u043E \u0436 \u043C\u043E\u0436\u0435\u0442
+      \u043F\u043E\u0440\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0433\u043B\u0430\u0437\u0430.
+      \u041C\u044B \u0437\u0434\u0435\u0441\u044C \u0447\u0442\u043E\u0431\u044B
+      \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0447\u0442\u043E \u0441\u0442\u0438\u043B\u044C
+      \u043F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u0438\u0442 \u043B\u044E\u0431\u0443\u044E
+      \u043A\u043E\u043C\u0438\u043A\u0441\u043D\u0443\u044E \u0438\u0441\u0442\u043E\u0440\u0438\u044E."
+    textoZH: "\u55EF\uFF0C\u4E5F\u8BB8\u662F\u65F6\u5019\u7741\u5F00\u4F60\u7684\u773C\u775B\u4E86\u3002\u6211\u4EEC\u5728\u8FD9\u91CC\u662F\u8981\u8BC1\u660E\u98CE\u683C\u80DC\u8FC7\u4EFB\u4F55\u6F2B\u753B\u6545\u4E8B\u3002"
+    textoHI: "\u0939\u093E\u0901 \u0936\u093E\u092F\u0926 \u0905\u092C \u0906\u092A\u0915\u094B
+      \u0905\u092A\u0928\u0940 \u0906\u0901\u0916\u0947\u0902 \u0916\u094B\u0932\u0928\u0947
+      \u0915\u093E \u0938\u092E\u092F \u0939\u0948\u0964 \u0939\u092E \u092F\u0939\u093E\u0902
+      \u0907\u0938\u0915\u093E \u092A\u094D\u0930\u0926\u0930\u094D\u0936\u0928 \u0915\u0930\u0928\u0947
+      \u0915\u0947 \u0932\u093F\u090F \u0939\u0948\u0902 \u0915\u093F \u0936\u0948\u0932\u0940
+      \u0915\u093F\u0938\u0940 \u092D\u0940 \u0915\u0949\u092E\u093F\u0915\u094D\u0938
+      \u0915\u0940 \u0915\u0939\u093E\u0928\u0940 \u0938\u0947 \u092C\u0947\u0939\u0924\u0930
+      \u0939\u0948\u0964"
+    textoJA: "\u307E\u3042\u3001\u304A\u305D\u3089\u304F\u3042\u306A\u305F\u306E\u76EE\u3092\u958B\u304F\u6642\u304C\u6765\u305F\u306E\u304B\u3082\u3057\u308C\u307E\u305B\u3093\u3002\u79C1\u305F\u3061\u306F\u3053\u3053\u306B\u3044\u3066\u3001\u30B9\u30BF\u30A4\u30EB\u304C\u3069\u3093\u306A\u6F2B\u753B\u306E\u7269\u8A9E\u306B\u3082\u52DD\u308B\u3053\u3068\u3092\u793A\u3059\u305F\u3081\u3067\u3059\u3002"
+  - avatar: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+    nome: Leona
+    textoPT: "Se \xE9 assim que querem jogar eu estou dentro. Mas n\xE3o me culpe
       se seus trajes da moda acabarem virando capas de mang\xE1."
-  - dialogeImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
-    name: Mizuki
-    text: "Veremos quem ter\xE1 a \xFAltima palavra, Leona."
+    textoEN: If that's how you want to play it count me in. But don't blame me if
+      your fashion designs end up turning into manga covers.
+    textoES: "Si as\xED es como quieren jugar me uno. Pero no me culpes si tus dise\xF1os
+      de moda terminan convirti\xE9ndose en portadas de manga."
+    textoFR: "Si c'est ainsi que vous voulez jouer je suis partant. Mais ne me bl\xE2mez
+      pas si vos cr\xE9ations de mode finissent par se transformer en couvertures
+      de manga."
+    textoDE: Wenn das ist wie ihr spielen wollt bin ich dabei. Aber beschuldigt mich
+      nicht wenn eure Modedesigns sich in Manga-Cover verwandeln.
+    textoIT: "Se \xE8 cos\xEC che volete giocare ci sto. Ma non incolpatemi se i
+      vostri abiti alla moda finiscono per diventare copertine di manga."
+    textoRU: "\u0415\u0441\u043B\u0438 \u0442\u0430\u043A \u0432\u044B \u0445\u043E\u0442\u0438\u0442\u0435
+      \u0438\u0433\u0440\u0430\u0442\u044C \u044F \u0432 \u044D\u0442\u043E\u043C
+      \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u044E. \u041D\u043E \u043D\u0435
+      \u0432\u0438\u043D\u0438\u0442\u0435 \u043C\u0435\u043D\u044F \u0435\u0441\u043B\u0438
+      \u0432\u0430\u0448\u0438 \u043C\u043E\u0434\u043D\u044B\u0435 \u043D\u0430\u0440\u044F\u0434\u044B
+      \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u044F\u0442\u0441\u044F \u0432 \u043E\u0431\u043B\u043E\u0436\u043A\u0438
+      \u043C\u0430\u043D\u0433\u0438."
+    textoZH: "\u5982\u679C\u4F60\u4EEC\u60F3\u8FD9\u6837\u73A9\uFF0C\u6211\u52A0\u5165\u3002\u4F46\u5982\u679C\u4F60\u4EEC\u7684\u65F6\u88C5\u6700\u7EC8\u53D8\u6210\u6F2B\u753B\u5C01\u9762\uFF0C\u4E0D\u8981\u8D23\u602A\u6211\u3002"
+    textoHI: "\u0905\u0917\u0930 \u0910\u0938\u093E \u0939\u0940 \u0916\u0947\u0932\u0928\u093E
+      \u091A\u093E\u0939\u0924\u0947 \u0939\u0948\u0902 \u0924\u094B \u092E\u0948\u0902
+      \u0905\u0902\u0926\u0930 \u0939\u0942\u0902\u0964 \u0932\u0947\u0915\u093F\u0928
+      \u0905\u0917\u0930 \u0906\u092A\u0915\u0947 \u092B\u0948\u0936\u0928 \u0921\u093F\u091C\u093C\u093E\u0907\u0928
+      \u0905\u0902\u0924 \u092E\u0947\u0902 \u092E\u0902\u0917\u093E \u0915\u0935\u0930\u094D\u0938
+      \u092E\u0947\u0902 \u092C\u0926\u0932 \u091C\u093E\u0924\u0947 \u0939\u0948\u0902
+      \u0924\u094B \u092E\u0941\u091D\u0947 \u0926\u094B\u0937 \u0928 \u0926\u0947\u0902\u0964"
+    textoJA: "\u305D\u308C\u304C\u3042\u306A\u305F\u305F\u3061\u304C\u904A\u3073\u305F\u3044\u65B9\u6CD5\u306A\u3089\u3001\u79C1\u3082\u53C2\u52A0\u3057\u307E\u3059\u3002\u305F\u3060\u3057\u3001\u3042\u306A\u305F\u306E\u30D5\u30A1\u30C3\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u304C\u6700\u7D42\u7684\u306B\u6F2B\u753B\u306E\u8868\u7D19\u306B\u306A\u3063\u305F\u3068\u3057\u3066\u3082\u79C1\u3092\u8CAC\u3081\u306A\u3044\u3067\u304F\u3060\u3055\u3044\u3002"
+  - avatar: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
+    nome: Mizuki
+    textoPT: "Veremos quem ter\xE1 a \xFAltima palavra Leona."
+    textoEN: We'll see who'll have the last word Leona.
+    textoES: "Veremos qui\xE9n tendr\xE1 la \xFAltima palabra Leona."
+    textoFR: Nous verrons qui aura le dernier mot Leona.
+    textoDE: Wir werden sehen wer das letzte Wort hat Leona.
+    textoIT: "Vedremo chi avr\xE0 l'ultima parola Leona."
+    textoRU: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C \u043A\u0442\u043E
+      \u043E\u043A\u0430\u0436\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u043C
+      \u041B\u0435\u043E\u043D\u0430."
+    textoZH: "\u6211\u4EEC\u4F1A\u770B\u8C01\u4F1A\u6709\u6700\u540E\u7684\u8BDD\u8BED\u6743\uFF0C\u8389\u5965\u5A1C\u3002"
+    textoHI: "\u0939\u092E \u0926\u0947\u0916\u0947\u0902\u0917\u0947 \u0915\u093F
+      \u0915\u093F\u0938\u0915\u0947 \u092A\u093E\u0938 \u0906\u0916\u093F\u0930\u0940
+      \u092C\u094B\u0932 \u0939\u094B\u0917\u093E \u0932\u093F\u092F\u094B\u0928\u093E\u0964"
+    textoJA: "\u6700\u5F8C\u306E\u8A00\u8449\u3092\u6301\u3064\u306E\u306F\u8AB0\u304B\u3001\u30EC\u30AA\u30CA\u3002"
