@@ -114,8 +114,8 @@ public class Player : MonoBehaviour
             }
         }
 
-        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
-        float maxWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 10)).x;
+        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 15)).x;
+        float maxWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 15)).x;
 
         rb.position = new Vector3(Mathf.Clamp(rb.position.x, minWidth+1, maxWidth-1), rb.position.y,
         Mathf.Clamp(rb.position.z, minHeight, maxHeight));
