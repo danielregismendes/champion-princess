@@ -39,6 +39,7 @@ public class DialogeData : ScriptableObject
     public class Dialogue
     {
         public Sprite avatar;
+        public Sprite nomeImg;
         public string nome;
         public string textoPT;
         public string textoEN;

@@ -91,7 +91,7 @@ public class DialogeSystem : MonoBehaviour
         }
 
         dialogeUI.SetName(dialogeData.items[currentText].nome);
-        dialogeUI.SetImage(dialogeData.items[currentText].avatar);
+        dialogeUI.SetImage(dialogeData.items[currentText].avatar, dialogeData.items[currentText].nomeImg);
 
         switch (lingua)
         {

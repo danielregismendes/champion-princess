@@ -315,7 +315,7 @@ MonoBehaviour:
   maxHealth: 4
   attackRate: 1
   enemyName: Costureira
-  enemyImage: {fileID: 21300000, guid: 2c01c2c4404a5604e8fcc071e4386f9b, type: 3}
+  enemyImage: {fileID: 21300000, guid: fe63c6afb4fc88d48aaa4b7bc2ed6869, type: 3}
   collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
   deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
   enemyHit:

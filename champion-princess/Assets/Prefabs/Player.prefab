@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioPlayer: {fileID: 6261309500357392215}
+  weaponDamage: 0
 --- !u!1 &7441260435713197888
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,8 +132,8 @@ Transform:
   m_GameObject: {fileID: 7524066228030097655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.9, y: 2.88, z: -4}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: -9, y: 0.5, z: -3.5}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1134162873908701850}
@@ -240,9 +241,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.16
-  m_Height: 0.63
+  m_Height: 0.6358773
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.0029385567, z: 0}
 --- !u!95 &752004745011791046
 Animator:
   serializedVersion: 7
@@ -277,16 +278,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f5558f5b8a5144ca008791a9b07cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4
-  jumpForce: 400
-  minHeight: -8.6
-  maxHeight: -2
+  maxSpeed: 10
+  jumpForce: 600
+  minHeight: -9
+  maxHeight: 2
   maxHealth: 10
-  playerName: Leona Silva
-  playerImage: {fileID: 21300000, guid: 334d46ef7d1bc1f40a02e99b3f739288, type: 3}
+  playerName: Leona
+  playerImage: {fileID: 21300000, guid: ada0a43bdea75ad4ea99b45123b78ae2, type: 3}
   collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
   jumpSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
   healthItem: {fileID: 8300000, guid: 958535b288fe6e34b9cae872baa55637, type: 3}
+  weapon: {fileID: 0}
+  stop: 0
 --- !u!114 &8125233529707395634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +324,7 @@ MonoBehaviour:
       resetTime: 0.35
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
-      slowDown: 1
+      slowDown: 0
   - hits:
     - animation: Chute - Direto
       inputButton: Fire2
@@ -343,7 +346,7 @@ MonoBehaviour:
       resetTime: 0.35
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
-      slowDown: 1
+      slowDown: 0
   - hits:
     - animation: Soco - Direita
       inputButton: Fire1
@@ -365,7 +368,7 @@ MonoBehaviour:
       resetTime: 0.35
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
-      slowDown: 1
+      slowDown: 0
   - hits:
     - animation: Chute - Direto
       inputButton: Fire2
@@ -394,7 +397,23 @@ MonoBehaviour:
       resetTime: 0.8
       damage: 5
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
-      slowDown: 1
+      slowDown: 0
+  - hits:
+    - animation: Soco - Direita
+      inputButton: Fire1
+      animationTime: 0.3
+      resetTime: 0.35
+      damage: 1
+      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      slowDown: 0
+  - hits:
+    - animation: Chute - Direto
+      inputButton: Fire1
+      animationTime: 0.3
+      resetTime: 0.4
+      damage: 2
+      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      slowDown: 0
   attack: {fileID: 8949402335567095014}
   currentCombo: []
   OnStartCombo:
@@ -403,6 +422,7 @@ MonoBehaviour:
   OnFinishCombo:
     m_PersistentCalls:
       m_Calls: []
+  weapon: 0
 --- !u!114 &6261309500357392215
 MonoBehaviour:
   m_ObjectHideFlags: 0
