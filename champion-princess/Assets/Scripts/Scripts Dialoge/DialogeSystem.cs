@@ -22,8 +22,10 @@ public class DialogeSystem : MonoBehaviour
 
     Player player;
     Enemy enemy;
+    Pause pause;
     bool playerStop;
     bool enemyStop;
+    bool paused;
 
     STATE state;
 
@@ -56,6 +58,9 @@ public class DialogeSystem : MonoBehaviour
     [Obsolete]
     void Update()
     {
+        pause = FindObjectOfType<Pause>();
+
+        paused = pause.GetPause();
 
         if (state == STATE.DISABLED) return;
 
@@ -142,7 +147,7 @@ public class DialogeSystem : MonoBehaviour
     [Obsolete]
     void Waiting()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !paused)
         {
             if (!finished)
             {
@@ -162,7 +167,7 @@ public class DialogeSystem : MonoBehaviour
 
     void Typing()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !paused)
         {
             typeText.Skip();
             state = STATE.WAITING;

@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private bool canJump = true;
     private bool direcaoFixa = false;
 
+    [System.Obsolete]
     void Start()
     {
 
@@ -62,12 +63,6 @@ public class Player : MonoBehaviour
 
                 Jump = true;
                
-            }
-
-            if (Input.GetButtonDown("Cancel"))
-            {
-                FindObjectOfType<GameManager>().GameOver();
-                SceneManager.LoadScene(0);
             }
 
         }
