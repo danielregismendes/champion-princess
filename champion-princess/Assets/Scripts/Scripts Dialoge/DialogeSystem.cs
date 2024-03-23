@@ -40,7 +40,7 @@ public class DialogeSystem : MonoBehaviour
         dialogeUI = FindObjectOfType<DialogeUI>();
         gameManager = FindObjectOfType<GameManager>();
 
-        lingua = gameManager.lingua;
+        lingua = gameManager.GetLingua();
 
         typeText.TypeFinished = OnTypeFinishe;
 
@@ -100,34 +100,34 @@ public class DialogeSystem : MonoBehaviour
 
         switch (lingua)
         {
-            case "PT":
+            case "PORTUGES":
                 typeText.fullText = dialogeData.items[currentText++].textoPT;
                 break;
-            case "EN":
+            case "INGLES":
                 typeText.fullText = dialogeData.items[currentText++].textoEN;
                 break;
-            case "ES":
+            case "ESPANHOL":
                 typeText.fullText = dialogeData.items[currentText++].textoES;
                 break;
-            case "FR":
+            case "FRANCES":
                 typeText.fullText = dialogeData.items[currentText++].textoFR;
                 break;
-            case "DE":
+            case "ALEMAO":
                 typeText.fullText = dialogeData.items[currentText++].textoDE;
                 break;
-            case "IT":
+            case "ITALIANO":
                 typeText.fullText = dialogeData.items[currentText++].textoIT;
                 break;
-            case "RU":
+            case "RUSSO":
                 typeText.fullText = dialogeData.items[currentText++].textoRU;
                 break;
-            case "ZH":
+            case "CHINES":
                 typeText.fullText = dialogeData.items[currentText++].textoZH;
                 break;  
-            case "HI":
+            case "HINDI":
                 typeText.fullText = dialogeData.items[currentText++].textoHI;
                 break;
-            case "JA":
+            case "JAPONES":
                 typeText.fullText = dialogeData.items[currentText++].textoJA;
                 break;
         }

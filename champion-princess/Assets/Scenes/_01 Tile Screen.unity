@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  lingua: PT
+  lingua: PORTUGES
 --- !u!4 &851462157
 Transform:
   m_ObjectHideFlags: 0
@@ -379,8 +379,8 @@ GameObject:
   - component: {fileID: 1172668545}
   - component: {fileID: 1172668544}
   - component: {fileID: 1172668543}
-  - component: {fileID: 1172668546}
   - component: {fileID: 1172668547}
+  - component: {fileID: 1172668548}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -471,18 +471,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172668541}
   m_CullTransparentMesh: 1
---- !u!114 &1172668546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172668541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aa278ef90019034ea25ba1a7694f09b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1172668547
 AudioSource:
   m_ObjectHideFlags: 0
@@ -580,6 +568,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1172668548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172668541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa278ef90019034ea25ba1a7694f09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1244306521
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int lives;
-    public string lingua = "PT";
 
+    private string lingua = "PORTUGES";
     private GameManager gameManager;
     private int currentLives;
+    private bool music = true;
+    private bool soundFX = true;
 
 
     // Start is called before the first frame update
@@ -30,8 +32,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-
-
     public int GetLives()
     {
         return currentLives;
@@ -47,11 +47,48 @@ public class GameManager : MonoBehaviour
         currentLives = lives;
     }
 
-    public void SetLingua(string abreviacaoLingua)
+    public void SetLingua(string Lingua)
     {
-        lingua = abreviacaoLingua;
+        lingua = Lingua;
     }
 
+    public string GetLingua()
+    {
+        return lingua;
+    }
 
+    public void SetMusic()
+    {
+        if(music)
+        {
+            music = false;
+        }
+        else
+        {
+            music = true;
+        }
+    }
+
+    public bool GetMusic()
+    {
+        return music;
+    }
+
+    public void SetSoundFX()
+    {
+        if (soundFX)
+        {
+            soundFX = false;
+        }
+        else
+        {
+            soundFX = true;
+        }
+    }
+
+    public bool GetSoundFX()
+    {
+        return soundFX;
+    }
 
 }

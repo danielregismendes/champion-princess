@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
-public class Menu : MonoBehaviour
+public class TileScream : MonoBehaviour
 {
     private bool press = false;
     private Animator anim;
