@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int lives;
 
-    private string lingua = "PORTUGES";
+    private string lingua = "PORTUGUES";
     private GameManager gameManager;
     private int currentLives;
     private bool music = true;

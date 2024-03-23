@@ -23,7 +23,7 @@ public class EscolheIdioma : MonoBehaviour
 
         textIdioma.text = gameManager.GetLingua();
 
-        idiomas.Add("PORTUGES");
+        idiomas.Add("PORTUGUES");
         idiomas.Add("INGLES");
         idiomas.Add("ESPANHOL");
         idiomas.Add("FRANCES");

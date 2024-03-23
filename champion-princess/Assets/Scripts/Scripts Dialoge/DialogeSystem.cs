@@ -100,7 +100,7 @@ public class DialogeSystem : MonoBehaviour
 
         switch (lingua)
         {
-            case "PORTUGES":
+            case "PORTUGUES":
                 typeText.fullText = dialogeData.items[currentText++].textoPT;
                 break;
             case "INGLES":
