@@ -29,7 +29,9 @@ public class CrashItem : MonoBehaviour
 
     public void DestroyItem()
     {
-        Instantiate(dropItem, trans.position, trans.rotation);
+        //Instantiate(dropItem, trans.position, trans.rotation);
+
+        Instantiate(dropItem, new Vector3(trans.position.x, dropItem.transform.position.y, trans.position.z), trans.rotation);
         gameObject.SetActive(false);
     }
 

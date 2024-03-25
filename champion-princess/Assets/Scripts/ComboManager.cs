@@ -20,7 +20,9 @@ public class ComboManager : MonoBehaviour {
 
 	private int totalCombo;
 
-	private void Awake()
+    private string comboLabelAtual;
+
+    private void Awake()
 	{
 		instance = this;
 	}
@@ -35,22 +37,23 @@ public class ComboManager : MonoBehaviour {
 	public void SetCombo()
 	{
 		totalCombo++;
+        comboLabelAtual = comboLabel.text;
 
-		if(totalCombo < 10) 
+        if (totalCombo < 10) 
 		{
-			comboLabel.text = "GOOD";
+			if(comboLabelAtual != "GOOD")  comboLabel.text = "GOOD";
         }
         if(totalCombo >= 10 && totalCombo < 20)
         {
-            comboLabel.text = "BRUTAL!";
+            if (comboLabelAtual != "BRUTAL!") comboLabel.text = "BRUTAL!";
         }
         if (totalCombo >= 20 && totalCombo < 30)
         {
-            comboLabel.text = "EPIC!";
+            if (comboLabelAtual != "EPIC!") comboLabel.text = "EPIC!";
         }
         if (totalCombo >= 30)
         {
-            comboLabel.text = "SUKEBAN!";
+            if (comboLabelAtual != "SUKEBAN!") comboLabel.text = "SUKEBAN!";
         }
 
         comboText.text = totalCombo.ToString();
