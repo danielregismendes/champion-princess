@@ -283,6 +283,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
+
 }
 
 

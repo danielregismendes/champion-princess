@@ -62,9 +62,12 @@ public class Attack : MonoBehaviour
 
         if (player != null)
         {
-            Debug.Log("Dano do inimigo = "+ enemyDamage);
-            player.TookDamage(enemyDamage);
-            audioPlayer.PlaySound(hitSoundEnemy);
+            if(player.GetHealth() > 0)
+            {
+                Debug.Log("Dano do inimigo = " + enemyDamage);
+                player.TookDamage(enemyDamage);
+                audioPlayer.PlaySound(hitSoundEnemy);
+            }
         }
 
         if (crashItem != null)

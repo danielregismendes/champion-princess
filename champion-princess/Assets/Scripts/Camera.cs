@@ -16,11 +16,18 @@ public class CameraFollow : MonoBehaviour
     private Vector2 PmaxXAndY; // The maximum x and y coordinates the camera can have.
     private Vector2 PminXAndY; // The minimum x and y coordinates the camera can have.
 
+    public float shakeDuration = 0.5f;
+    public float shakeIntensity = 0.1f;
+
+    private float currentShakeDuration = 0f;
+    private Vector3 originalPosition;
+
     private void Awake()
     {
         // Setting up the reference.
         m_Player = GameObject.FindGameObjectWithTag("Player").transform;
         PmaxXAndY = maxXAndY;
+        originalPosition = transform.localPosition;
     }
 
     public float GetMaxX()
@@ -43,15 +50,35 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        TrackPlayer();
+        
+
+        if (currentShakeDuration > 0)
+        {
+            Vector3 randomOffset = Random.insideUnitSphere * shakeIntensity;
+            transform.localPosition = originalPosition + randomOffset;
+
+            currentShakeDuration -= Time.deltaTime;
+        }
+        else
+        {
+            TrackPlayer();
+            originalPosition = transform.localPosition;
+            currentShakeDuration = 0f;
+        }
+
     }
 
+    public void Shake()
+    {
+        currentShakeDuration = shakeDuration;
+    }
 
     private void TrackPlayer()
     {
         // By default the target x and y coordinates of the camera are it's current x and y coordinates.
         float targetX = transform.position.x;
         float targetY = transform.position.y;
+        float targetZ = transform.position.z;
 
         // If the player has moved beyond the x margin...
         if (CheckXMargin())
