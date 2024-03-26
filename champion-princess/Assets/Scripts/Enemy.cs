@@ -42,6 +42,10 @@ public class Enemy : MonoBehaviour {
 	public bool stop = false;
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
+	private CameraFollow cam;
+
+	public float distanceAttackX = 1.5f;
+    public float distanceAttackZ = 1.5f;
 
 
     // Use this for initialization
@@ -54,7 +58,9 @@ public class Enemy : MonoBehaviour {
 		target = FindObjectOfType<Player>().transform;
 		currentHealth = maxHealth;
 		audioS = GetComponent<AudioSource>();
-	}
+		cam = FindObjectOfType<CameraFollow>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -118,7 +124,7 @@ public class Enemy : MonoBehaviour {
 
 				anim.SetFloat("Speed", Mathf.Abs(currentSpeed));
 
-				if (Mathf.Abs(targetDitance.x) < 1.5f && Mathf.Abs(targetDitance.z) < 1.5f && Time.time > nextAttack)
+				if (Mathf.Abs(targetDitance.x) < distanceAttackX && Mathf.Abs(targetDitance.z) < distanceAttackZ && Time.time > nextAttack)
 				{
 					anim.SetTrigger("Attack");
 					attack.SetEnemyAttack(enemyHit);
@@ -220,4 +226,10 @@ public class Enemy : MonoBehaviour {
 	{
 		return currentHealth;
 	}
+
+	public void ShakeCam()
+	{
+		cam.Shake();
+	}
+
 }

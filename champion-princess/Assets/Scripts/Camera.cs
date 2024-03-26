@@ -19,15 +19,14 @@ public class CameraFollow : MonoBehaviour
     public float shakeDuration = 0.5f;
     public float shakeIntensity = 0.1f;
 
-    private float currentShakeDuration = 0f;
-    private Vector3 originalPosition;
+    public float currentShakeDuration = 0f;
+    public Vector3 originalPosition;
 
     private void Awake()
     {
         // Setting up the reference.
         m_Player = GameObject.FindGameObjectWithTag("Player").transform;
         PmaxXAndY = maxXAndY;
-        originalPosition = transform.localPosition;
     }
 
     public float GetMaxX()
@@ -50,20 +49,17 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        
-
-        if (currentShakeDuration > 0)
+        if (currentShakeDuration > 0f)
         {
             Vector3 randomOffset = Random.insideUnitSphere * shakeIntensity;
             transform.localPosition = originalPosition + randomOffset;
 
             currentShakeDuration -= Time.deltaTime;
+
         }
         else
         {
             TrackPlayer();
-            originalPosition = transform.localPosition;
-            currentShakeDuration = 0f;
         }
 
     }
@@ -78,7 +74,6 @@ public class CameraFollow : MonoBehaviour
         // By default the target x and y coordinates of the camera are it's current x and y coordinates.
         float targetX = transform.position.x;
         float targetY = transform.position.y;
-        float targetZ = transform.position.z;
 
         // If the player has moved beyond the x margin...
         if (CheckXMargin())
@@ -86,6 +81,9 @@ public class CameraFollow : MonoBehaviour
             // ... the target x coordinate should be a Lerp between the camera's current x position and the player's current x position.
             targetX = Mathf.Lerp(transform.position.x, m_Player.position.x, xSmooth * Time.deltaTime);
         }
+
+        targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
+
 
         // If the player has moved beyond the y margin...
         //if (CheckYMargin())
@@ -95,10 +93,13 @@ public class CameraFollow : MonoBehaviour
         //}
 
         // The target x and y coordinates should not be larger than the maximum or smaller than the minimum.
-        targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
+        //targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
         //targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
 
         // Set the camera's position to the target position with the same z component.
         transform.position = new Vector3(targetX, transform.position.y, transform.position.z);
+
+        originalPosition = transform.position;
+        currentShakeDuration = 0f;
     }
 }

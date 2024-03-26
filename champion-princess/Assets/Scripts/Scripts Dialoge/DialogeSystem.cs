@@ -29,7 +29,7 @@ public class DialogeSystem : MonoBehaviour
 
     STATE state;
 
-    public string lingua;
+    public string lingua = "PORTUGUES";
 
     GameManager gameManager;
 
@@ -40,7 +40,7 @@ public class DialogeSystem : MonoBehaviour
         dialogeUI = FindObjectOfType<DialogeUI>();
         gameManager = FindObjectOfType<GameManager>();
 
-        lingua = gameManager.GetLingua();
+        if(gameManager) lingua = gameManager.GetLingua();
 
         typeText.TypeFinished = OnTypeFinishe;
 

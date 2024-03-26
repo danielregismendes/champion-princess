@@ -124,7 +124,7 @@ Transform:
   m_GameObject: {fileID: 2094737572795381620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.33, y: -5.98, z: 0}
+  m_LocalPosition: {x: 2.2, y: -8.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -161,8 +161,8 @@ Transform:
   m_GameObject: {fileID: 6142490494634527439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.55, y: 0.04, z: -5.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7062631156312399674}
@@ -284,7 +284,7 @@ Animator:
   m_GameObject: {fileID: 6142490494634527439}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5c4355e217100bc438446083b8c2407f, type: 2}
+  m_Controller: {fileID: 9100000, guid: eac980ce295f05340a801b0207c429ae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -308,18 +308,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5bc4caadd4d494eb3a26d7254ddb00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4
+  maxSpeed: 0
   minHeight: -10
   maxHeight: 2
   damageTime: 0.5
-  maxHealth: 4
-  attackRate: 1
-  enemyName: Costureira
-  enemyImage: {fileID: 21300000, guid: fe63c6afb4fc88d48aaa4b7bc2ed6869, type: 3}
+  maxHealth: 20
+  attackRate: 3
+  enemyName: God
+  enemyImage: {fileID: 21300000, guid: b73c3c9ff8f8e5f4fbd638c2556d1b8c, type: 3}
   collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
   deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
   enemyHit:
-    damage: 1
+    damage: 3
     collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
     deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
   attack: {fileID: 3977921496079397398}
@@ -329,6 +329,8 @@ MonoBehaviour:
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}
   damageTextPosition: {fileID: 1819854164453975634}
   stop: 0
+  distanceAttackX: 10
+  distanceAttackZ: 5
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0
