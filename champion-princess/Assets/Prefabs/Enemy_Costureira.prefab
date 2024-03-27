@@ -329,6 +329,8 @@ MonoBehaviour:
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}
   damageTextPosition: {fileID: 1819854164453975634}
   stop: 0
+  distanceAttackX: 1.5
+  distanceAttackZ: 1.5
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0
