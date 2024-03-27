@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
+  m_Name: Dialogo 2
+  m_EditorClassIdentifier: 
+  sheetId: 1UO11imXHFnMzBmPNlRuKjEX6Z6LfBrKgYQAM3AYBMms
+  gridId: 66608897
+  items:
+  - avatar: {fileID: 21300000, guid: fcdf48f40f4f4b846897a3e5da08d450, type: 3}
+    nomeImg: {fileID: 21300000, guid: c929f09926451c4469d096d2e6c2e6af, type: 3}
+    nome: Mizuki
+    textoPT: "Ora, ora ora\u2026 O que temos aqui?! Uma valentona com punhos de pluma.
+      Hahaha, acha mesmo que pode vencer nossa majestosa l\xEDder?"
+    textoEN: Well, well, well... What do we have here?! A tough girl with feather
+      fists. Hahaha, do you really think you can defeat our majestic leader?
+    textoES: "\xA1Vaya, vaya, vaya... Qu\xE9 tenemos aqu\xED! \xBFUna bravucona con
+      pu\xF1os de pluma? Jajaja, \xBFde verdad crees que puedes vencer a nuestra
+      majestuosa l\xEDder?"
+    textoFR: "Ah, ah, ah... Mais qu'est-ce que nous avons l\xE0 ?! Une brute avec
+      des poings de plume. Hahaha, tu penses vraiment pouvoir vaincre notre majestueuse
+      leader ?"
+    textoDE: "Nun, nun, nun... Was haben wir denn hier?! Ein Draufg\xE4nger mit Federn
+      als F\xE4usten. Hahaha, glaubst du wirklich, dass du unsere majest\xE4tische
+      Anf\xFChrerin besiegen kannst?"
+    textoIT: Ebbene, ebbene, ebbene... Che abbiamo qui?! Una teppista con pugni di
+      piuma. Hahaha, pensi davvero di poter battere la nostra maestosa leader?
+    textoRU: "\u041D\u0443-\u043A\u0430, \u043D\u0443-\u043A\u0430, \u043D\u0443-\u043A\u0430...
+      \u0427\u0442\u043E \u0443 \u043D\u0430\u0441 \u0437\u0434\u0435\u0441\u044C?!
+      \u0421\u0430\u043C\u043E\u0437\u0432\u0430\u043D\u043A\u0430 \u0441 \u043F\u0435\u0440\u044C\u0435\u0432\u044B\u043C\u0438
+      \u043A\u0443\u043B\u0430\u043A\u0430\u043C\u0438. \u0425\u0430-\u0445\u0430-\u0445\u0430,
+      \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+      \u0441\u0447\u0438\u0442\u0430\u0435\u0448\u044C, \u0447\u0442\u043E \u043C\u043E\u0436\u0435\u0448\u044C
+      \u043F\u043E\u0431\u0435\u0434\u0438\u0442\u044C \u043D\u0430\u0448\u0443 \u0432\u0435\u043B\u0438\u043A\u043E\u043B\u0435\u043F\u043D\u0443\u044E
+      \u043B\u0438\u0434\u0435\u0440\u0448\u0443?"
+    textoZH: "\u55EF\uFF0C\u55EF\uFF0C\u55EF\u2026 \u6211\u4EEC\u8FD9\u91CC\u6709\u4EC0\u4E48\uFF1F\uFF01
+      \u4E00\u4E2A\u62F3\u5934\u50CF\u7FBD\u6BDB\u4E00\u6837\u7684\u6076\u9738\u3002\u54C8\u54C8\u54C8\uFF0C\u4F60\u771F\u7684\u8BA4\u4E3A\u4F60\u80FD\u6253\u8D25\u6211\u4EEC\u5A01\u4E25\u7684\u9886\u8896\u5417\uFF1F"
+    textoHI: "\u0905\u0930\u0947, \u0905\u0930\u0947, \u0905\u0930\u0947... \u092F\u0939\u093E\u0902
+      \u0939\u092E\u0947\u0902 \u0915\u094D\u092F\u093E \u092E\u093F\u0932\u093E
+      \u0939\u0948?! \u090F\u0915 \u092A\u0902\u0916\u094B\u0902 \u0915\u0947 \u092A\u0902\u091C\u0947
+      \u0935\u093E\u0932\u0940 \u0917\u0941\u0902\u0921\u0940\u0964 \u0939\u093E
+      \u0939\u093E \u0939\u093E, \u0915\u094D\u092F\u093E \u0935\u093E\u0938\u094D\u0924\u0935
+      \u092E\u0947\u0902 \u0906\u092A \u0939\u092E\u093E\u0930\u0940 \u0936\u093E\u0928\u0926\u093E\u0930
+      \u0928\u0947\u0924\u093E \u0915\u094B \u0939\u0930\u093E \u0938\u0915\u0924\u0947
+      \u0939\u0948\u0902?"
+    textoJA: "\u3055\u3066\u3055\u3066\u3055\u3066\u2026 \u3053\u3053\u306B\u4F55\u304C\u3042\u308B\u306E\u304B\uFF1F\uFF01
+      \u7FBD\u306E\u3088\u3046\u306A\u62F3\u3092\u6301\u3064\u3084\u308A\u624B\u304B\u3002\u30CF\u30CF\u30CF\u3001\u672C\u5F53\u306B\u79C1\u305F\u3061\u306E\u5A01\u53B3\u3042\u308B\u30EA\u30FC\u30C0\u30FC\u306B\u52DD\u3066\u308B\u3068\u601D\u3063\u3066\u3044\u308B\u306E\u304B\uFF1F"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "Pera\u2026 O lagarto \xE9 f\xEAmea?"
+    textoEN: Wait... The lizard is female?
+    textoES: "Espera... \xBFEl lagarto es hembra?"
+    textoFR: "Attends... Le l\xE9zard est une femelle ?"
+    textoDE: Moment mal... Ist das Echsenweibchen?
+    textoIT: "Aspetta... La lucertola \xE8 femmina?"
+    textoRU: "\u041F\u043E\u0433\u043E\u0434\u0438... \u042D\u0442\u043E \u044F\u0449\u0435\u0440\u0438\u0446\u0430-\u0441\u0430\u043C\u043A\u0430?"
+    textoZH: "\u7B49\u7B49\u2026 \u8725\u8734\u662F\u6BCD\u7684\u5417\uFF1F"
+    textoHI: "\u0930\u0941\u0915\u094B... \u0915\u094D\u092F\u093E \u0935\u0930\u093E\u0928\u0940
+      \u092E\u0939\u093F\u0932\u093E \u0939\u0948?"
+    textoJA: "\u5F85\u3063\u3066\u3088\u2026 \u30C8\u30AB\u30B2\u306F\u30E1\u30B9\u306A\u306E\u304B\uFF1F"
+  - avatar: {fileID: 21300000, guid: fcdf48f40f4f4b846897a3e5da08d450, type: 3}
+    nomeImg: {fileID: 21300000, guid: c929f09926451c4469d096d2e6c2e6af, type: 3}
+    nome: Mizuki
+    textoPT: "Mais respeito! Ela \xE9 bonita demais para perder tempo com uma horrorosa
+      como voc\xEA. Pode acabar contigo em um movimento de cauda!"
+    textoEN: Show some respect! She's too pretty to waste time with a hideous creature
+      like you. She can finish you off with a flick of her tail!
+    textoES: "\xA1M\xE1s respeto! Ella es demasiado bonita como para perder el tiempo
+      con una criatura tan fea como t\xFA. \xA1Puede acabar contigo con un simple
+      movimiento de cola!"
+    textoFR: Plus de respect ! Elle est bien trop belle pour perdre du temps avec
+      une horrible comme toi. Elle pourrait te terrasser d'un seul mouvement de queue
+      !
+    textoDE: "Mehr Respekt! Sie ist viel zu sch\xF6n, um Zeit mit einem abscheulichen
+      Gesch\xF6pf wie dir zu verschwenden. Sie k\xF6nnte dich mit einem einzigen
+      Schwanzschlag erledigen!"
+    textoIT: "Pi\xF9 rispetto! \xC8 troppo bella per perdere tempo con una brutta
+      come te. Potrebbe finire con te con un colpo di coda!"
+    textoRU: "\u0411\u043E\u043B\u044C\u0448\u0435 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F!
+      \u041E\u043D\u0430 \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043A\u0440\u0430\u0441\u0438\u0432\u0430,
+      \u0447\u0442\u043E\u0431\u044B \u0442\u0440\u0430\u0442\u0438\u0442\u044C \u0432\u0440\u0435\u043C\u044F
+      \u043D\u0430 \u0443\u0440\u043E\u0434\u043B\u0438\u0432\u0443\u044E, \u043A\u0430\u043A
+      \u0442\u044B. \u041E\u043D\u0430 \u043C\u043E\u0436\u0435\u0442 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u0442\u044C
+      \u0442\u0435\u0431\u044F \u043E\u0434\u043D\u0438\u043C \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435\u043C
+      \u0445\u0432\u043E\u0441\u0442\u0430!"
+    textoZH: "\u66F4\u52A0\u5C0A\u91CD\u70B9\uFF01 \u5979\u592A\u6F02\u4EAE\u4E86\uFF0C\u4E0D\u503C\u5F97\u6D6A\u8D39\u65F6\u95F4\u548C\u4F60\u8FD9\u6837\u53EF\u6015\u7684\u5BB6\u4F19\u3002
+      \u5979\u53EF\u4EE5\u4E00\u6446\u5C3E\u5DF4\u5C31\u7ED3\u675F\u4F60\uFF01"
+    textoHI: "\u0905\u0927\u093F\u0915 \u0938\u092E\u094D\u092E\u093E\u0928! \u0935\u0939
+      \u092C\u0939\u0941\u0924 \u0938\u0941\u0902\u0926\u0930 \u0939\u0948 \u0915\u093F
+      \u0906\u092A \u091C\u0948\u0938\u0947 \u0918\u093F\u0928\u094C\u0928\u0947
+      \u0915\u0947 \u0938\u093E\u0925 \u0938\u092E\u092F \u092C\u0930\u094D\u092C\u093E\u0926
+      \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F \u0928\u0939\u0940\u0902
+      \u0939\u0948\u0964 \u0935\u0939 \u090F\u0915 \u092A\u0942\u0902\u091B \u0915\u0947
+      \u090F\u0915 \u091A\u0932\u0928 \u092E\u0947\u0902 \u0906\u092A\u0915\u094B
+      \u0916\u0924\u094D\u092E \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0948!"
+    textoJA: "\u3082\u3063\u3068\u656C\u610F\u3092\u6255\u3063\u3066\u304F\u308C\uFF01
+      \u3042\u306A\u305F\u306E\u3088\u3046\u306A\u919C\u3044\u3082\u306E\u306B\u6642\u9593\u3092\u7121\u99C4\u306B\u3059\u308B\u306B\u306F\u5F7C\u5973\u304C\u7F8E\u3057\u3059\u304E\u307E\u3059\u3002
+      \u5F7C\u5973\u306F\u4E00\u3064\u306E\u5C3B\u5C3E\u306E\u52D5\u304D\u3067\u3042\u306A\u305F\u3092\u7D42\u308F\u3089\u305B\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\uFF01"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "H\xE3??? Cauda? Ent\xE3o realmente \xE9\u2026"
+    textoEN: Huh??? Tail? So it really is...
+    textoES: "\xBFEh? \xBFCola? Entonces realmente es..."
+    textoFR: Hein ??? Queue ? Alors c'est vraiment...
+    textoDE: "H\xE4??? Schwanz? Also ist es wirklich..."
+    textoIT: "Eh??? Coda? Quindi \xE8 davvero..."
+    textoRU: "\u0427\u0442\u043E??? \u0425\u0432\u043E\u0441\u0442? \u0422\u0430\u043A
+      \u044D\u0442\u043E \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E..."
+    textoZH: "\u554A\uFF1F\uFF1F\uFF1F\u5C3E\u5DF4\uFF1F\u90A3\u771F\u7684\u662F\u2026"
+    textoHI: "\u0939\u093E\u0901??? \u092A\u0942\u0902\u091B? \u0924\u094B \u092F\u0939
+      \u0938\u091A \u092E\u0947\u0902 \u0939\u0948..."
+    textoJA: "\u3048\u3063\uFF1F\uFF1F\uFF1F\u5C3B\u5C3E\uFF1F\u305D\u308C\u306F\u672C\u5F53\u306B\u2026"
+  - avatar: {fileID: 21300000, guid: fcdf48f40f4f4b846897a3e5da08d450, type: 3}
+    nomeImg: {fileID: 21300000, guid: c929f09926451c4469d096d2e6c2e6af, type: 3}
+    nome: Mizuki
+    textoPT: Seu pior pesadelo! E a mais bela dessa escola!
+    textoEN: Your worst nightmare! And the most beautiful one in this school!
+    textoES: "\xA1Tu peor pesadilla! \xA1Y la m\xE1s hermosa de esta escuela!"
+    textoFR: "Ton pire cauchemar ! Et la plus belle de cette \xE9cole !"
+    textoDE: "Dein schlimmster Albtraum! Und die Sch\xF6nste dieser Schule!"
+    textoIT: "Il tuo peggior incubo! E la pi\xF9 bella di questa scuola!"
+    textoRU: "\u0422\u0432\u043E\u0439 \u0445\u0443\u0434\u0448\u0438\u0439 \u043A\u043E\u0448\u043C\u0430\u0440!
+      \u0418 \u0441\u0430\u043C\u0430\u044F \u043A\u0440\u0430\u0441\u0438\u0432\u0430\u044F
+      \u0432 \u044D\u0442\u043E\u0439 \u0448\u043A\u043E\u043B\u0435!"
+    textoZH: "\u4F60\u6700\u7CDF\u7CD5\u7684\u5669\u68A6\uFF01 \u8FD9\u4E2A\u5B66\u6821\u6700\u7F8E\u4E3D\u7684\u5973\u5B69\uFF01"
+    textoHI: "\u0906\u092A\u0915\u093E \u0938\u092C\u0938\u0947 \u092C\u0941\u0930\u093E
+      \u0938\u092A\u0928\u093E! \u0914\u0930 \u0907\u0938 \u0938\u094D\u0915\u0942\u0932
+      \u0915\u0940 \u0938\u092C\u0938\u0947 \u0916\u0942\u092C\u0938\u0942\u0930\u0924!"
+    textoJA: "\u3042\u306A\u305F\u306E\u6700\u60AA\u306E\u60AA\u5922\uFF01 \u305D\u3057\u3066\u3053\u306E\u5B66\u6821\u3067\u4E00\u756A\u7F8E\u3057\u3044\uFF01"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "Hehehe, \xE9 uma pena que meu soco vai borrar a maquiagem dela. Espero
+      que n\xE3o quebre as unhas!"
+    textoEN: Hehehe, it's a shame my punch will smudge her makeup. Hope it doesn't
+      break her nails!
+    textoES: "Jejeje, es una l\xE1stima que mi golpe arruine su maquillaje. \xA1Espero
+      que no se rompan las u\xF1as!"
+    textoFR: "Hehehe, c'est dommage que mon coup va brouiller son maquillage. J'esp\xE8re
+      que \xE7a ne cassera pas ses ongles !"
+    textoDE: "Hehehe, es ist schade, dass mein Schlag ihr Make-up verschmieren wird.
+      Ich hoffe, dass ihre N\xE4gel nicht brechen!"
+    textoIT: "Hehehe, \xE8 un peccato che il mio pugno roviner\xE0 il suo trucco.
+      Spero che non si rompano le unghie!"
+    textoRU: "\u0425\u0435-\u0445\u0435-\u0445\u0435, \u0436\u0430\u043B\u044C, \u0447\u0442\u043E
+      \u043C\u043E\u0439 \u0443\u0434\u0430\u0440 \u0440\u0430\u0437\u043C\u0430\u0436\u0435\u0442
+      \u0435\u0439 \u043C\u0430\u043A\u0438\u044F\u0436. \u041D\u0430\u0434\u0435\u044E\u0441\u044C,
+      \u0447\u0442\u043E \u0443 \u043D\u0435\u0435 \u043D\u0435 \u0441\u043B\u043E\u043C\u0430\u044E\u0442\u0441\u044F
+      \u043D\u043E\u0433\u0442\u0438!"
+    textoZH: "\u54C8\u54C8\u54C8\uFF0C\u771F\u662F\u53EF\u60DC\u6211\u7684\u4E00\u51FB\u4F1A\u5F04\u82B1\u5979\u7684\u5316\u5986\u3002
+      \u5E0C\u671B\u4E0D\u4F1A\u5F04\u65AD\u5979\u7684\u6307\u7532\uFF01"
+    textoHI: "\u0939\u0947 \u0939\u0947 \u0939\u0947, \u092E\u0941\u091D\u0947 \u0916\u0947\u0926
+      \u0939\u0948 \u0915\u093F \u092E\u0947\u0930\u093E \u090F\u0915 \u0939\u0925\u094C\u0921\u093C\u093E
+      \u0909\u0938\u0915\u093E \u092E\u0947\u0915\u0905\u092A \u092C\u093F\u0917\u093E\u0921\u093C
+      \u0926\u0947\u0917\u093E\u0964 \u092E\u0941\u091D\u0947 \u0909\u092E\u094D\u092E\u0940\u0926
+      \u0939\u0948 \u0915\u093F \u0935\u0939 \u0905\u092A\u0928\u0947 \u0928\u093E\u0916\u0942\u0928
+      \u0928 \u0924\u094B\u0921\u093C\u0947!"
+    textoJA: "\u30D8\u30D8\u30D8\u3001\u6B8B\u5FF5\u3060\u304C\u79C1\u306E\u30D1\u30F3\u30C1\u304C\u5F7C\u5973\u306E\u30E1\u30A4\u30AF\u3092\u6EF2\u307E\u305B\u308B\u3060\u308D\u3046\u3002
+      \u5F7C\u5973\u306E\u722A\u304C\u6298\u308C\u306A\u3044\u3053\u3068\u3092\u9858\u3063\u3066\uFF01"

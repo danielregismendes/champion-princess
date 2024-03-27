@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
+  m_Name: Sinopse
+  m_EditorClassIdentifier: 
+  sheetId: 1UO11imXHFnMzBmPNlRuKjEX6Z6LfBrKgYQAM3AYBMms
+  gridId: 1595990409
+  items:
+  - avatar: {fileID: 0}
+    nomeImg: {fileID: 0}
+    nome: '-'
+    textoPT: "Leona, uma brasileira de 16 anos que se mudou recentemente para o Jap\xE3o
+      est\xE1 entrando em uma nova jornada: Entrar no Clube de Mangak\xE1 de sua
+      nova escola. Ela se depara com sua equipe desmotivada, pois acreditam que n\xE3o
+      v\xE3o conseguir ganhar o festival. O clube precisa muito da vit\xF3ria para
+      ganhar seu devido destaque na escola. "
+    textoEN: 'Leona, a 16-year-old Brazilian who recently moved to Japan, is embarking
+      on a new journey: Joining the Manga Club at her new school. She encounters
+      her demotivated team, as they believe they won''t be able to win the festival.
+      The club desperately needs the victory to gain its rightful recognition in
+      the school.'
+    textoES: "Leona, una brasile\xF1a de 16 a\xF1os que recientemente se mud\xF3
+      a Jap\xF3n, est\xE1 embarcando en una nueva aventura: unirse al Club de Manga
+      de su nueva escuela. Se encuentra con su equipo desmotivado, ya que creen que
+      no podr\xE1n ganar el festival. El club necesita desesperadamente la victoria
+      para obtener el reconocimiento que se merece en la escuela."
+    textoFR: "Leona, une Br\xE9silienne de 16 ans qui vient de d\xE9m\xE9nager r\xE9cemment
+      au Japon, se lance dans une nouvelle aventure : rejoindre le Club de Mangak\xE1
+      de sa nouvelle \xE9cole. Elle fait face \xE0 son \xE9quipe d\xE9motiv\xE9e,
+      car ils pensent qu'ils ne pourront pas gagner le festival. Le club a d\xE9sesp\xE9r\xE9ment
+      besoin de la victoire pour obtenir la reconnaissance qu'il m\xE9rite \xE0 l'\xE9cole."
+    textoDE: "Leona, eine 16-j\xE4hrige Brasilianerin, die k\xFCrzlich nach Japan
+      gezogen ist, begibt sich auf eine neue Reise: Sie tritt dem Mangak\xE1-Club
+      ihrer neuen Schule bei. Sie sieht sich mit ihrem demotivierten Team konfrontiert,
+      da sie glauben, dass sie das Festival nicht gewinnen k\xF6nnen. Der Club braucht
+      dringend den Sieg, um die verdiente Anerkennung in der Schule zu erlangen."
+    textoIT: "Leona, una brasiliana di 16 anni che si \xE8 trasferita di recente
+      in Giappone, sta intraprendendo un nuovo viaggio: unirsi al Club di Mangak\xE1
+      della sua nuova scuola. Si trova di fronte alla sua squadra demotivata, poich\xE9
+      credono di non riuscire a vincere il festival. Il club ha disperatamente bisogno
+      della vittoria per ottenere il riconoscimento che merita nella scuola."
+    textoRU: "\u041B\u0435\u043E\u043D\u0430, 16-\u043B\u0435\u0442\u043D\u044F\u044F
+      \u0431\u0440\u0430\u0437\u0438\u043B\u044C\u0441\u043A\u0430\u044F \u0434\u0435\u0432\u0443\u0448\u043A\u0430,
+      \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043D\u0435\u0434\u0430\u0432\u043D\u043E
+      \u043F\u0435\u0440\u0435\u0435\u0445\u0430\u043B\u0430 \u0432 \u042F\u043F\u043E\u043D\u0438\u044E,
+      \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442 \u043D\u043E\u0432\u043E\u0435
+      \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435: \u0432\u0441\u0442\u0443\u043F\u043B\u0435\u043D\u0438\u0435
+      \u0432 \u043A\u043B\u0443\u0431 \u043C\u0430\u043D\u0433\u0430\u043A\u0430
+      \u0441\u0432\u043E\u0435\u0439 \u043D\u043E\u0432\u043E\u0439 \u0448\u043A\u043E\u043B\u044B.
+      \u041E\u043D\u0430 \u0441\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442\u0441\u044F
+      \u0441 \u0434\u0435\u043C\u043E\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0439
+      \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0439, \u0442\u0430\u043A \u043A\u0430\u043A
+      \u043E\u043D\u0438 \u0432\u0435\u0440\u044F\u0442, \u0447\u0442\u043E \u043D\u0435
+      \u0441\u043C\u043E\u0433\u0443\u0442 \u043F\u043E\u0431\u0435\u0434\u0438\u0442\u044C
+      \u043D\u0430 \u0444\u0435\u0441\u0442\u0438\u0432\u0430\u043B\u0435. \u041A\u043B\u0443\u0431\u0443
+      \u043E\u0447\u0435\u043D\u044C \u043D\u0443\u0436\u043D\u0430 \u043F\u043E\u0431\u0435\u0434\u0430,
+      \u0447\u0442\u043E\u0431\u044B \u0437\u0430\u0441\u043B\u0443\u0436\u0438\u0442\u044C
+      \u0437\u0430\u0441\u043B\u0443\u0436\u0435\u043D\u043D\u043E\u0435 \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u0438\u0435
+      \u0432 \u0448\u043A\u043E\u043B\u0435."
+    textoZH: "\u8389\u5965\u5A1C\uFF0C\u4E00\u4F4D16\u5C81\u7684\u5DF4\u897F\u5973\u5B69\uFF0C\u6700\u8FD1\u642C\u5230\u65E5\u672C\uFF0C\u5F00\u59CB\u4E86\u4E00\u6BB5\u65B0\u7684\u65C5\u7A0B\uFF1A\u52A0\u5165\u5979\u65B0\u5B66\u6821\u7684\u6F2B\u753B\u793E\u3002\u5979\u53D1\u73B0\u81EA\u5DF1\u7684\u56E2\u961F\u58EB\u6C14\u4F4E\u843D\uFF0C\u56E0\u4E3A\u4ED6\u4EEC\u76F8\u4FE1\u4ED6\u4EEC\u8D62\u4E0D\u4E86\u6BD4\u8D5B\u3002\u793E\u56E2\u975E\u5E38\u9700\u8981\u8FD9\u573A\u80DC\u5229\uFF0C\u5728\u5B66\u6821\u4E2D\u83B7\u5F97\u5E94\u6709\u7684\u5173\u6CE8\u3002"
+    textoHI: "\u0932\u0947\u0913\u0928\u093E, \u091C\u093F\u0938\u0928\u0947 \u0939\u093E\u0932
+      \u0939\u0940 \u092E\u0947\u0902 \u091C\u093E\u092A\u093E\u0928 \u091C\u093E\u0915\u0930
+      16 \u0938\u093E\u0932 \u0915\u0940 \u0906\u092F\u0941 \u092E\u0947\u0902 \u092C\u094D\u0930\u093E\u091C\u0940\u0932
+      \u0938\u0947 \u092A\u094D\u0930\u093E\u0925\u092E\u093F\u0915 \u0936\u093F\u0915\u094D\u0937\u093E
+      \u092A\u094D\u0930\u093E\u092A\u094D\u0924 \u0915\u0940 \u0939\u0948, \u090F\u0915
+      \u0928\u0908 \u092F\u093E\u0924\u094D\u0930\u093E \u092E\u0947\u0902 \u092A\u094D\u0930\u0935\u0947\u0936
+      \u0915\u0930 \u0930\u0939\u0940 \u0939\u0948: \u0905\u092A\u0928\u0947 \u0928\u090F
+      \u0938\u094D\u0915\u0942\u0932 \u0915\u0947 \u092E\u0902\u0917\u093E\u0915\u093E
+      \u0915\u094D\u0932\u092C \u092E\u0947\u0902 \u0936\u093E\u092E\u093F\u0932
+      \u0939\u094B\u0928\u093E\u0964 \u0935\u0939 \u0905\u092A\u0928\u0940 \u0928\u093F\u0937\u094D\u092B\u0932
+      \u091F\u0940\u092E \u0938\u0947 \u092E\u0941\u0915\u093E\u092C\u0932\u093E
+      \u0915\u0930\u0924\u0940 \u0939\u0948, \u0915\u094D\u092F\u094B\u0902\u0915\u093F
+      \u0935\u0947 \u092F\u0939 \u092E\u093E\u0928\u0924\u0947 \u0939\u0948\u0902
+      \u0915\u093F \u0935\u0947 \u092E\u0939\u094B\u0924\u094D\u0938\u0935 \u091C\u0940\u0924
+      \u0928\u0939\u0940\u0902 \u0938\u0915\u0924\u0947\u0964 \u0938\u094D\u0915\u0942\u0932
+      \u092E\u0947\u0902 \u0909\u091A\u093F\u0924 \u092A\u094D\u0930\u092E\u0941\u0916\u0924\u093E
+      \u092A\u094D\u0930\u093E\u092A\u094D\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947
+      \u0932\u093F\u090F \u0915\u094D\u0932\u092C \u0915\u094B \u091C\u0940\u0924
+      \u0915\u0940 \u092C\u0939\u0941\u0924 \u0906\u0935\u0936\u094D\u092F\u0915\u0924\u093E
+      \u0939\u0948\u0964"
+    textoJA: "\u30EC\u30AA\u30CA\u306F\u3001\u6700\u8FD1\u65E5\u672C\u306B\u5F15\u3063\u8D8A\u3057\u305F16\u6B73\u306E\u30D6\u30E9\u30B8\u30EB\u4EBA\u5973\u6027\u3067\u3059\u3002\u5F7C\u5973\u306F\u65B0\u3057\u3044\u5B66\u6821\u306E\u6F2B\u753B\u30AF\u30E9\u30D6\u306B\u5165\u308B\u3068\u3044\u3046\u65B0\u3057\u3044\u65C5\u306B\u4E57\u308A\u51FA\u3057\u3066\u3044\u307E\u3059\u3002\u5F7C\u5973\u306F\u30C1\u30FC\u30E0\u304C\u3084\u308B\u6C17\u3092\u306A\u304F\u3057\u3066\u3044\u308B\u306E\u3092\u76EE\u306B\u3057\u307E\u3057\u305F\u3002\u306A\u305C\u306A\u3089\u3001\u5F7C\u3089\u306F\u30D5\u30A7\u30B9\u30C6\u30A3\u30D0\u30EB\u306B\u52DD\u3066\u306A\u3044\u3068\u4FE1\u3058\u3066\u3044\u307E\u3059\u3002\u30AF\u30E9\u30D6\u306F\u5B66\u6821\u3067\u306E\u9069\u5207\u306A\u6CE8\u76EE\u3092\u5F97\u308B\u305F\u3081\u306B\u52DD\u5229\u304C\u975E\u5E38\u306B\u5FC5\u8981\u3067\u3059\u3002"

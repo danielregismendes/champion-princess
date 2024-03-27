@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/_02 Menu.unity
     guid: 14a15671c48cb2b418904971d0130984
   - enabled: 1
-    path: Assets/Scenes/_03 Tutorial.unity
+    path: Assets/Scenes/Obsolete/_03 Tutorial.unity
     guid: 5b3bcedbb193ba147adece0447a14bdc
   - enabled: 1
     path: Assets/Scenes/_04 Fase 1.unity

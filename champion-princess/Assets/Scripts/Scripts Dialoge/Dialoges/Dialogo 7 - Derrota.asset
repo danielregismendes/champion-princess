@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
+  m_Name: Dialogo 7 - Derrota
+  m_EditorClassIdentifier: 
+  sheetId: 1UO11imXHFnMzBmPNlRuKjEX6Z6LfBrKgYQAM3AYBMms
+  gridId: 768174275
+  items:
+  - avatar: {fileID: 21300000, guid: ab0d014d1ff0e5846a9bb2ff05cea925, type: 3}
+    nomeImg: {fileID: 21300000, guid: 1d9b9fc48f1b6ab4fb50319096baf4bc, type: 3}
+    nome: 'Godzilly '
+    textoPT: "Onde est\xE1 toda aquela valentia? Para onde foi toda aquela for\xE7a?
+      Realmente voc\xEA \xE9 um desperd\xEDcio de espa\xE7o. E de tempo! Hahahahaha!"
+    textoEN: Where is all that bravery? Where did all that strength go? You truly
+      are a waste of space. And time! Hahahahaha!
+    textoES: "\xBFD\xF3nde est\xE1 toda esa valent\xEDa? \xBFA d\xF3nde fue toda
+      esa fuerza? Realmente eres un desperdicio de espacio. \xA1Y de tiempo! \xA1Jajajaja!"
+    textoFR: "O\xF9 est pass\xE9e toute cette bravoure ? O\xF9 est all\xE9e toute
+      cette force ? Vraiment, tu es un gaspillage d'espace. Et de temps ! Hahahahaha
+      !"
+    textoDE: "Wo ist all der Mut hin? Wohin ist all die St\xE4rke gegangen? Du bist
+      wirklich eine Verschwendung von Platz. Und von Zeit! Hahahahaha!"
+    textoIT: "Dove \xE8 finito tutto quel coraggio? Dove \xE8 andata tutta quella
+      forza? Davvero sei uno spreco di spazio. E di tempo! Hahahahaha!"
+    textoRU: "\u0413\u0434\u0435 \u0432\u0441\u044F \u0442\u0430 \u043E\u0442\u0432\u0430\u0433\u0430?
+      \u041A\u0443\u0434\u0430 \u0443\u0448\u043B\u0430 \u0432\u0441\u044F \u044D\u0442\u0430
+      \u0441\u0438\u043B\u0430? \u0422\u044B \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+      \u043F\u0443\u0441\u0442\u0430\u044F \u0442\u0440\u0430\u0442\u0430 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u0430.
+      \u0418 \u0432\u0440\u0435\u043C\u0435\u043D\u0438! \u0425\u0430-\u0445\u0430-\u0445\u0430-\u0445\u0430!"
+    textoZH: "\u90A3\u4EFD\u52C7\u6C14\u5230\u5E95\u53BB\u4E86\u54EA\u91CC\uFF1F\u90A3\u4EFD\u529B\u91CF\u53C8\u6D41\u5411\u4F55\u65B9\uFF1F\u4F60\u771F\u7684\u662F\u4E00\u4E2A\u6D6A\u8D39\u7A7A\u95F4\u3001\u6D6A\u8D39\u65F6\u95F4\u7684\u4EBA\uFF01\u54C8\u54C8\u54C8\u54C8\uFF01"
+    textoHI: "\u0935\u0939 \u0938\u092C \u092C\u0939\u093E\u0926\u0941\u0930\u0940
+      \u0915\u0939\u093E\u0901 \u0939\u0948? \u0909\u0938 \u0938\u092D\u0940 \u0936\u0915\u094D\u0924\u093F
+      \u0915\u0939\u093E\u0901 \u0917\u0908? \u0935\u093E\u0938\u094D\u0924\u0935
+      \u092E\u0947\u0902 \u0924\u0941\u092E \u090F\u0915 \u0916\u093E\u0932\u0940
+      \u091C\u0917\u0939 \u0915\u0947 \u0932\u093F\u090F \u0939\u094B\u0964 \u0914\u0930
+      \u0938\u092E\u092F \u0915\u0940 \u092D\u0940! \u0939\u093E\u0939\u093E\u0939\u093E\u0939\u093E!"
+    textoJA: "\u52C7\u6C17\u306F\u3069\u3053\u306B\u884C\u3063\u305F\u306E\uFF1F\u529B\u306F\u3069\u3053\u306B\u884C\u3063\u305F\u306E\uFF1F\u3042\u306A\u305F\u306F\u672C\u5F53\u306B\u5834\u6240\u3068\u6642\u9593\u306E\u7121\u99C4\u3067\u3059\uFF01\u30CF\u30CF\u30CF\u30CF\u30CF\uFF01"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "Eu\u2026 Eu perdi\u2026"
+    textoEN: I... I lost...
+    textoES: "Yo... yo perd\xED..."
+    textoFR: Je... J'ai perdu...
+    textoDE: Ich... Ich habe verloren...
+    textoIT: Io... Io ho perso...
+    textoRU: "\u042F... \u042F \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B..."
+    textoZH: "\u6211\u2026\u2026\u6211\u8F93\u4E86\u2026\u2026"
+    textoHI: "\u092E\u0948\u0902... \u092E\u0948\u0902 \u0939\u093E\u0930 \u0917\u092F\u093E..."
+    textoJA: "\u79C1\u306F\u2026\u8CA0\u3051\u305F\u2026"

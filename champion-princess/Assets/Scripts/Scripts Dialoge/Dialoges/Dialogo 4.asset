@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e446fbdb81262af43aa7ac7e6c7611f5, type: 3}
+  m_Name: Dialogo 4
+  m_EditorClassIdentifier: 
+  sheetId: 1UO11imXHFnMzBmPNlRuKjEX6Z6LfBrKgYQAM3AYBMms
+  gridId: 1149233490
+  items:
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: Novo dia! Novas pessoas para socar! Bom dia, pessoal!,
+    textoEN: New day! New people to punch! Good morning
+    textoES: ' everyone!'
+    textoFR: "Novo d\xEDa! \xA1Nuevas personas para golpear! \xA1Buenos d\xEDas a
+      todos!,"
+    textoDE: "Nouvelle journ\xE9e ! De nouvelles personnes \xE0 frapper ! Bonjour
+      \xE0 tous !"
+    textoIT: Neuer Tag! Neue Leute zum Schlagen! Guten Morgen, Leute!,
+    textoRU: Nuovo giorno! Nuove persone da picchiare! Buongiorno
+    textoZH: ' ragazzi!'
+    textoHI: "\u041D\u043E\u0432\u044B\u0439 \u0434\u0435\u043D\u044C! \u041D\u043E\u0432\u044B\u0435
+      \u043B\u044E\u0434\u0438, \u0447\u0442\u043E\u0431\u044B \u0434\u0430\u0442\u044C
+      \u043F\u043E \u043C\u043E\u0440\u0434\u0435! \u0414\u043E\u0431\u0440\u043E\u0435
+      \u0443\u0442\u0440\u043E, \u0440\u0435\u0431\u044F\u0442\u0430!,"
+    textoJA: "\u65B0\u7684\u4E00\u5929\uFF01\u65B0\u7684\u5BF9\u624B\u7B49\u5F85\u7740\u88AB\u63CD\uFF01\u65E9\u4E0A\u597D\uFF0C\u5927\u5BB6\uFF01"
+  - avatar: {fileID: 21300000, guid: 24efb3bc7c8ebe947a2d012331a9b968, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0899068caf5e67946a6643f393a8d119, type: 3}
+    nome: Sayuri
+    textoPT: "Oi, Leona! Bom dia! Voc\xEA foi muito bem ontem! N\xE3o sabia que era
+      t\xE3o forte assim.,"
+    textoEN: Hi
+    textoES: ' Leona! Good morning! You did great yesterday! I didn''t know you were
+      so strong.'
+    textoFR: "\xA1Hola, Leona! \xA1Buenos d\xEDas! \xA1Lo hiciste muy bien ayer!
+      No sab\xEDa que eras tan fuerte.,"
+    textoDE: Salut
+    textoIT: " Leona ! Bonjour ! Tu as tr\xE8s bien jou\xE9 hier ! Je ne savais pas
+      que tu \xE9tais si forte."
+    textoRU: Hallo, Leona! Guten Morgen! Du hast gestern sehr gut gespielt! Ich wusste
+      nicht, dass du so stark bist.,
+    textoZH: Ciao
+    textoHI: " Leona! Buongiorno! Hai giocato molto bene ieri! Non sapevo che fossi
+      cos\xEC forte."
+    textoJA: "\u041F\u0440\u0438\u0432\u0435\u0442, \u041B\u0435\u043E\u043D\u0430!
+      \u0414\u043E\u0431\u0440\u043E\u0435 \u0443\u0442\u0440\u043E! \u0422\u044B
+      \u0432\u0447\u0435\u0440\u0430 \u043E\u0442\u043B\u0438\u0447\u043D\u043E \u0441\u043F\u0440\u0430\u0432\u0438\u043B\u0430\u0441\u044C!
+      \u041D\u0435 \u0437\u043D\u0430\u043B, \u0447\u0442\u043E \u0442\u044B \u0442\u0430\u043A\u0430\u044F
+      \u0441\u0438\u043B\u044C\u043D\u0430\u044F.,"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: Que bom que acredita mais nos meus punhos do que nas minhas palavras.,
+    textoEN: Glad you trust more in my fists than in my words.
+    textoES: "Me alegra que conf\xEDes m\xE1s en mis pu\xF1os que en mis palabras.,"
+    textoFR: Je suis contente que tu aies plus confiance en mes poings qu'en mes
+      paroles.
+    textoDE: "Es ist gut, dass du mehr an meine F\xE4uste glaubst als an meine Worte.,"
+    textoIT: "Sono contento che credi di pi\xF9 nei miei pugni che nelle mie parole."
+    textoRU: "\u0425\u043E\u0440\u043E\u0448\u043E, \u0447\u0442\u043E \u0442\u044B
+      \u0432\u0435\u0440\u0438\u0448\u044C \u0431\u043E\u043B\u044C\u0448\u0435 \u0432
+      \u043C\u043E\u0438 \u043A\u0443\u043B\u0430\u043A\u0438, \u0447\u0435\u043C
+      \u0432 \u043C\u043E\u0438 \u0441\u043B\u043E\u0432\u0430.,"
+    textoZH: "\u5F88\u9AD8\u5174\u4F60\u66F4\u76F8\u4FE1\u6211\u7684\u62F3\u5934\uFF0C\u800C\u4E0D\u662F\u6211\u7684\u8BDD\u3002"
+    textoHI: "\u0905\u091A\u094D\u091B\u093E \u0939\u0948 \u0915\u093F \u0924\u0941\u092E
+      \u092E\u0947\u0930\u0947 \u092E\u0941\u0901\u0939 \u0928\u0939\u0940\u0902
+      \u092E\u0947\u0930\u0940 \u092C\u093E\u0924\u094B\u0902 \u092A\u0930 \u0905\u0927\u093F\u0915
+      \u0935\u093F\u0936\u094D\u0935\u093E\u0938 \u0915\u0930\u0924\u0947 \u0939\u094B\u0964,"
+    textoJA: "\u79C1\u306E\u8A00\u8449\u3088\u308A\u3082\u79C1\u306E\u62F3\u3092\u4FE1\u3058\u308B\u3053\u3068\u304C\u3067\u304D\u3066\u826F\u304B\u3063\u305F\u3067\u3059\u3002"
+  - avatar: {fileID: 21300000, guid: 24efb3bc7c8ebe947a2d012331a9b968, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0899068caf5e67946a6643f393a8d119, type: 3}
+    nome: Sayuri
+    textoPT: "N\xE3o sei se hoje ser\xE1 t\xE3o f\xE1cil como ontem\u2026 Senti tremores
+      por toda a escola.,"
+    textoEN: I don't know if today will be as easy as yesterday... I felt tremors
+      all over the school.
+    textoES: "No s\xE9 si hoy ser\xE1 tan f\xE1cil como ayer... Sent\xED temblores
+      en toda la escuela.,"
+    textoFR: "Je ne sais pas si aujourd'hui sera aussi facile qu'hier... J'ai ressenti
+      des tremblements dans toute l'\xE9cole."
+    textoDE: "Ich wei\xDF nicht, ob heute so einfach wird wie gestern... Ich habe
+      \xFCberall in der Schule Ersch\xFCtterungen gesp\xFCrt.,"
+    textoIT: "Non so se oggi sar\xE0 cos\xEC facile come ieri... Ho sentito tremori
+      in tutta la scuola."
+    textoRU: "\u041D\u0435 \u0437\u043D\u0430\u044E, \u0431\u0443\u0434\u0435\u0442
+      \u043B\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F \u0442\u0430\u043A
+      \u043B\u0435\u0433\u043A\u043E, \u043A\u0430\u043A \u0432\u0447\u0435\u0440\u0430...
+      \u041F\u043E\u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B \u0442\u043E\u043B\u0447\u043A\u0438
+      \u043F\u043E \u0432\u0441\u0435\u0439 \u0448\u043A\u043E\u043B\u0435.,"
+    textoZH: "\u4E0D\u77E5\u9053\u4ECA\u5929\u4F1A\u4E0D\u4F1A\u50CF\u6628\u5929\u90A3\u6837\u5BB9\u6613...
+      \u6574\u4E2A\u5B66\u6821\u90FD\u5728\u9707\u52A8\u3002"
+    textoHI: "\u092E\u0941\u091D\u0947 \u0928\u0939\u0940\u0902 \u092A\u0924\u093E
+      \u0915\u093F \u0906\u091C \u0915\u0932 \u0907\u0924\u0928\u093E \u0906\u0938\u093E\u0928
+      \u0939\u094B\u0917\u093E \u092F\u093E \u0928\u0939\u0940\u0902... \u092A\u0942\u0930\u0947
+      \u0938\u094D\u0915\u0942\u0932 \u092E\u0947\u0902 \u0924\u0932\u0935\u093E\u0930\u0947\u0902
+      \u092E\u0939\u0938\u0942\u0938 \u0915\u0940\u0964,"
+    textoJA: "\u4ECA\u65E5\u304C\u6628\u65E5\u307B\u3069\u7C21\u5358\u3067\u306F\u306A\u3044\u304B\u3082\u3057\u308C\u307E\u305B\u3093...
+      \u5B66\u6821\u4E2D\u304C\u9707\u3048\u3066\u3044\u308B\u3088\u3046\u306A\u611F\u3058\u304C\u3057\u307E\u3057\u305F\u3002"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "Ent\xE3o ela est\xE1 aqui. A Godzilla F\xEAmea! Eu vou atr\xE1s dela
+      agora mesmo!,"
+    textoEN: So she's here. The Female Godzilla! I'm going after her right away!
+    textoES: "Entonces ella est\xE1 aqu\xED. \xA1La Godzilla hembra! \xA1Voy tras
+      ella ahora mismo!,"
+    textoFR: Alors elle est ici. La Godzilla femelle ! Je vais la chercher tout de
+      suite !
+    textoDE: Also ist sie hier. Die weibliche Godzilla! Ich werde sie sofort verfolgen!,
+    textoIT: "Quindi lei \xE8 qui. La Godzilla Femmina! Andr\xF2 subito a prenderla!"
+    textoRU: "\u0422\u0430\u043A \u0432\u043E\u0442 \u043E\u043D\u0430. \u0416\u0435\u043D\u0441\u043A\u0438\u0439
+      \u0413\u043E\u0434\u0437\u0438\u043B\u043B\u0430! \u042F \u043F\u043E\u0439\u0434\u0443
+      \u0437\u0430 \u043D\u0435\u0439 \u043F\u0440\u044F\u043C\u043E \u0441\u0435\u0439\u0447\u0430\u0441!,"
+    textoZH: "\u5979\u5C31\u5728\u8FD9\u91CC\u3002\u90A3\u4E2A\u96CC\u6027\u54E5\u65AF\u62C9\uFF01\u6211\u73B0\u5728\u5C31\u53BB\u8FFD\u5979\uFF01"
+    textoHI: "\u0924\u094B \u0935\u0939 \u092F\u0939\u093E\u0901 \u0939\u0948\u0964
+      \u0917\u0949\u0921\u091C\u093C\u093F\u0932\u093E \u092E\u093E\u0926\u093E!
+      \u092E\u0948\u0902 \u0905\u092D\u0940 \u0909\u0938\u0915\u0947 \u092A\u0940\u091B\u0947
+      \u091C\u093E\u090A\u0902\u0917\u093E!,"
+    textoJA: "\u305D\u308C\u3067\u306F\u5F7C\u5973\u304C\u3053\u3053\u306B\u3044\u307E\u3059\u3002\u30B4\u30B8\u30E9\u306E\u30E1\u30B9\uFF01\u79C1\u306F\u4ECA\u3059\u3050\u5F7C\u5973\u306E\u5F8C\u3092\u8FFD\u3044\u307E\u3059\uFF01"
+  - avatar: {fileID: 21300000, guid: 24efb3bc7c8ebe947a2d012331a9b968, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0899068caf5e67946a6643f393a8d119, type: 3}
+    nome: Sayuri
+    textoPT: "E-espera, Leona! Cuidado com os ataques dela! S\xE3o poderosos demais!,"
+    textoEN: W-wait
+    textoES: ' Leona! Be careful with her attacks! They''re too powerful!'
+    textoFR: "E-espera, \xA1Leona! \xA1Ten cuidado con sus ataques! \xA1Son demasiado
+      poderosos!,"
+    textoDE: A-attends
+    textoIT: " Leona ! Fais attention \xE0 ses attaques ! Elles sont trop puissantes
+      !"
+    textoRU: "W-warte, Leona! Pass auf ihre Angriffe auf! Sie sind viel zu m\xE4chtig!,"
+    textoZH: A-aspetta
+    textoHI: ' Leona! Fai attenzione ai suoi attacchi! Sono troppo potenti!'
+    textoJA: "\u041F-\u043F\u043E\u0434\u043E\u0436\u0434\u0438, \u041B\u0435\u043E\u043D\u0430!
+      \u041E\u0441\u0442\u0435\u0440\u0435\u0433\u0430\u0439\u0441\u044F \u0435\u0435
+      \u0430\u0442\u0430\u043A! \u041E\u043D\u0438 \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+      \u043C\u043E\u0449\u043D\u044B\u0435!,"
+  - avatar: {fileID: 21300000, guid: 5e78640b94041dc428b98a76c801182c, type: 3}
+    nomeImg: {fileID: 21300000, guid: 0f831056e26a1044a95ed662614750e4, type: 3}
+    nome: Leona
+    textoPT: "Eu vou mostrar quem s\xE3o poderosos demais! Punho esquerdo e direito!,"
+    textoEN: I'll show who's too powerful! Left fist and right fist!
+    textoES: "\xA1Voy a mostrar qui\xE9nes son demasiado poderosos! \xA1Pu\xF1o izquierdo
+      y derecho!,"
+    textoFR: Je vais montrer qui est trop puissant ! Poing gauche et droit !
+    textoDE: "Ich werde zeigen, wer zu m\xE4chtig ist! Linker und rechter Faustschlag!,"
+    textoIT: "Mostrer\xF2 chi sono i pi\xF9 potenti! Pugno sinistro e destro!"
+    textoRU: "\u042F \u043F\u043E\u043A\u0430\u0436\u0443, \u043A\u0442\u043E \u0437\u0434\u0435\u0441\u044C
+      \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043E\u0449\u043D\u044B\u0439!
+      \u041B\u0435\u0432\u044B\u0439 \u0438 \u043F\u0440\u0430\u0432\u044B\u0439
+      \u043A\u0443\u043B\u0430\u043A\u0438!,"
+    textoZH: "\u6211\u4F1A\u8BC1\u660E\u8C01\u624D\u662F\u771F\u6B63\u5F3A\u5927\u7684\uFF01\u5DE6\u62F3\u53F3\u62F3\uFF01"
+    textoHI: "\u092E\u0948\u0902 \u0926\u093F\u0916\u093E \u0926\u0942\u0902\u0917\u093E
+      \u0915\u093F \u0915\u094C\u0928 \u0939\u0948\u0902 \u092C\u0939\u0941\u0924
+      \u0936\u0915\u094D\u0924\u093F\u0936\u093E\u0932\u0940! \u092C\u093E\u092F\u093E\u0902
+      \u0939\u093E\u0925 \u0914\u0930 \u0926\u093E\u090F\u0902 \u0939\u093E\u0925!,"
+    textoJA: "\u79C1\u306F\u8AB0\u304C\u3042\u307E\u308A\u306B\u3082\u5F37\u529B\u304B\u3092\u793A\u3059\u3064\u3082\u308A\u3067\u3059\uFF01\u5DE6\u3068\u53F3\u306E\u62F3\uFF01"
