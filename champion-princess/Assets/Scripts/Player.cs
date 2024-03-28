@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     private bool canJump = true;
     private bool direcaoFixa = false;
 
+    private Boss bossFigth;
+
     [System.Obsolete]
     void Start()
     {
@@ -42,6 +44,8 @@ public class Player : MonoBehaviour
         groundCheck = gameObject.transform.Find("GroundCheck");
         currentSpeed = maxSpeed;
         audioS = GetComponent<AudioSource>();
+        bossFigth = FindObjectOfType<Boss>();
+
         
     }
 
@@ -202,17 +206,17 @@ public class Player : MonoBehaviour
     void PlayerRespawn()
     {
         if (FindObjectOfType<GameManager>().GetLives() >= 0)
-            {
-                isDead = false;
-                currentHealth = maxHealth;
-                FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);
-                anim.Rebind();
-                float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
-                transform.position = new Vector3(minWidth, 10, -4);
-            }
+        {
+            isDead = false;
+            currentHealth = maxHealth;
+            FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);
+            anim.Rebind();
+            float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10)).x;
+            transform.position = new Vector3(minWidth, 10, -4);
+        }
         else
         {
-            FindObjectOfType<UIManager>().GameOver();
+            if(bossFigth) FindObjectOfType<UIManager>().GameOver();
 
         }
     }
@@ -286,6 +290,11 @@ public class Player : MonoBehaviour
     public int GetHealth()
     {
         return currentHealth;
+    }
+
+    public bool GetIsDead()
+    {
+        return isDead;
     }
 
 }

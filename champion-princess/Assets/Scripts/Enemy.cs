@@ -232,4 +232,10 @@ public class Enemy : MonoBehaviour {
 		cam.Shake();
 	}
 
+	public bool GetIsDead()
+	{
+		return isDead;
+
+    }
+
 }

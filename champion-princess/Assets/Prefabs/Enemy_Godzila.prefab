@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 6690102614185866835}
   - component: {fileID: 4634831617474398005}
   - component: {fileID: 2714654565608840825}
+  - component: {fileID: 8678005670783318557}
   - component: {fileID: 1048001823093174532}
   m_Layer: 11
   m_Name: Enemy_Godzila
@@ -331,6 +332,31 @@ MonoBehaviour:
   stop: 0
   distanceAttackX: 15
   distanceAttackZ: 10
+--- !u!114 &8678005670783318557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142490494634527439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4417a9bd3439b114d9fd2886ccf8ae57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogeDataDerrota: {fileID: 0}
+  dialogeDataVitoria: {fileID: 0}
+  dialogeSystem: {fileID: 0}
+  eventoColisao: 0
+  anim: {fileID: 0}
+  uiManager: {fileID: 0}
+  dialogeUI: {fileID: 0}
+  reproduzido: 0
+  state: 0
+  stage: 0
+  gameManager: {fileID: 0}
+  boosDead: 0
+  playerDead: 0
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0
