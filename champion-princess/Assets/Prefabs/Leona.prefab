@@ -375,30 +375,30 @@ MonoBehaviour:
       slowDown: 0
     - animation: Soco - Gancho
       inputButton: Fire1
-      animationTime: 0.3
-      resetTime: 0.35
+      animationTime: 0.35
+      resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
       slowDown: 0
   - hits:
     - animation: Chute - Direto
       inputButton: Fire2
-      animationTime: 0.3
+      animationTime: 0.35
       resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
       slowDown: 0
-    - animation: Soco - Gancho
+    - animation: Soco - Esquerda
       inputButton: Fire1
       animationTime: 0.3
       resetTime: 0.35
       damage: 1
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
       slowDown: 0
-    - animation: Soco - Direita
+    - animation: Soco - Gancho
       inputButton: Fire1
       animationTime: 0.3
-      resetTime: 0.35
+      resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
       slowDown: 0
@@ -412,30 +412,30 @@ MonoBehaviour:
       slowDown: 0
     - animation: Chute - Lateral
       inputButton: Fire2
-      animationTime: 0.3
-      resetTime: 0.35
+      animationTime: 0.35
+      resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
       slowDown: 0
     - animation: Soco - Gancho
       inputButton: Fire1
-      animationTime: 0.3
-      resetTime: 0.35
+      animationTime: 0.35
+      resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
       slowDown: 0
   - hits:
     - animation: Chute - Direto
       inputButton: Fire2
-      animationTime: 0.3
+      animationTime: 0.35
       resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
       slowDown: 0
     - animation: Chute - Lateral
       inputButton: Fire2
-      animationTime: 0.3
-      resetTime: 0.35
+      animationTime: 0.35
+      resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
       slowDown: 0
@@ -448,8 +448,8 @@ MonoBehaviour:
       slowDown: 0
     - animation: Especial
       inputButton: Fire1
-      animationTime: 0.8
-      resetTime: 0.8
+      animationTime: 0.6
+      resetTime: 0.65
       damage: 5
       hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
       slowDown: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   - hits:
     - animation: Chute - Direto
       inputButton: Fire1
-      animationTime: 0.3
+      animationTime: 0.35
       resetTime: 0.4
       damage: 2
       hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}

@@ -57,14 +57,11 @@ public class MenuButtons : MonoBehaviour
     public void Musica()
     {
         gameManager.SetMusic();
-        Debug.Log(gameManager.GetMusic());
-        
     }
 
     public void Audio()
     {
         gameManager.SetSoundFX();
-        Debug.Log(gameManager.GetSoundFX());
     }
 
 }

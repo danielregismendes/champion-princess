@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum STATEGAME
+{
+    MENU,
+    CUTSCENE,
+    TRANSISAO,
+    GAMEPLAY
+}
+
 public class GameManager : MonoBehaviour
 {
     public int lives;
@@ -12,9 +20,8 @@ public class GameManager : MonoBehaviour
     private int currentLives;
     private bool music = true;
     private bool soundFX = true;
+    STATEGAME stage;
 
-
-    // Start is called before the first frame update
     void Awake()
     {
         currentLives = lives;
@@ -30,6 +37,32 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         
+    }
+
+    private void Start()
+    {
+        stage = STATEGAME.MENU;
+    }
+
+    private void Update()
+    {
+        
+        switch(stage)
+        {
+            case STATEGAME.MENU:
+
+                break;
+            case STATEGAME.CUTSCENE:
+
+                break;
+            case STATEGAME.TRANSISAO:
+
+                break;
+            case STATEGAME.GAMEPLAY:
+
+                break;
+        }  
+
     }
 
     public int GetLives()
@@ -90,5 +123,8 @@ public class GameManager : MonoBehaviour
     {
         return soundFX;
     }
+
+
+
 
 }

@@ -1,0 +1,747 @@
+fileFormatVersion: 2
+guid: dbae47a4a70dd3c45a01114241644d98
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 4988
+        width: 350
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec61b6ad3edff74888cc77199a070ad
+      internalID: 1942611607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4069
+        width: 381
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e1d04bc7b703b4c9b061072b8acd45
+      internalID: -456102754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4056
+        width: 397
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce90344e07a944c9a85097f548ba4a
+      internalID: -966302065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 4053
+        width: 363
+        height: 759
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcd1716d2ca871489cf543fd6349ff0
+      internalID: -1176600345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 4062
+        width: 337
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db0cd9f5ed5b2c41a92f068f6d4d506
+      internalID: -484399264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 4069
+        width: 392
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b5a427dbcc8940996b394e795f49d
+      internalID: 329655304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 4056
+        width: 397
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bf3387904fe394389e5f87333a896a
+      internalID: -1303285358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 4056
+        width: 348
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bd7c837cbc29a40b61896e7703c6af
+      internalID: 1478270542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3939
+        y: 4062
+        width: 336
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adf5c78e52610f419ca80e0df64cb68
+      internalID: 1251533438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3156
+        width: 469
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38941b9cbd69134ab20324395e48b75
+      internalID: -840901989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3153
+        width: 523
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4b67f4ddc6fbd4a9ebd11239dc9b33
+      internalID: 1575847616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 3167
+        width: 595
+        height: 711
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78afe3c174a13e1438ad7910e49b6d99
+      internalID: 1164750317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2250
+        width: 509
+        height: 751
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af008f35c6dfe3e4587a52c2a0b9866c
+      internalID: 1687251053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 2740
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affbde985b1a57c4c95d4ad05ea91d26
+      internalID: -29960962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 2256
+        width: 676
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5977bba518ff1245a2ec2294ba9642f
+      internalID: 1984164434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 2259
+        width: 693
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acc6b7d5e3437f48a38c345b7429fe9
+      internalID: -1750302269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 2290
+        width: 325
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adf5a8060e57cc40af3499f7615d774
+      internalID: -173968283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 2276
+        width: 500
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4863d999b18f4844aae779b24f513a0
+      internalID: 1231372624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3803
+        y: 2293
+        width: 524
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ca024f7001a1a4c91437244a730671
+      internalID: -2039965443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3571
+        y: 2643
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f48969fd677a5e42975f27c205ec6e8
+      internalID: -1813887390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1252
+        width: 365
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bcb3e16b97fe94386d3629e34352ec
+      internalID: 1717178192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1258
+        width: 748
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a28dbe91f574ac48948117f4723e01d
+      internalID: 1956220380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1238
+        width: 846
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae84b39158369949b065954f1909f39
+      internalID: 13543049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 341
+        width: 402
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bd653a52f580145895658a06f7a46b
+      internalID: -354266397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 427
+        width: 523
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b625b72376d707645b5926a8603dd394
+      internalID: -1518070209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 499
+        width: 693
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7633a2ce624a5c14ca13c854a261a5c5
+      internalID: 2006012027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leona Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 416
+        width: 314
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73b0b61bb5ac3f4faa28da828b094c3
+      internalID: 647714781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fa100179eae53b14f972094347525e01
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Leona Sprite Sheet_0: 1942611607
+      Leona Sprite Sheet_1: -456102754
+      Leona Sprite Sheet_10: 1575847616
+      Leona Sprite Sheet_11: 1164750317
+      Leona Sprite Sheet_12: 1687251053
+      Leona Sprite Sheet_13: -29960962
+      Leona Sprite Sheet_14: 1984164434
+      Leona Sprite Sheet_15: -1750302269
+      Leona Sprite Sheet_16: -173968283
+      Leona Sprite Sheet_17: 1231372624
+      Leona Sprite Sheet_18: -2039965443
+      Leona Sprite Sheet_19: -1813887390
+      Leona Sprite Sheet_2: -966302065
+      Leona Sprite Sheet_20: 1717178192
+      Leona Sprite Sheet_21: 1956220380
+      Leona Sprite Sheet_22: 13543049
+      Leona Sprite Sheet_23: -354266397
+      Leona Sprite Sheet_24: -1518070209
+      Leona Sprite Sheet_25: 2006012027
+      Leona Sprite Sheet_26: 647714781
+      Leona Sprite Sheet_3: -1176600345
+      Leona Sprite Sheet_4: -484399264
+      Leona Sprite Sheet_5: 329655304
+      Leona Sprite Sheet_6: -1303285358
+      Leona Sprite Sheet_7: 1478270542
+      Leona Sprite Sheet_8: 1251533438
+      Leona Sprite Sheet_9: -840901989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
