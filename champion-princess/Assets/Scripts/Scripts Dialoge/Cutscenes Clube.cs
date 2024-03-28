@@ -37,15 +37,15 @@ public class CutscenesClube : MonoBehaviour
 
         switch (stage)
         {
-            case STAGEFASE.FASE0:
+            case STAGEFASE.FASE1:
                 anim.SetTrigger("D1");
                 break;
 
-            case STAGEFASE.FASE1:
+            case STAGEFASE.FASE2:
                 anim.SetTrigger("D2");
                 break;
 
-            case STAGEFASE.FASE2:
+            case STAGEFASE.FASE3:
                 anim.SetTrigger("D3");
                 break;
         }
