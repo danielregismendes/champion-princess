@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum STATEGAME
+public enum STAGEFASE
 {
-    MENU,
-    CUTSCENE,
-    TRANSISAO,
-    GAMEPLAY
+    FASE0,
+    FASE1,
+    FASE2,
+    FASE3,
 }
 
 public class GameManager : MonoBehaviour
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     private int currentLives;
     private bool music = true;
     private bool soundFX = true;
-    STATEGAME stage;
+    public STAGEFASE stage;
 
     void Awake()
     {
@@ -39,32 +39,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void Start()
-    {
-        stage = STATEGAME.MENU;
-    }
-
-    private void Update()
-    {
-        
-        switch(stage)
-        {
-            case STATEGAME.MENU:
-
-                break;
-            case STATEGAME.CUTSCENE:
-
-                break;
-            case STATEGAME.TRANSISAO:
-
-                break;
-            case STATEGAME.GAMEPLAY:
-
-                break;
-        }  
-
-    }
-
     public int GetLives()
     {
         return currentLives;
@@ -78,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         currentLives = lives;
+        SetStage(STAGEFASE.FASE1);
     }
 
     public void SetLingua(string Lingua)
@@ -124,7 +99,14 @@ public class GameManager : MonoBehaviour
         return soundFX;
     }
 
+    public void SetStage(STAGEFASE newStage)
+    {
+        stage = newStage;
+    }
 
-
+    public STAGEFASE GetStage()
+    {
+        return stage;
+    }
 
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public enum STATE
@@ -26,6 +27,7 @@ public class DialogeSystem : MonoBehaviour
     bool playerStop;
     bool enemyStop;
     bool paused;
+
 
     STATE state;
 
@@ -60,7 +62,7 @@ public class DialogeSystem : MonoBehaviour
     {
         pause = FindObjectOfType<Pause>();
 
-        paused = pause.GetPause();
+        if(pause) paused = pause.GetPause();
 
         if (state == STATE.DISABLED) return;
 
@@ -81,8 +83,8 @@ public class DialogeSystem : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         enemy = FindObjectOfType<Enemy>();
-        playerStop = player.GetStop();
-        enemyStop = player.GetStop();
+        if(player) playerStop = player.GetStop();
+        if (enemy) enemyStop = player.GetStop();
 
         if (!playerStop && !enemyStop)
         {
@@ -178,6 +180,11 @@ public class DialogeSystem : MonoBehaviour
     public void SetDialogo(DialogeData dialogo)
     {
         dialogeData = dialogo;
+    }
+
+    public STATE GetState()
+    {
+        return state;
     }
 
 }

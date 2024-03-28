@@ -2,7 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+public enum STATEUI
+{
+    ENABLE,
+    DISABLED,
+}
 
 public class DialogeUI : MonoBehaviour
 {
@@ -11,6 +18,8 @@ public class DialogeUI : MonoBehaviour
     TextMeshProUGUI nameText;
     TextMeshProUGUI talkText;
     Image nameImage;
+
+    STATEUI stateUI;
 
     public float speed = 10f;
     bool open = false;
@@ -24,25 +33,24 @@ public class DialogeUI : MonoBehaviour
         nameImage = transform.GetChild(4).GetComponent<Image>();
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
 
         if (open)
         {
-            background.fillAmount = Mathf.Lerp(background.fillAmount,1,speed*Time.deltaTime);
+            background.fillAmount = Mathf.Lerp(background.fillAmount,1,speed * Time.deltaTime);
             personagem.fillAmount = Mathf.Lerp(background.fillAmount, 1, speed * Time.deltaTime);
             nameImage.fillAmount = Mathf.Lerp(background.fillAmount, 1, speed * Time.deltaTime);
+
+            
         }
         else
         {
             background.fillAmount = Mathf.Lerp(background.fillAmount, 0, speed * Time.deltaTime);
             personagem.fillAmount = Mathf.Lerp(background.fillAmount, 0, speed * Time.deltaTime);
             nameImage.fillAmount = Mathf.Lerp(background.fillAmount, 0, speed * Time.deltaTime);
+
+            stateUI = STATEUI.DISABLED;
         }
     }
 
@@ -63,6 +71,7 @@ public class DialogeUI : MonoBehaviour
         personagem.fillAmount = 0;
         nameImage.fillAmount = 0;
         open = true;
+        stateUI = STATEUI.ENABLE;
     }
 
     public void Disable()
@@ -70,6 +79,12 @@ public class DialogeUI : MonoBehaviour
         open = false;
         nameText.text = "";
         talkText.text = "";
+    }
+
+
+    public STATEUI GetStateUI()
+    {
+        return stateUI;
     }
 
 }
