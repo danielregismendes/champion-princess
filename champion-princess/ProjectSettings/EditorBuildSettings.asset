@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/_07 Fase 3.unity
     guid: 3bd6c1d296efcfa469eac686787e3139
+  - enabled: 1
+    path: Assets/Scenes/_08 Creditos.unity
+    guid: dbbf77e40e704454e821b1f6d07317c8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

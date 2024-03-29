@@ -213,8 +213,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1491956260, guid: ddb5df7be2b777747982666b4140862f, type: 3}
-  m_Color: {r: 0.754717, g: 0.31782666, b: 0.252759, a: 1}
+  m_Sprite: {fileID: -91827011, guid: a4c09775b0870bc49a13917a059e826a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -284,7 +284,7 @@ Animator:
   m_GameObject: {fileID: 6142490494634527439}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5c4355e217100bc438446083b8c2407f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6b91d8e6c89122144b5f29ec404f960a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -324,6 +324,7 @@ MonoBehaviour:
     deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
   attack: {fileID: 3977921496079397398}
   boboTreino: 0
+  boss: 0
   damageColor: {r: 1, g: 1, b: 1, a: 0}
   damageExibitionTime: 0.1
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}

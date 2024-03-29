@@ -325,6 +325,7 @@ MonoBehaviour:
     deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
   attack: {fileID: 3977921496079397398}
   boboTreino: 0
+  boss: 1
   damageColor: {r: 1, g: 1, b: 1, a: 0}
   damageExibitionTime: 0.1
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}

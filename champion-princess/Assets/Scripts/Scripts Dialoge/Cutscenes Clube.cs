@@ -126,14 +126,12 @@ public class CutscenesClube : MonoBehaviour
                 break;
         }
 
-       StartCoroutine(LoadScene(fase));
-
+        anim.SetTrigger("Fade");
+        
     }
 
-    IEnumerator LoadScene(int fase)
+    public void LoadScene()
     {
-        anim.SetTrigger("Fade");
-        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(fase);
     }
 

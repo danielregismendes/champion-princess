@@ -31,13 +31,15 @@ public class Player : MonoBehaviour
     private bool canFlip = true;
     private bool canJump = true;
     private bool direcaoFixa = false;
+    private GameManager gameManager;
 
     private Boss bossFigth;
 
     [System.Obsolete]
     void Start()
     {
-
+        gameManager = FindObjectOfType<GameManager>();
+        maxHealth = gameManager.GetMaxHP();
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
@@ -216,7 +218,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if(bossFigth) FindObjectOfType<UIManager>().GameOver();
+            if(!bossFigth) FindObjectOfType<UIManager>().GameOver();
 
         }
     }

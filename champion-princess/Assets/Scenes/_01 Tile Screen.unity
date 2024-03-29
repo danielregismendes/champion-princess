@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
+  stage: 0
 --- !u!4 &851462157
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour {
 	public EnemyHit enemyHit;
     public Attack attack;
 	public bool boboTreino = false;
+	public bool boss = false;
 
     public Color damageColor;
     public float damageExibitionTime = 0.1f;
@@ -163,7 +164,7 @@ public class Enemy : MonoBehaviour {
 	
 	public void DisableEnemy()
 	{
-		Destroy(gameObject);
+		if(!boss) Destroy(gameObject);
 	}
 
 	void ResetSpeed()

@@ -35,7 +35,6 @@ public class Preludio : MonoBehaviour
         }
     }
 
-
     public void NextStage()
     {
         if (anim) anim.SetTrigger("Fade");

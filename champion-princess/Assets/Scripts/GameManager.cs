@@ -15,15 +15,18 @@ public class GameManager : MonoBehaviour
 {
     public int lives;
 
+    private string dificuldade = "NORMAL";
     private string lingua = "PORTUGUES";
     private GameManager gameManager;
     private int currentLives;
     private bool music = true;
     private bool soundFX = true;
     public STAGEFASE stage;
+    public int maxHP = 10;
 
     void Awake()
     {
+        SetDif(dificuldade);
         currentLives = lives;
 
         if (gameManager == null)
@@ -37,6 +40,43 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         
+    }
+
+    public void SetDif(string dif)
+    {
+        dificuldade = dif;
+
+        switch (dificuldade)
+        {
+            case "FACIL":
+                lives = 3;
+                currentLives = 3;
+                maxHP = 10;
+                break;
+
+            case "NORMAL":
+                lives = 1;
+                currentLives = 1;
+                maxHP = 10;
+                break;
+
+            case "DIFICIL":
+                lives = 0;
+                currentLives = 0;
+                maxHP = 10;
+                break;
+
+            case "SUKEBAN!":
+                lives = 0;
+                currentLives = 0;
+                maxHP = 1;
+                break;
+        }
+    }
+
+    public int GetMaxHP()
+    {
+        return maxHP;
     }
 
     public int GetLives()
@@ -63,6 +103,11 @@ public class GameManager : MonoBehaviour
     public string GetLingua()
     {
         return lingua;
+    }
+
+    public string GetDif()
+    {
+        return dificuldade;
     }
 
     public void SetMusic()

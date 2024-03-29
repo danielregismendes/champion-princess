@@ -89,7 +89,7 @@ public class UIManager : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         FindObjectOfType<GameManager>().GameOver();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
 }

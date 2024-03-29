@@ -1,11 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static DialogeData;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class Boss : MonoBehaviour
 {
@@ -55,6 +51,7 @@ public class Boss : MonoBehaviour
         {
             dialogeSystem.SetDialogo(dialogeDataDerrota);
             dialogeSystem.Next();
+            if (dialogeUI) state = dialogeUI.GetStateUI();
             reproduzido = true;
         }
         else
@@ -63,6 +60,7 @@ public class Boss : MonoBehaviour
             {
                 dialogeSystem.SetDialogo(dialogeDataVitoria);
                 dialogeSystem.Next();
+                if (dialogeUI) state = dialogeUI.GetStateUI();
                 reproduzido = true;
             }
         }
