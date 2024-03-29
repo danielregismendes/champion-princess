@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour {
     public float distanceAttackZ = 1.5f;
 
 
-    // Use this for initialization
+
     [System.Obsolete]
     void Start () {
 
@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour {
 
     }
 	
-	// Update is called once per frame
+
 	void Update () {
 		if (!boboTreino)
 		{

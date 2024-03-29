@@ -139,12 +139,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_0
       rect:
         serializedVersion: 2
-        x: 82
-        y: 7578
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 170
+        y: 7573
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_1
       rect:
         serializedVersion: 2
-        x: 1328
-        y: 7573
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1711
+        y: 7543
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_2
       rect:
         serializedVersion: 2
-        x: 2553
-        y: 7569
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3371
+        y: 7525
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_3
       rect:
         serializedVersion: 2
-        x: 2341
-        y: 6362
-        width: 1555
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2876
+        y: 6273
+        width: 1613
+        height: 1243
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_4
       rect:
         serializedVersion: 2
-        x: 82
-        y: 4708
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 184
+        y: 4566
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_5
       rect:
         serializedVersion: 2
-        x: 1328
-        y: 4703
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1828
+        y: 4557
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_6
       rect:
         serializedVersion: 2
-        x: 2553
-        y: 4699
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3376
+        y: 4557
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_7
       rect:
         serializedVersion: 2
-        x: 2341
-        y: 3492
-        width: 1555
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3008
+        y: 3129
+        width: 1611
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_8
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1674
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 272
+        y: 1568
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_9
       rect:
         serializedVersion: 2
-        x: 1328
-        y: 1670
-        width: 1242
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1859
+        y: 1537
+        width: 1286
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_10
       rect:
         serializedVersion: 2
-        x: 2553
-        y: 1665
-        width: 1241
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3415
+        y: 1533
+        width: 1282
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: Misuki_Sprite_Sheet_11
       rect:
         serializedVersion: 2
-        x: 2341
-        y: 458
-        width: 1555
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2876
+        y: 157
+        width: 1613
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

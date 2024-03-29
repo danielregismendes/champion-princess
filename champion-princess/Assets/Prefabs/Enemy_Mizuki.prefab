@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 949857730972269376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8, y: 4.41, z: 0.093}
+  m_LocalPosition: {x: 0, y: 4, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -125,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 2094737572795381620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.33, y: -5.98, z: 0}
+  m_LocalPosition: {x: 0, y: -6.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -272,10 +272,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.6249704
-  m_Height: 11.435501
+  m_Radius: 2.16927
+  m_Height: 11.915186
   m_Direction: 1
-  m_Center: {x: 3.2685285, y: 0.13219357, z: 0}
+  m_Center: {x: 0.09261656, y: -0.55599594, z: 0}
 --- !u!95 &4634831617474398005
 Animator:
   serializedVersion: 7
@@ -332,8 +332,8 @@ MonoBehaviour:
   damageText: {fileID: 1556998593426347939, guid: 61455b0fb79d5ef42b02bc88e03d51b7, type: 3}
   damageTextPosition: {fileID: 1819854164453975634}
   stop: 0
-  distanceAttackX: 1.5
-  distanceAttackZ: 1.5
+  distanceAttackX: 4
+  distanceAttackZ: 2
 --- !u!114 &4118775408799881618
 MonoBehaviour:
   m_ObjectHideFlags: 0

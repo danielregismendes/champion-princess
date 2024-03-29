@@ -381,6 +381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogo
       objectReference: {fileID: 0}
+    - target: {fileID: 1428620773920722302, guid: 44f365618b45de14eb57f9a6acc2596a, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291148421652613308, guid: 44f365618b45de14eb57f9a6acc2596a, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3389063572001171351, guid: 44f365618b45de14eb57f9a6acc2596a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -459,6 +467,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389063572001171351, guid: 44f365618b45de14eb57f9a6acc2596a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696951551493355286, guid: 44f365618b45de14eb57f9a6acc2596a, type: 3}
+      propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
