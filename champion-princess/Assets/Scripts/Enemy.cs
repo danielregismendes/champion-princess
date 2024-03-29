@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
 	private CameraFollow cam;
+	private GameManager	gameManager;
 
 	public float distanceAttackX = 1.5f;
     public float distanceAttackZ = 1.5f;
@@ -60,6 +61,7 @@ public class Enemy : MonoBehaviour {
 		currentHealth = maxHealth;
 		audioS = GetComponent<AudioSource>();
 		cam = FindObjectOfType<CameraFollow>();
+        gameManager = FindObjectOfType<GameManager>();
 
     }
 	
@@ -151,7 +153,6 @@ public class Enemy : MonoBehaviour {
 			damaged = true;
 			currentHealth -= damage;
 			anim.SetTrigger("HitDamage");
-			PlaySong(collisionSound);
 			FindObjectOfType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyName, enemyImage);
 			if(currentHealth <= 0)
 			{
@@ -175,7 +176,7 @@ public class Enemy : MonoBehaviour {
 	public void PlaySong(AudioClip clip)
 	{
 		audioS.clip = clip;
-		audioS.Play();
+		if(gameManager.GetSoundFX() && audioS) audioS.Play();
 	}
 
     private void Awake()

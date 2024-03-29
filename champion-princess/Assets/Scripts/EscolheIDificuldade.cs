@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,12 +15,14 @@ public class EscolheDificuldade : MonoBehaviour
     private int dif = 0;
     private List<String> dificuldades = new List<String>();
     private GameManager gameManager;
+    private AudioSource audioSource;
 
 
     [System.Obsolete]
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        audioSource = GetComponent<AudioSource>();
 
         textDificuldade.text = gameManager.GetDif();
 
@@ -40,6 +43,8 @@ public class EscolheDificuldade : MonoBehaviour
 
     public void DifMais()
     {
+        if (gameManager.GetSoundFX() && audioSource) audioSource.Play();
+
         if (dif == 3)
         {
             dif = 0;
@@ -55,6 +60,7 @@ public class EscolheDificuldade : MonoBehaviour
     }
     public void DifMenos()
     {
+        if (gameManager.GetSoundFX() && audioSource) audioSource.Play();
 
         if (dif == 0)
         {

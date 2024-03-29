@@ -7,17 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class Creditos : MonoBehaviour
 {
-    private bool press = false;
-    private Animator anim;
-    private AudioSource audioSource;
     private GameManager gameManager;
 
 
     [Obsolete]
     private void Start()
     {
-        anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
         gameManager = FindObjectOfType<GameManager>();
     }
 

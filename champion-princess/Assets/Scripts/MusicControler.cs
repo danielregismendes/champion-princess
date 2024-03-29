@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,26 +8,37 @@ public class MusicControler : MonoBehaviour
     public AudioClip levelSong, bossSong, levelClearSong;
 
     private AudioSource audioS;
+    private GameManager gameManager;
 
-    // Start is called before the first frame update
+    [Obsolete]
     void Start()
     {
         audioS = GetComponent<AudioSource>();
+        gameManager = FindObjectOfType<GameManager>();
         PlaySong(levelSong);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+
+    public void SetVolume(float volume)
+    {
+        if (audioS)  audioS.volume = volume;
+    }
+
 
     public void PlaySong(AudioClip clip)
     {
 
         audioS.clip = clip;
-        audioS.Play();
+        if (gameManager.GetMusic() && audioS) audioS.Play();
 
     }
+
+    public void StopSong() { audioS.Stop(); }
 
 }

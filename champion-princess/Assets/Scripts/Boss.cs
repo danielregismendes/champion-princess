@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class Boss : MonoBehaviour
     public DialogeSystem dialogeSystem;
     public bool eventoColisao;
     public Animator anim;
+    public MusicControler musicControler;
 
     public UIManager uiManager;
     public DialogeUI dialogeUI;
@@ -27,6 +29,9 @@ public class Boss : MonoBehaviour
     public bool boosDead = false;
     public bool playerDead = false;
 
+    private bool winTrigger = false;
+    private bool loseTrigger = false;
+
     [Obsolete]
     private void Start()
     {
@@ -36,7 +41,8 @@ public class Boss : MonoBehaviour
         dialogeUI = FindObjectOfType<DialogeUI>();
         enemy = FindObjectOfType<Enemy>();
         player = FindObjectOfType<Player>();
-        
+        musicControler = FindObjectOfType<MusicControler>();
+
         stage = gameManager.GetStage();
     }
 
@@ -69,14 +75,43 @@ public class Boss : MonoBehaviour
         {
             if(playerDead)
             {
-                uiManager.GameOver();
+
+                Derrota();
+
             }
             else
             {
-                StartCoroutine(LoadScene(7));
+
+                Vitoria();
+
             }
         }
 
+    }
+
+    [Obsolete]
+    void Derrota()
+    {
+        if (!loseTrigger)
+        {
+            loseTrigger = true;
+            musicControler.SetVolume(1f);
+            musicControler.PlaySong(musicControler.bossSong);
+            uiManager.GameOver();
+        }
+        
+    }
+
+    void Vitoria()
+    {
+        if (!winTrigger)
+        {
+            winTrigger = true;
+            musicControler.SetVolume(1f);
+            musicControler.PlaySong(musicControler.levelClearSong);
+            StartCoroutine(LoadScene(7));
+        }
+        
     }
 
     IEnumerator LoadScene(int fase)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
 {
     public int lives;
 
-    private string dificuldade = "NORMAL";
+    private string dificuldade = "FACIL";
     private string lingua = "PORTUGUES";
     private GameManager gameManager;
     private int currentLives;
@@ -110,15 +111,20 @@ public class GameManager : MonoBehaviour
         return dificuldade;
     }
 
+    [Obsolete]
     public void SetMusic()
     {
         if(music)
         {
             music = false;
+            MusicControler musicControler = FindObjectOfType<MusicControler>();
+            musicControler.StopSong();
         }
         else
         {
             music = true;
+            MusicControler musicControler = FindObjectOfType<MusicControler>();
+            musicControler.PlaySong(musicControler.levelSong);
         }
     }
 

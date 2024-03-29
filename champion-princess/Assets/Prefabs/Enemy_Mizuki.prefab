@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee659f16811dcef40bbd362239f0de13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 0}
+  isPlayer: 0
+  audioPlayer: {fileID: 4118775408799881618}
   weaponDamage: 0
 --- !u!1 &2094737572795381620
 GameObject:
@@ -144,6 +145,7 @@ GameObject:
   - component: {fileID: 6690102614185866835}
   - component: {fileID: 4634831617474398005}
   - component: {fileID: 2714654565608840825}
+  - component: {fileID: 4118775408799881618}
   - component: {fileID: 1048001823093174532}
   m_Layer: 11
   m_Name: Enemy_Mizuki
@@ -315,13 +317,13 @@ MonoBehaviour:
   maxHealth: 10
   attackRate: 1
   enemyName: Mizuki
-  enemyImage: {fileID: 21300000, guid: fe63c6afb4fc88d48aaa4b7bc2ed6869, type: 3}
-  collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-  deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+  enemyImage: {fileID: 21300000, guid: c578f1ad4778eed4b99c25356c38a33c, type: 3}
+  collisionSound: {fileID: 8300000, guid: 407769fb701b3054689a1ae38dc2a277, type: 3}
+  deathSound: {fileID: 8300000, guid: 2cb064c89bce3004b976e1f26b003d99, type: 3}
   enemyHit:
     damage: 1
-    collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-    deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+    collisionSound: {fileID: 8300000, guid: 407769fb701b3054689a1ae38dc2a277, type: 3}
+    deathSound: {fileID: 8300000, guid: 2cb064c89bce3004b976e1f26b003d99, type: 3}
   attack: {fileID: 3977921496079397398}
   boboTreino: 0
   boss: 0
@@ -332,6 +334,18 @@ MonoBehaviour:
   stop: 0
   distanceAttackX: 1.5
   distanceAttackZ: 1.5
+--- !u!114 &4118775408799881618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142490494634527439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b6c4cddc308b2458094d1e044db60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0

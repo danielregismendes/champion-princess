@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee659f16811dcef40bbd362239f0de13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 1
   audioPlayer: {fileID: 6261309500357392215}
   weaponDamage: 0
 --- !u!212 &7361992981779752051
@@ -148,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 7441260435713197888}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -4.04, z: 0}
+  m_LocalPosition: {x: -0.5, y: -4.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -339,10 +340,10 @@ MonoBehaviour:
   maxHeight: 2
   maxHealth: 10
   playerName: Leona
-  playerImage: {fileID: 21300000, guid: ada0a43bdea75ad4ea99b45123b78ae2, type: 3}
-  collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-  jumpSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
-  healthItem: {fileID: 8300000, guid: 958535b288fe6e34b9cae872baa55637, type: 3}
+  playerImage: {fileID: 21300000, guid: 9e3cf3f994e733d4bbc0f98fd2c0cfeb, type: 3}
+  collisionSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
+  jumpSound: {fileID: 8300000, guid: 64a2167041376c74ba73d1c3ad724f8a, type: 3}
+  healthItem: {fileID: 8300000, guid: 41e4a38a2b6e4154bb0352133b0d5f3c, type: 3}
   weapon: {fileID: 0}
   stop: 0
 --- !u!114 &8125233529707395634
@@ -378,7 +379,7 @@ MonoBehaviour:
       animationTime: 0.35
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
+      hitSound: {fileID: 8300000, guid: 18705698e6b02bf44a4dc1b807c5a076, type: 3}
       slowDown: 0
   - hits:
     - animation: Chute - Direto
@@ -386,21 +387,21 @@ MonoBehaviour:
       animationTime: 0.35
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Soco - Esquerda
       inputButton: Fire1
       animationTime: 0.3
       resetTime: 0.35
       damage: 1
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Soco - Gancho
       inputButton: Fire1
       animationTime: 0.3
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
+      hitSound: {fileID: 8300000, guid: 18705698e6b02bf44a4dc1b807c5a076, type: 3}
       slowDown: 0
   - hits:
     - animation: Soco - Direita
@@ -408,50 +409,50 @@ MonoBehaviour:
       animationTime: 0.3
       resetTime: 0.35
       damage: 1
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Chute - Lateral
       inputButton: Fire2
       animationTime: 0.35
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Soco - Gancho
       inputButton: Fire1
       animationTime: 0.35
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
+      hitSound: {fileID: 8300000, guid: 18705698e6b02bf44a4dc1b807c5a076, type: 3}
       slowDown: 0
   - hits:
-    - animation: Chute - Direto
-      inputButton: Fire2
-      animationTime: 0.35
-      resetTime: 0.4
+    - animation: Soco - Direita
+      inputButton: Fire1
+      animationTime: 0.3
+      resetTime: 0.35
       damage: 2
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
+      slowDown: 0
+    - animation: Soco - Esquerda
+      inputButton: Fire1
+      animationTime: 0.3
+      resetTime: 0.35
+      damage: 2
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Chute - Lateral
       inputButton: Fire2
       animationTime: 0.35
       resetTime: 0.4
-      damage: 2
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-      slowDown: 0
-    - animation: Soco - Direita
-      inputButton: Fire1
-      animationTime: 0.3
-      resetTime: 0.35
       damage: 1
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
     - animation: Especial
-      inputButton: Fire1
+      inputButton: Fire2
       animationTime: 0.6
       resetTime: 0.65
       damage: 5
-      hitSound: {fileID: 8300000, guid: 5863d83dc9d4a2e499de94aca9bdcf47, type: 3}
+      hitSound: {fileID: 8300000, guid: 18705698e6b02bf44a4dc1b807c5a076, type: 3}
       slowDown: 0
   - hits:
     - animation: Soco - Direita
@@ -459,7 +460,7 @@ MonoBehaviour:
       animationTime: 0.3
       resetTime: 0.35
       damage: 1
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
   - hits:
     - animation: Chute - Direto
@@ -467,7 +468,7 @@ MonoBehaviour:
       animationTime: 0.35
       resetTime: 0.4
       damage: 2
-      hitSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
+      hitSound: {fileID: 8300000, guid: 94091026d317dbf4385f6ff0e7ef3a5c, type: 3}
       slowDown: 0
   attack: {fileID: 8949402335567095014}
   currentCombo: []

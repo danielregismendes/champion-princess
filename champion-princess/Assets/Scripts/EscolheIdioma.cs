@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,12 +15,14 @@ public class EscolheIdioma : MonoBehaviour
     private int lingua = 0;
     private List<String> idiomas = new List<String>();
     private GameManager gameManager;
+    private AudioSource audioSource;
 
 
     [System.Obsolete]
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        audioSource = GetComponent<AudioSource>();
 
         textIdioma.text = gameManager.GetLingua();
 
@@ -46,6 +49,8 @@ public class EscolheIdioma : MonoBehaviour
 
     public void IdiomaMais()
     {
+        if (gameManager.GetSoundFX() && audioSource) audioSource.Play();
+
         if (lingua == 9)
         {
             lingua = 0;
@@ -61,6 +66,7 @@ public class EscolheIdioma : MonoBehaviour
     }
     public void IdiomaMenos()
     {
+        if (gameManager.GetSoundFX() && audioSource) audioSource.Play();
 
         if (lingua == 0)
         {

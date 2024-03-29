@@ -11,6 +11,7 @@ public class gatilhoFinalFase : MonoBehaviour
     public DialogeSystem dialogeSystem;
     public bool eventoColisao;
     public Animator anim;
+    public MusicControler musicControler;
 
     public DialogeUI dialogeUI;
 
@@ -29,6 +30,7 @@ public class gatilhoFinalFase : MonoBehaviour
         dialogeSystem = FindObjectOfType<DialogeSystem>();
         gameManager = FindObjectOfType<GameManager>();
         dialogeUI = FindObjectOfType<DialogeUI>();
+        musicControler = FindObjectOfType<MusicControler>();
 
         stage = gameManager.GetStage();
     }
@@ -99,6 +101,8 @@ public class gatilhoFinalFase : MonoBehaviour
     IEnumerator LoadScene(int fase)
     {
         anim.SetTrigger("Fade");
+        musicControler.SetVolume(1f);
+        musicControler.PlaySong(musicControler.levelClearSong);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(fase);
     }

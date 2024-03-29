@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee659f16811dcef40bbd362239f0de13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 0}
+  isPlayer: 0
+  audioPlayer: {fileID: 8308942165493711255}
   weaponDamage: 0
 --- !u!1 &2094737572795381620
 GameObject:
@@ -145,6 +146,7 @@ GameObject:
   - component: {fileID: 4634831617474398005}
   - component: {fileID: 2714654565608840825}
   - component: {fileID: 8678005670783318557}
+  - component: {fileID: 8308942165493711255}
   - component: {fileID: 1048001823093174532}
   m_Layer: 11
   m_Name: Enemy_Godzila
@@ -317,12 +319,12 @@ MonoBehaviour:
   attackRate: 3
   enemyName: God
   enemyImage: {fileID: 21300000, guid: b73c3c9ff8f8e5f4fbd638c2556d1b8c, type: 3}
-  collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-  deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+  collisionSound: {fileID: 8300000, guid: 563b8ea62f020ca4bae0bc3b8a6166f1, type: 3}
+  deathSound: {fileID: 8300000, guid: dbb599f0bda204a43b82a91ecc6a76d8, type: 3}
   enemyHit:
     damage: 3
-    collisionSound: {fileID: 8300000, guid: a3aeb9ff92e7e2a4fb858f45c03fc6db, type: 3}
-    deathSound: {fileID: 8300000, guid: b749cbb77b8165246969dba4d5a9385e, type: 3}
+    collisionSound: {fileID: 8300000, guid: 563b8ea62f020ca4bae0bc3b8a6166f1, type: 3}
+    deathSound: {fileID: 8300000, guid: dbb599f0bda204a43b82a91ecc6a76d8, type: 3}
   attack: {fileID: 3977921496079397398}
   boboTreino: 0
   boss: 1
@@ -350,6 +352,7 @@ MonoBehaviour:
   dialogeSystem: {fileID: 0}
   eventoColisao: 0
   anim: {fileID: 0}
+  musicControler: {fileID: 0}
   uiManager: {fileID: 0}
   dialogeUI: {fileID: 0}
   reproduzido: 0
@@ -358,6 +361,18 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   boosDead: 0
   playerDead: 0
+--- !u!114 &8308942165493711255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142490494634527439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b6c4cddc308b2458094d1e044db60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1048001823093174532
 AudioSource:
   m_ObjectHideFlags: 0

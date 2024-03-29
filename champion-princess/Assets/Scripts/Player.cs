@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -162,7 +163,6 @@ public class Player : MonoBehaviour
             currentHealth -= damage;
             anim.SetTrigger("HitDamage");
             FindObjectOfType<UIManager>().UpdateHealt(currentHealth);
-            PlaySong(collisionSound);
             if(currentHealth <= 0)
             {
                 isDead = true;
@@ -227,7 +227,7 @@ public class Player : MonoBehaviour
     {
 
         audioS.clip = clip;
-        audioS.Play();
+        if (gameManager.GetSoundFX() && audioS) audioS.Play();
 
     }
 

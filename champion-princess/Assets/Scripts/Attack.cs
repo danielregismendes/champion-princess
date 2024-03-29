@@ -8,6 +8,7 @@ using static Enemy;
 public class Attack : MonoBehaviour
 {
 
+    public bool isPlayer;
     public AudioPlayer audioPlayer;
     public int weaponDamage;
 
@@ -41,7 +42,7 @@ public class Attack : MonoBehaviour
         CrashItem crashItem = other.GetComponent<CrashItem>();
 
 
-        if (enemy != null)
+        if (isPlayer && enemy != null)
         {
             if (enemy.GetHealth() > 0)
             {
@@ -60,7 +61,7 @@ public class Attack : MonoBehaviour
             }
         }
 
-        if (player != null)
+        if (!isPlayer && player != null)
         {
             if(player.GetHealth() > 0)
             {
