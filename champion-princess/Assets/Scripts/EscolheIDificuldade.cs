@@ -11,6 +11,7 @@ using UnityEngine.UI;
 public class EscolheDificuldade : MonoBehaviour
 {
     public Text textDificuldade;
+    public LocalizationData localizationData;
 
     private int dif = 0;
     private List<String> dificuldades = new List<String>();
@@ -41,6 +42,11 @@ public class EscolheDificuldade : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (textDificuldade.text != GetText(dif + 6)) textDificuldade.text = GetText(dif + 6);
+    }
+
     public void DifMais()
     {
         if (gameManager.GetSoundFX() && audioSource) audioSource.Play();
@@ -55,7 +61,7 @@ public class EscolheDificuldade : MonoBehaviour
         }
         
         gameManager.SetDif(dificuldades[dif]);
-        textDificuldade.text = dificuldades[dif];
+        textDificuldade.text = GetText(dif + 6);
 
     }
     public void DifMenos()
@@ -72,8 +78,60 @@ public class EscolheDificuldade : MonoBehaviour
         }
 
         gameManager.SetDif(dificuldades[dif]);
-        textDificuldade.text = dificuldades[dif];
+        textDificuldade.text = GetText(dif + 6);
 
     }
 
-}
+    public string GetText(int indice)
+    {
+        String result = null;
+
+        switch (gameManager.GetLingua())
+        {
+            case "PORTUGUES":
+                result = localizationData.items[indice].textoPT;
+                break;
+
+            case "INGLES":
+                result = localizationData.items[indice].textoEN;
+                break;
+
+            case "ESPANHOL":
+                result = localizationData.items[indice].textoES;
+                break;
+
+            case "FRANCES":
+                result = localizationData.items[indice].textoFR;
+                break;
+
+            case "ALEMAO":
+                result = localizationData.items[indice].textoDE;
+                break;
+
+            case "ITALIANO":
+                result = localizationData.items[indice].textoIT;
+                break;
+
+            case "RUSSO":
+                result = localizationData.items[indice].textoRU;
+                break;
+
+            case "CHINES":
+                result = localizationData.items[indice].textoZH;
+                break;
+
+            case "HINDI":
+                result = localizationData.items[indice].textoHI;
+                break;
+
+            case "JAPONES":
+                result = localizationData.items[indice].textoJA;
+                break;
+
+        }
+
+        return result;
+    }
+
+    }
+

@@ -22,6 +22,7 @@ public class TypeTextAnimation : MonoBehaviour
 
     IEnumerator TypeText()
     {
+
         textObject.text = fullText;
         textObject.maxVisibleCharacters = 0;
         for(int i=0; i<=textObject.text.Length; i++)

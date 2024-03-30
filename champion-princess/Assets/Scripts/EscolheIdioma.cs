@@ -11,6 +11,8 @@ using UnityEngine.UI;
 public class EscolheIdioma : MonoBehaviour
 {
     public Text textIdioma;
+    public LocalizationData localizationData;
+
 
     private int lingua = 0;
     private List<String> idiomas = new List<String>();
@@ -61,7 +63,7 @@ public class EscolheIdioma : MonoBehaviour
         }
         
         gameManager.SetLingua(idiomas[lingua]);
-        textIdioma.text = idiomas[lingua];
+        textIdioma.text = GetText(lingua + 11);
 
     }
     public void IdiomaMenos()
@@ -78,7 +80,59 @@ public class EscolheIdioma : MonoBehaviour
         }
 
         gameManager.SetLingua(idiomas[lingua]);
-        textIdioma.text = idiomas[lingua];
+        textIdioma.text = GetText(lingua+11);
+
+    }
+
+    public string GetText(int indice)
+    {
+        String result = null;
+
+        switch (gameManager.GetLingua())
+        {
+            case "PORTUGUES":
+                result = localizationData.items[indice].textoPT;
+                break;
+
+            case "INGLES":
+                result = localizationData.items[indice].textoEN;
+                break;
+
+            case "ESPANHOL":
+                result = localizationData.items[indice].textoES;
+                break;
+
+            case "FRANCES":
+                result = localizationData.items[indice].textoFR;
+                break;
+
+            case "ALEMAO":
+                result = localizationData.items[indice].textoDE;
+                break;
+
+            case "ITALIANO":
+                result = localizationData.items[indice].textoIT;
+                break;
+
+            case "RUSSO":
+                result = localizationData.items[indice].textoRU;
+                break;
+
+            case "CHINES":
+                result = localizationData.items[indice].textoZH;
+                break;
+
+            case "HINDI":
+                result = localizationData.items[indice].textoHI;
+                break;
+
+            case "JAPONES":
+                result = localizationData.items[indice].textoJA;
+                break;
+
+        }
+
+        return result;
 
     }
 

@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1222966115249793991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8526740439714132808}
+  - component: {fileID: 1150977678203951538}
+  m_Layer: 0
+  m_Name: LocalizationUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8526740439714132808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222966115249793991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 816.5927, y: 599.73035, z: 48.28555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150977678203951538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222966115249793991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc37a3fb9ba6c83439bb323752602f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizationData: {fileID: 11400000, guid: 086bb2e2a0888d74db3d88e0ea27398a, type: 2}
+  uiList:
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}
+  - textObjects:
+    - texto: {fileID: 0}
+      textoPro: {fileID: 0}

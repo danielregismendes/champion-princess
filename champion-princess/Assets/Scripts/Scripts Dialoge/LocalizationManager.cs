@@ -1,50 +1,47 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Preludio : MonoBehaviour
+public class LocalizationManager : MonoBehaviour
 {
-    public GameManager gameManager;
-    public DialogeData localizationData;
-    public Text textoPreludio;
+    public LocalizationData localizationData;
 
-    private bool press = false;
-    private Animator anim;
-    private AudioSource audioSource;
+    public TextList[] uiList;
+
+    private GameManager gameManager;
+
 
     [Obsolete]
-    private void Start()
+    void Start()
     {
-
-        anim = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
-        audioSource = GetComponent<AudioSource>();
-        textoPreludio.text = GetText(0);
-
+        
     }
 
+    
     void Update()
     {
-        if (!press)
-        {
-            if (Input.anyKeyDown)
-            {
-                if (anim) anim.SetTrigger("Fade");
-                if (audioSource) audioSource.Play();
-                press = true;
-            }
-        }
-    }
 
-    public void NextStage()
-    {
-        if (anim) anim.SetTrigger("Fade");
-        gameManager.SetStage(STAGEFASE.FASE1);
-        SceneManager.LoadScene(3);
+        for (int i = 0; i < uiList.Length; i++)
+        {
+
+            
+                if (uiList[i].textObjects[0].texto)
+                {
+                    if (uiList[i].textObjects[0].texto.text != GetText(i)) uiList[i].textObjects[0].texto.text = GetText(i);
+                }
+                if (uiList[i].textObjects[0].textoPro)
+                {
+                    if (uiList[i].textObjects[0].textoPro.text != GetText(i)) uiList[i].textObjects[0].textoPro.text = GetText(i);
+                }
+
+        }
+
+        
+
     }
 
     public string GetText(int indice)
@@ -56,7 +53,7 @@ public class Preludio : MonoBehaviour
             case "PORTUGUES":
                 result = localizationData.items[indice].textoPT;
                 break;
-
+                
             case "INGLES":
                 result = localizationData.items[indice].textoEN;
                 break;
@@ -98,5 +95,18 @@ public class Preludio : MonoBehaviour
         return result;
 
     }
+   
+}
 
+[Serializable]
+public class TextList
+{
+    public TextObjects[] textObjects;
+}
+
+[Serializable]
+public class TextObjects
+{
+    public Text texto;
+    public TextMeshProUGUI textoPro;
 }

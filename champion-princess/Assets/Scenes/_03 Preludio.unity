@@ -443,6 +443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  localizationData: {fileID: 11400000, guid: 56bc101aa18c1b94ea4d517281d9a1bc, type: 2}
+  textoPreludio: {fileID: 1976723975}
 --- !u!1 &1225698536
 GameObject:
   m_ObjectHideFlags: 0
