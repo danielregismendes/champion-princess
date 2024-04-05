@@ -46,7 +46,7 @@ public class PlayerCombo : MonoBehaviour
         player = GetComponentInParent<Player>();
         stop = player.GetStop();
 
-        if (!weapon && !stop )
+        if (!weapon && !stop && !player.GetIsDead())
         {
 
             CheckInputs();
