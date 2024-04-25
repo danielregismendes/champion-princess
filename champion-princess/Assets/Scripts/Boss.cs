@@ -35,13 +35,13 @@ public class Boss : MonoBehaviour
     [Obsolete]
     private void Start()
     {
-        uiManager = FindObjectOfType<UIManager>();
-        dialogeSystem = FindObjectOfType<DialogeSystem>();
-        gameManager = FindObjectOfType<GameManager>();
-        dialogeUI = FindObjectOfType<DialogeUI>();
+        uiManager = FindObjectOfType<UIManager>(); //padrão singleton
+        dialogeSystem = FindObjectOfType<DialogeSystem>();//padrão singleton
+        gameManager = FindObjectOfType<GameManager>();//padrão singleton
+        dialogeUI = FindObjectOfType<DialogeUI>();//padrão singleton
         enemy = FindObjectOfType<Enemy>();
         player = FindObjectOfType<Player>();
-        musicControler = FindObjectOfType<MusicControler>();
+        musicControler = FindObjectOfType<MusicControler>();//padrão singleton
 
         stage = gameManager.GetStage();
     }

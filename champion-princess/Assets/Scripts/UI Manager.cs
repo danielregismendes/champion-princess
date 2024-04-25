@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 
 {
+    //padrão singleton: public static UIManager Instance;
     public Slider healthUI;
     public Image playerImage;
     public Text playerName;
@@ -27,8 +28,20 @@ public class UIManager : MonoBehaviour
     private Player player;
     private Animator anim;
 
+//Padrão singleton:
+// private void Awake()
+// {
+//     if (Instance != null && Instance != this)
+//     {
+//         Destroy(gameObject);
+//     }
+//     else
+//     {
+//         Instance = this;
+//     }
+// }
 
-    [System.Obsolete]
+[System.Obsolete]
     // Start is called before the first frame update
     void Start()
     {

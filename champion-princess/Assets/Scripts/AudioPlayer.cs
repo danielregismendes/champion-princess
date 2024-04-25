@@ -13,7 +13,7 @@ public class AudioPlayer : MonoBehaviour {
 	private void Awake()
 	{
 		audioSource = GetComponent<AudioSource>();
-		gameManager = FindObjectOfType<GameManager>();
+		gameManager = FindObjectOfType<GameManager>();//padrão singleton
 
     }
 

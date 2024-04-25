@@ -7,14 +7,14 @@ public class MusicControler : MonoBehaviour
 {
     public AudioClip levelSong, bossSong, levelClearSong;
 
-    private AudioSource audioS;
+    private AudioSource audioS;//não economiza letra no nome da variável, não tem impacto positivo
     private GameManager gameManager;
 
     [Obsolete]
     void Start()
     {
         audioS = GetComponent<AudioSource>();
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>(); // ver comentário sobre padrão singleton
         PlaySong(levelSong);
         
     }

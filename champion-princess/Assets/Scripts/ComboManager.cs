@@ -24,7 +24,16 @@ public class ComboManager : MonoBehaviour {
 
     private void Awake()
 	{
-		instance = this;
+		instance = this; //Isso não garante o singleton, é necessário tratar a possibilidade de já haver uma instância
+		
+		// if (Instance != null && Instance != this)
+		// {
+		// 	Destroy(gameObject);
+		// }
+		// else
+		// {
+		// 	Instance = this;
+		// }
 	}
 
 	// Use this for initialization
@@ -39,7 +48,7 @@ public class ComboManager : MonoBehaviour {
 		totalCombo++;
         comboLabelAtual = comboLabel.text;
 
-        if (totalCombo < 10) 
+        if (totalCombo < 10) //expor os valores de threshold de combo em scriptable object para configuração
 		{
 			if(comboLabelAtual != "GOOD")  comboLabel.text = "GOOD";
         }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 [Serializable]
 public class Enemy : MonoBehaviour {
-
+	//Muitos atributos em comum com o player. Avaliar a possibilidade de usar uma classe pai comum ou expor esses atributos em scriptable object.
 	public float maxSpeed;
 	public float minHeight, maxHeight;
 	public float damageTime = 0.5f;
@@ -70,8 +70,8 @@ public class Enemy : MonoBehaviour {
 		if (!boboTreino)
 		{
 			onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-			anim.SetBool("Grounded", onGround);
-			anim.SetBool("Dead", isDead);
+			anim.SetBool("Grounded", onGround); //setar apenas se o valor mudou
+			anim.SetBool("Dead", isDead); //setar apenas se o valor mudou
 
 			if (!isDead && !stop)
 			{
@@ -153,7 +153,7 @@ public class Enemy : MonoBehaviour {
 			damaged = true;
 			currentHealth -= damage;
 			anim.SetTrigger("HitDamage");
-			FindObjectOfType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyName, enemyImage);
+			FindObjectOfType<UIManager>().UpdateEnemyUI(maxHealth, currentHealth, enemyName, enemyImage); // UIManager singleton
 			if(currentHealth <= 0)
 			{
 				isDead = true;

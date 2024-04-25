@@ -8,14 +8,14 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
-    public float maxSpeed = 4;
-    public float jumpForce = 400;
-    public float minHeight, maxHeight;
-    public int maxHealth = 10;
-    public string playerName;
-    public Sprite playerImage;
-    public AudioClip collisionSound, jumpSound, healthItem;
-    public Weapon weapon;
+    public float maxSpeed = 4; //public sem uso externo. setar private, utilizar SerializeField ou melhor ainda, expor em ScriptableObject
+    public float jumpForce = 400;//public sem uso externo. setar private, utilizar SerializeField ou melhor ainda, expor em ScriptableObject
+    public float minHeight, maxHeight;//public sem uso externo. setar private, utilizar SerializeField ou melhor ainda, expor em ScriptableObject
+    public int maxHealth = 10;//public sem uso externo. setar private, utilizar SerializeField ou melhor ainda, expor em ScriptableObject
+    public string playerName;//atributo privato, get público
+    public Sprite playerImage;//Idem
+    public AudioClip collisionSound, jumpSound, healthItem; //public sem uso externo.
+    public Weapon weapon; //public sem uso externo.
 
     private int currentHealth;
     private float currentSpeed;
@@ -39,8 +39,8 @@ public class Player : MonoBehaviour
     [System.Obsolete]
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
-        maxHealth = gameManager.GetMaxHP();
+        gameManager = FindObjectOfType<GameManager>(); //ver comentário sobre singleton
+        maxHealth = gameManager.GetMaxHP(); //configuração estranha, difícil de explicar em comentário, me chama pra eu dar mais detalhes
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
@@ -58,14 +58,14 @@ public class Player : MonoBehaviour
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-        anim.SetBool("OnGround", onGround);
-        anim.SetBool("Dead", isDead);
-        anim.SetBool("Weapon", holdingWeapon);
+        anim.SetBool("OnGround", onGround); //setar apenas se valor mudou
+        anim.SetBool("Dead", isDead);//setar apenas se valor mudou
+        anim.SetBool("Weapon", holdingWeapon);//setar apenas se valor mudou
 
         if (!isDead && !stop)
         {
 
-            if (Input.GetButtonDown("Jump") && onGround && canJump)
+            if (Input.GetButtonDown("Jump") && onGround && canJump) //ver InputSystem package
             {
 
                 Jump = true;
@@ -81,8 +81,8 @@ public class Player : MonoBehaviour
 
         if(!isDead && !stop && !direcaoFixa)
         {
-            float h = Input.GetAxis("Horizontal");
-            float z = Input.GetAxis("Vertical");
+            float h = Input.GetAxis("Horizontal"); //InputSystem
+            float z = Input.GetAxis("Vertical");//InputSystem
 
             if(!onGround)
                 z = 0;
@@ -116,8 +116,8 @@ public class Player : MonoBehaviour
             }
         }
 
-        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 15)).x;
-        float maxWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 15)).x;
+        float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 15)).x; //guardar ref da câmera, essa chamada é pesada.
+        float maxWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 15)).x;//guardar ref da câmera, essa chamada é pesada.
 
         rb.position = new Vector3(Mathf.Clamp(rb.position.x, minWidth+1, maxWidth-1), rb.position.y,
         Mathf.Clamp(rb.position.z, minHeight, maxHeight));
@@ -162,12 +162,12 @@ public class Player : MonoBehaviour
         {
             currentHealth -= damage;
             anim.SetTrigger("HitDamage");
-            FindObjectOfType<UIManager>().UpdateHealt(currentHealth);
+            FindObjectOfType<UIManager>().UpdateHealt(currentHealth); //evitar FindObject, ver padrão singleton
             if(currentHealth <= 0)
             {
                 isDead = true;
-                FindObjectOfType<GameManager>().SetLives();
-                FindObjectOfType<UIManager>().UpdateLives();
+                FindObjectOfType<GameManager>().SetLives();//evitar FindObject, ver padrão singleton
+                FindObjectOfType<UIManager>().UpdateLives();//evitar FindObject, ver padrão singleton
                 if(facingRight)
                 {
                     rb.AddForce(new Vector3(-3, 5, 0), ForceMode.Impulse);
@@ -189,7 +189,7 @@ public class Player : MonoBehaviour
             anim.SetTrigger("Catching");
             PlaySong(healthItem);
             currentHealth = maxHealth;
-            FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);    
+            FindAnyObjectByType<UIManager>().UpdateHealt(currentHealth);    //evitar FindObject, ver padrão singleton
         }
 
         if (other.CompareTag("Weapon"))
@@ -218,7 +218,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if(!bossFigth) FindObjectOfType<UIManager>().GameOver();
+            if(!bossFigth) FindObjectOfType<UIManager>().GameOver();//evitar FindObject, ver padrão singleton
 
         }
     }
@@ -231,9 +231,9 @@ public class Player : MonoBehaviour
 
     }
 
-    public void SetHoldingWeaponToFalse()
+    public void SetHoldingWeaponToFalse() //desnecessário. Usar atributo privado com setter público.
     {
-        holdingWeapon = false;
+        holdingWeapon = false; 
     }
 
     public bool GetHoldingWeapon() 
@@ -243,7 +243,7 @@ public class Player : MonoBehaviour
 
     }
 
-    public void SetStop()
+    public void SetStop() //renomear. O nome sugere que isso é um setter, mas tu tá na verdade invertendo o valor que já existe
     {
         if (stop)
         {
@@ -265,7 +265,7 @@ public class Player : MonoBehaviour
 
     }
 
-    public void SetCanFlip()
+    public void SetCanFlip() // renomear ou transformar em setter.
     {
         if (canFlip)
         {
@@ -277,7 +277,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void SetDireçãoFixa()
+    public void SetDireçãoFixa() //Idem
     {
         if (direcaoFixa)
         {

@@ -59,7 +59,7 @@ public class DialogeSystem : MonoBehaviour
     [Obsolete]
     void Update()
     {
-        pause = FindObjectOfType<Pause>();
+        pause = FindObjectOfType<Pause>(); //FindObjectOfType no Update JAMAIS. Evitar o FindObject e afins sempre que possível. Quando estritamente necessário, fazer uma vez e armazenar a ref
 
         if(pause) paused = pause.GetPause();
 

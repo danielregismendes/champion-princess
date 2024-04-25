@@ -16,9 +16,9 @@ public class GameManager : MonoBehaviour
 {
     public int lives;
 
-    private string dificuldade = "FACIL";
-    private string lingua = "PORTUGUES";
-    private GameManager gameManager;
+    private string dificuldade = "FACIL"; //Evitar hard-code de strings. Tem uma quantidade limitada de opções, bom use case de enum
+    private string lingua = "PORTUGUES"; //Idem a linha anterior
+    private GameManager gameManager; //Singleton pattern: public static GameManager gameManager
     private int currentLives;
     private bool music = true;
     private bool soundFX = true;

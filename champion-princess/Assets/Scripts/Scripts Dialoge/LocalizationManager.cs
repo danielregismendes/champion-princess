@@ -17,7 +17,7 @@ public class LocalizationManager : MonoBehaviour
     [Obsolete]
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>(); // GameManager sendo um singleton, é acessível via GameManager.gameManager e não precisa armazenar referências em outras classes. FindObjectOfType e métodos semelhantes são pesados e devem ser evitados quando possível.
         
     }
 

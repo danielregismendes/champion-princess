@@ -42,8 +42,8 @@ public class PlayerCombo : MonoBehaviour
     {
 
         onGround = Physics.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-        weapon = GetComponentInParent<Player>().GetHoldingWeapon();
-        player = GetComponentInParent<Player>();
+        weapon = GetComponentInParent<Player>().GetHoldingWeapon(); //GameManager.gameManager.GetPlayer().GetEquippedWeapon();
+        player = GetComponentInParent<Player>(); //busca dupla
         stop = player.GetStop();
 
         if (!weapon && !stop && !player.GetIsDead())
@@ -57,11 +57,11 @@ public class PlayerCombo : MonoBehaviour
     void CheckInputs()
     {
 
-        if (!onGround && Input.GetButtonDown("Fire2"))
+        if (!onGround && Input.GetButtonDown("Fire2")) //InputSystem package
         {
             anim.SetTrigger("Attack");
             //player.SetCanFlip();
-            //player.SetDireçãoFixa();
+            //player.SetDireï¿½ï¿½oFixa();
         }
         if(onGround && !Input.GetButtonDown("Jump"))
         {
@@ -90,7 +90,7 @@ public class PlayerCombo : MonoBehaviour
                                 {
                                     if (currentCombo[y] != combos[i].hits[y].inputButton)
                                     {
-                                        Debug.Log("Input não pertence ao hit atual");
+                                        Debug.Log("Input nï¿½o pertence ao hit atual");
                                         comboMatch = false;
                                         break;
                                     }

@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
-public class Pause : MonoBehaviour
+public class Pause : MonoBehaviour // essa classe inteira poderia ser um bool no GameManager.
 {
     public GameObject menuPausa;
 
     private bool paused = false;
 
-     void Update()
+    void Update()
     {
 
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel")) //evitar processamento de input em update, utilizar eventos. Ver InputSystem em packages.
         {
             Pausar();
         }

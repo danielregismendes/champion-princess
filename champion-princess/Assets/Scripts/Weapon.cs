@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
             if (durability < 0)
             {
                 spriteRenderer.sprite = null;
-                GetComponentInParent<Player>().SetHoldingWeaponToFalse();
+                GetComponentInParent<Player>().SetHoldingWeaponToFalse(); //controlar isso no player. Usar evento/delegate
             }
         }
 
